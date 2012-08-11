@@ -1,0 +1,125 @@
+BFS Constructor
+DFS Constructor
+
+
+Graph Main
+AList [0] : [ 59 ] -> [ 58 ] -> [ 47 ] -> 
+AList [1] : [ 2 ] -> 
+AList [2] : [ 3 ] -> [ 1 ] -> 
+AList [3] : [ 10 ] -> [ 4 ] -> [ 2 ] -> 
+AList [4] : [ 5 ] -> [ 3 ] -> 
+AList [5] : [ 6 ] -> [ 16 ] -> [ 4 ] -> 
+AList [6] : [ 19 ] -> [ 7 ] -> [ 5 ] -> 
+AList [7] : [ 6 ] -> 
+AList [8] : [ 9 ] -> 
+AList [9] : [ 10 ] -> [ 8 ] -> 
+AList [10] : [ 13 ] -> [ 9 ] -> [ 3 ] -> 
+AList [11] : [ 12 ] -> 
+AList [12] : [ 13 ] -> [ 11 ] -> 
+AList [13] : [ 14 ] -> [ 12 ] -> [ 10 ] -> 
+AList [14] : [ 13 ] -> 
+AList [15] : [ 21 ] -> [ 16 ] -> 
+AList [16] : [ 17 ] -> [ 15 ] -> [ 5 ] -> 
+AList [17] : [ 18 ] -> [ 16 ] -> 
+AList [18] : [ 19 ] -> [ 17 ] -> 
+AList [19] : [ 20 ] -> [ 18 ] -> [ 6 ] -> 
+AList [20] : [ 29 ] -> [ 19 ] -> 
+AList [21] : [ 31 ] -> [ 22 ] -> [ 15 ] -> 
+AList [22] : [ 23 ] -> [ 21 ] -> 
+AList [23] : [ 41 ] -> [ 24 ] -> [ 22 ] -> 
+AList [24] : [ 25 ] -> [ 23 ] -> 
+AList [25] : [ 26 ] -> [ 24 ] -> 
+AList [26] : [ 50 ] -> [ 27 ] -> [ 25 ] -> 
+AList [27] : [ 28 ] -> [ 26 ] -> 
+AList [28] : [ 30 ] -> [ 27 ] -> 
+AList [29] : [ 30 ] -> [ 20 ] -> 
+AList [30] : [ 48 ] -> [ 29 ] -> [ 28 ] -> 
+AList [31] : [ 32 ] -> [ 21 ] -> 
+AList [32] : [ 33 ] -> [ 31 ] -> 
+AList [33] : [ 53 ] -> [ 34 ] -> [ 32 ] -> 
+AList [34] : [ 35 ] -> [ 33 ] -> 
+AList [35] : [ 42 ] -> [ 36 ] -> [ 34 ] -> 
+AList [36] : [ 37 ] -> [ 35 ] -> 
+AList [37] : [ 38 ] -> [ 36 ] -> 
+AList [38] : [ 39 ] -> [ 46 ] -> [ 37 ] -> 
+AList [39] : [ 49 ] -> [ 40 ] -> [ 38 ] -> 
+AList [40] : [ 41 ] -> [ 39 ] -> 
+AList [41] : [ 40 ] -> [ 23 ] -> 
+AList [42] : [ 43 ] -> [ 35 ] -> 
+AList [43] : [ 44 ] -> [ 42 ] -> 
+AList [44] : [ 45 ] -> [ 51 ] -> [ 43 ] -> 
+AList [45] : [ 46 ] -> [ 44 ] -> 
+AList [46] : [ 45 ] -> [ 38 ] -> 
+AList [47] : [ 0 ] -> 
+AList [48] : [ 56 ] -> [ 52 ] -> [ 30 ] -> 
+AList [49] : [ 50 ] -> [ 39 ] -> 
+AList [50] : [ 49 ] -> [ 26 ] -> 
+AList [51] : [ 52 ] -> [ 44 ] -> 
+AList [52] : [ 51 ] -> [ 48 ] -> 
+AList [53] : [ 58 ] -> [ 54 ] -> [ 33 ] -> 
+AList [54] : [ 55 ] -> [ 53 ] -> 
+AList [55] : [ 56 ] -> [ 54 ] -> 
+AList [56] : [ 55 ] -> [ 48 ] -> 
+AList [57] : [ 58 ] -> 
+AList [58] : [ 57 ] -> [ 53 ] -> [ 0 ] -> 
+AList [59] : [ 0 ] -> 
+0 : vertex: 0
+1 : vertex: 47
+2 : vertex: 58
+3 : vertex: 53
+4 : vertex: 33
+5 : vertex: 32
+6 : vertex: 31
+7 : vertex: 21
+8 : vertex: 15
+9 : vertex: 16
+10 : vertex: 5
+11 : vertex: 4
+12 : vertex: 3
+13 : vertex: 2
+14 : vertex: 1
+15 : vertex: 10
+16 : vertex: 9
+17 : vertex: 8
+18 : vertex: 13
+19 : vertex: 12
+20 : vertex: 11
+21 : vertex: 14
+22 : vertex: 6
+23 : vertex: 7
+24 : vertex: 19
+25 : vertex: 18
+26 : vertex: 20
+27 : vertex: 29
+28 : vertex: 30
+29 : vertex: 28
+30 : vertex: 27
+31 : vertex: 26
+32 : vertex: 25
+33 : vertex: 24
+34 : vertex: 23
+35 : vertex: 41
+36 : vertex: 40
+37 : vertex: 39
+38 : vertex: 38
+39 : vertex: 37
+40 : vertex: 36
+41 : vertex: 35
+42 : vertex: 42
+43 : vertex: 43
+44 : vertex: 44
+45 : vertex: 51
+46 : vertex: 52
+47 : vertex: 45
+48 : vertex: 46
+49 : vertex: 49
+50 : vertex: 50
+51 : vertex: 48
+52 : vertex: 56
+53 : vertex: 55
+54 : vertex: 17
+55 : vertex: 22
+56 : vertex: 34
+57 : vertex: 54
+58 : vertex: 57
+59 : vertex: 59

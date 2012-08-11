@@ -1,0 +1,264 @@
+#include "kernelMain.h"
+
+extern "C" {
+    initGDT();
+    getCodeSelector( int );
+    getDataSelector( int );
+};
+
+
+
+
+void initialize( void ) {
+
+    initGDT();
+    //initIDT();
+}
+    
+
+/*
+---- normal switch ---
+enum NodeType { NodeA, NodeB, NodeC };
+
+switch (getNodeType()) {
+    
+    case NodeA:
+
+    case NodeB:
+
+    case NodeC:
+
+    .
+    .
+    .
+}
+---- fast switch ----
+
+int processNodeA(void);
+int processNodeB(void);
+int processNodeC(void);
+
+//
+//  Estabilishement of a table of pointers to functions 
+//
+int (*func) () nodeFunctions[] 
+		= { processNodeA, processNodeB, processNodeC };
+..
+..
+
+
+// 
+// The entire switch statement is replaced by the next line.
+//
+
+status = nodeFunctions[getNodeType()]();
+        
+*/
+main(uint bindTable,int numFiles ) {
+
+    Bindfile	aBindfile( bindTable, numFiles );
+    Aout	aAoutHeader;
+    
+    initialize();
+
+
+    initDebug(ErrorDebug); // debug message init
+
+
+// hal test
+    aBindfile.findModule("Kernel");
+
+    cprintf("\nKernel's code selector 0x%x\n",
+	getCodeSelector(0));
+    cprintf("Kernel's data selector 0x%x\n",
+	getDataSelector(0));
+
+    getchar();
+
+    aBindfile.printBindfile();
+    aAoutHeader.printAoutHeader(&aBindfile);
+
+    getchar();
+
+#undef FIRST_TEST
+#ifdef FIRST_TEST
+
+    Task 	aTask[MaxTaskNum];
+    TaskPQueue	aTaskPQ;
+
+    Task *	pTask;
+
+// task test
+    for(int i = 0 ; i < 30 ; i++)
+	aTask[i].printTask();
+
+    pTask = &aTask[1];
+
+    printf("\n");
+    pTask->printTask();
+
+    pTask->hello();
+
+    
+
+    printf("task testing\n");
+    char * taskState = pTask->getState();
+    printf("task state [%s] \n", taskState);
+
+    //pTask->priority = 340;
+    if( pTask->isValidPriority(LowestPriority) != OK )
+	printf("NOT valid priority\n");
+    else
+	printf("valid priority\n");
+
+    aTask[45].priority = 1;
+    aTask[4].priority = 254;
+    aTask[5].priority = 0;
+    aTask[14].priority = 1;
+    aTask[37].priority = 1;
+    aTask[99].priority = 0;
+    aTask[78].priority = 4;
+    for(i = 3; i < 80; i++) {
+	pTask = &aTask[i]; 
+	aTaskPQ.addReadyQueue(pTask);
+    }
+    getchar();
+    
+    aTaskPQ.printQueue(255);
+    aTaskPQ.printQueue(254);
+    aTaskPQ.printQueue(200);
+    aTaskPQ.printQueue(99);
+    aTaskPQ.printQueue(78);
+    aTaskPQ.printQueue(37);
+    aTaskPQ.printQueue(45);
+    aTaskPQ.printQueue(14);
+    //aTaskPQ.printQueue(3);
+    aTaskPQ.printQueue(1);
+
+    getchar();
+    //aTaskPQ.getHighPriority();
+
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+	aTaskPQ.addReadyQueue(&aTask[5]);
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+
+    aTaskPQ.printQueue(1);
+    //printf("getNext task %d\n", pTask->tid);
+    //aTaskPQ.removeQueue(1);
+
+    //aTaskPQ.getHighestPriority();
+
+    getchar();
+#endif // FIRST_TEST
+
+
+#undef	SECOND_TEST
+#ifdef  SECOND_TEST
+    Task 	aTask[MaxTaskNum];
+    PriQueue	aTaskPriQueue;
+
+    Task *	pTask;
+
+    int i;
+
+    //initDebug(ErrorDebug);
+    for(i = 0 ; i < 30 ; i++)
+	aTask[i].printTask();
+
+    pTask = &aTask[1];
+
+    printf("\n");
+    pTask->printTask();
+
+    pTask->hello();
+
+    printf("\ntask testing\n");
+	pTask->setState(Ready);
+    char * taskState = pTask->getState();
+    printf("task state [%s] \n", taskState);
+
+    //pTask->priority = 340;
+    if( pTask->isValidPriority(LowestPriority) != OK )
+	printf("NOT valid priority\n");
+    else
+	printf("valid priority\n");
+
+    aTask[45].priority = 1;
+    aTask[4].priority = 254;
+    aTask[5].priority = 0;
+    aTask[14].priority = 1;
+    aTask[37].priority = 1;
+    aTask[99].priority = 0;
+    aTask[78].priority = 4;
+    for(i = 3; i < 80; i++) {
+	pTask = &aTask[i]; 
+	// XXX 
+	pTask->setState(Ready);
+	aTaskPriQueue.addPriQueue(pTask);
+    }
+    
+    aTaskPriQueue.printQueue(255);
+    aTaskPriQueue.printQueue(254);
+    aTaskPriQueue.printQueue(99);
+    aTaskPriQueue.printQueue(78);
+    aTaskPriQueue.printQueue(37);
+    aTaskPriQueue.printQueue(45);
+    aTaskPriQueue.printQueue(14);
+    //aTaskPriQueue.printQueue(3);
+    aTaskPriQueue.printQueue(1);
+    aTaskPriQueue.printQueue(0);
+
+    //aTaskPriQueue.getHighPriority();
+
+    printf("Damm i will call getNextTask\n");
+    pTask = aTaskPriQueue.getNextTask();
+    pTask = aTaskPriQueue.getNextTask();
+    pTask = aTaskPriQueue.getNextTask();
+	// XXX 
+	aTask[5].setState(Ready);
+	aTaskPriQueue.addPriQueue(&aTask[5]);
+    pTask = aTaskPriQueue.getNextTask();
+    pTask = aTaskPriQueue.getNextTask();
+    pTask = aTaskPriQueue.getNextTask();
+    pTask = aTaskPriQueue.getNextTask();
+    pTask = aTaskPriQueue.getNextTask();
+
+    aTaskPriQueue.printQueue(1);
+    //printf("getNext task %d\n", pTask->tid);
+    //aTaskPriQueue.removeQueue(1);
+
+    //aTaskPriQueue.getHighestPriority();
+
+
+    printf("\nfirst version of test finished \n");
+    getchar();
+#endif // SECOND_TEST
+
+    TaskDescTable aTDTable;
+
+    //
+    // test getNextFreeTask();
+    //
+    printf(" testing getNextFreeTask\n");
+    Task * pTempTask = aTDTable.getNextFreeTask();
+    printf("First free task tid %d\n", pTempTask->tid);
+    for(int i = 1; i< aTDTable.getMaxNumTasks()+2; i++) {
+	pTempTask = aTDTable.getNextFreeTask();
+	if( pTempTask != (Task *) Empty) {
+	    printf(" %d: free task tid %d\n", i, pTempTask->tid);
+	}
+    }
+
+
+
+
+
+
+} // main
+

@@ -1,0 +1,165 @@
+[femos]  >> Fast E M bedded Operating System <<  [femos]
+--------------------------------------------------------
+
+    Real Time Operating System for Eos system
+    Real Time Application System for Eos system
+
+University of Waterloo, Canada
+
+
+Author 	: 	INSOP SONG, Michael Cole
+email	: 	isong@uwaterloo.ca
+Date 	: 	June 15, 2001
+
+Directory explanation:
+
+task	:	task descriptor table 
+		ready queue stuff
+kernel	: 	kernel main, init
+bsp	:	board specific code 
+hal	: 	hardware abstraction layer
+util	:	usful stuffs
+clock	: 	clock server and notifier
+serial	: 	char bounded buffer for serial communcation
+	:	we don't have serial server, we have those functions
+	:	inside kernel
+name	: 	name server
+ipc	: 	inter process communication
+syscall	:	system call stuffs, syscall
+include	: 	header files
+lib	:	object files
+name_server:	name server implementation
+
+sensor	:	sensor releated and other serial related files
+train	:	trainTask class, and trainTaskMail files
+central_control : centralControl class and main files
+pathfind:	shortest path find using dijkstra algorithm
+buffer_server	: some bounded buffer server (which are not used for
+this demonstration)
+black_blard	: blackboard class and files (which are not used for
+this demonstration)
+
+
+onestep : 	make each step command generation
+schedular:	scheduling for multiple trains
+tokenizer:	command input parsing files
+
+
+--------------------------------------------------------
+[femos]  >> Fast E M bedded Operating System <<  [femos]
+
+
+
+General thing: 
+
+Class implementation files usually starts with narmal
+name such as, kernel, trainTask, centralControl. And the real files
+which use thoses objects(Kernel, TrainTask, CentralControl..) is ends
+with "Main" such as kernelMain, trainTask, centralControlMain.
+
+
+Install:
+
+1. make clean
+2. make all(it generate object files and copy into "lib" directory
+
+
+Run:
+
+0. all the files for download are at 'kernel' directory including
+Bindfile and 'kernelMain' and other user tasks programs
+
+1. main kernel : "kernelMain"
+
+2. refer "Bindfile"
+
+
+---------------------------------------------------
+
+kernelMain              KernelMain              62000
+init                    Init                    700
+idle                    Idle                    300
+stat                    Stat                    400
+nameServer              NameServer              1900
+commandSrv              CommandSrv              1500
+sensorSrv               SensorSrv               1500
+sensorSchen             SensorSched             500
+trainTaskMain           TrainTaskMain           34000
+centralControlMain      CentralControlMain      40000
+blackBoardMain          BlackBoardMain          10000
+pathfind                PathFind                5000
+onestep                 OneStep                 5000
+schedular               Schedular               10000
+tokenizer               Tokenizer               2700
+matrix                  Matrix                  900
+sensorReporter          SensorReporter          1000
+
+----------------------------------------------------
+
+
+Using program:
+
+1. Please use the Eos on track B(our kernel needs lots of memeory)
+I tested with 64 full tasks(with matrix like taksks) today(25) without
+any problem(just in case, if you don't like such things ,undefine
+"MATRIX_TASKS" at "kernel\init.c"files
+
+2. When it starts 
+it asks you "which track" you can press A or B
+
+3. it asks you about trains
+such as " do you want to use train 1?" you can press y or n for
+chosing.
+
+One thing: 52 trains runs well, because we got this train's speed
+table.
+
+4. If you answer about all train(1,6,12,52,55,57)
+
+then you can command as follows
+train 52 -s a01 -e d15
+> means train 52 starts from current position and end position d15
+> our parser is stubbrn so you have to type exactly same as I typed
+> starting position has no meaning, though.Because our system assumes
+> that current position is start position(last tripped sensor
+> position)
+
+>* it may finished at next to the end position(We give many constraint
+>on the way but we give lots of flexibility at stop position for the
+>future implementation. multiple train.)
+
+5. or you may type "run random"
+it runs 5 times random run in a row.
+
+6. current other command"hal, run init.." are not provided
+> you can use "train 52 -a a01 -e d05" and "run random" with one train
+and two train.
+
+7. when program runs it tells its command set first
+and if train passes it command set sensor, it tells you about
+current positoin estimation and real position and differences with
+percentage.
+
+Most of the position estimation is below 10% except start
+postion(because train starts from somewhere out of the sensor, but
+when it runs We can calibrate everytime train passes the sensor, and
+the same login end position may have little large difference
+percentage.
+
+8. Out output is bit differcult follow, because we made this for Java
+Terminal. We dump many information because using Java terminal cature
+many system information and check those later not like WYSE. We use only "\n" for our Write primitives which give strange output at WYSE but not on our java terminal. 
+Pleas count on this point.
+
+9. If you have any question, please email me 
+using 
+insop@watfor.uwaterloo.ca (PAMI group systems design engineering)
+or
+isong@student.math.ueaterloo.ca
+
+Thank you very much
+
+
+July 26, 2001
+by Insop song
+

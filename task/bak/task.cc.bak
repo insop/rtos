@@ -1,0 +1,285 @@
+#include	"task.h"
+#include	<stdio.h>
+
+char *strTaskState[] = {"Dummy", "Active", "Ready", "Dead", "SendBlocked", 
+	    "ReplyBlocked", "ReceiveBlocked", "EventBlocked"};
+
+#define	POWER	3	// 2^3 = 8; 2^POWER = BITS 
+#define BITIZE(p)	((0x01 << (p)))
+
+// use this for 0 is lowest priority case
+#define PRI_CHANGE(p)	(LowestPriority - p)
+
+//
+// 	fast search highest priority from ARX RTOS of SNU
+//
+const UBYTE priorityMap[] = {
+ /* 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15  */
+    0, 0, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3,	// 16 * 0 ~
+    4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,	// 16 * 1 ~
+    5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 	// 16 * 2 ~
+    5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 	// 16 * 3 ~
+    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,	// 16 * 4 ~
+    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,	// 16 * 5 ~
+    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,	// 16 * 6 ~
+    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,	// 16 * 7 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 8 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 9 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 10 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 11 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 12 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 13 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 14 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7	// 16 * 15 ~
+};
+
+    
+
+
+
+int	Task::nextTid = 0;
+
+//
+//	TASK CLASS
+//
+Task::Task() {
+    state = Dummy; 
+    tid = Task::nextTid++;
+    priority = LowestPriority;
+
+    //cprintf("Task created tid[%d] priority[%d]\n", tid, priority);
+}
+
+Task::~Task() {
+    //cprintf("Task Destoried \n");
+}
+
+void Task::hello() {
+    cprintf("Task Hello \n");
+}
+
+inline void  Task::setState(TaskState _state) {
+    state = _state;
+}
+char *Task::getState() {
+    //cprintf("task state [%s] \n", strTaskState[state]);
+    return strTaskState[state];
+}
+
+void Task::printTask()	{
+    cprintf("tid[%d], pri[%d], s[%s]\n", 
+	Task::tid, Task::priority, Task::getState());
+}
+
+
+ErrorCode Task::isValidPriority(int _priority) {
+
+    if( ( _priority > PriorityRange - 1) ||
+	( _priority < HighestPriority ))
+	return ErrorPriority;
+    else
+	return OK;
+}
+
+    
+TaskPQueue::TaskPQueue() {
+
+    for(int i = 0; i < PriorityRange; i++) {
+	taskQ[i].pHead = taskQ[i].pTail = (Task *)Empty;
+    }
+    //cprintf("PQ initialized \n");
+}
+
+
+
+//
+//	TASK PRIORITY QUEUE class
+//
+ErrorCode TaskPQueue::addReadyQueue(Task * _pTask) {
+
+    register int priority = _pTask->priority;
+    register int tid = _pTask->tid;
+    //int priority = _pTask->priority;
+    //int tid = _pTask->tid;
+
+    _pTask->setState(Ready);
+
+    cprintf("EnQueueing tid[%d], priority[%d]\n", tid, priority);
+
+    return addQueue(_pTask, priority);
+
+
+}
+
+// 
+// 	add queue for eacy priority specific queue
+//
+
+ErrorCode TaskPQueue::addQueue(Task * _pTask, int _priority) {
+
+    if((taskQ[_priority].pHead) == (Task *)Empty) {
+
+	setPriorityMask(_priority);	// this is the first, so set
+	taskQ[_priority].pHead = _pTask;
+	taskQ[_priority].pTail = _pTask;
+	_pTask->pNext = (Task *)Empty;
+    } // if
+    else {
+	taskQ[_priority].pTail->pNext = _pTask;
+	taskQ[_priority].pTail = _pTask;
+	_pTask->pNext = (Task *)Empty;
+    } // else 
+    return True;
+}
+
+// 
+// 	de queue for eacy priority specific queue
+//
+//	return pTask;
+//
+Task *	TaskPQueue::removeQueue(int _priority) {
+
+    register Task * pTask;
+    //Task * pTask;
+
+    pTask = taskQ[_priority].pHead;
+    if( pTask->pNext != (Task *)Empty) {
+	taskQ[_priority].pHead = pTask->pNext;
+    } // if
+    else {	
+	clearPriorityMask(_priority);	// last task of the priority
+	taskQ[_priority].pHead = (Task *)Empty;
+	taskQ[_priority].pTail = (Task *)Empty;
+    }
+    return pTask;
+}
+
+void	TaskPQueue::setPriorityMask(int _priority) {
+
+    register int p1, p2, p3;
+    register int p;
+    //int p1, p2, p3;
+    //int p;
+
+    p = PRI_CHANGE(_priority);
+
+    //GET_MASK_INDEX(_priority, p1, p2, p3);
+    p1 = ((p>>(POWER*2)) & 0x07);
+    p2 = ((p>>(POWER*1)) & 0x07);	
+    p3 = ((p>>(POWER*0)) & 0x07);
+
+    //cprintf("p1 0x%x, 2 %x, 3%x\n",p1,p2,p3);
+
+    priorityMaskFirst 		|= BITIZE(p1);
+    priorityMaskSecond[p1] 	|= BITIZE(p2);
+    priorityMaskThird[p1][p2] 	|= BITIZE(p3);
+}
+
+void	TaskPQueue::clearPriorityMask(int _priority) {
+    register int p1, p2, p3;
+    register int p;
+    //int p1, p2, p3;
+    //int p;
+
+    p = PRI_CHANGE(_priority);
+
+    //GET_MASK_INDEX(_priority, p1, p2, p3);
+    p1 = ((p>>(POWER*2)) & 0x07);
+    p2 = ((p>>(POWER*1)) & 0x07);	
+    p3 = ((p>>(POWER*0)) & 0x07);
+
+    //cprintf("p1 0x%x, 2 %x, 3%x\n",p1,p2,p3);
+
+    priorityMaskThird[p1][p2] &= ~BITIZE(p3);
+    if (priorityMaskThird[p1][p2] == 0) {
+	priorityMaskSecond[p1] &= ~BITIZE(p2);
+	if(priorityMaskSecond[p1] == 0) {
+	    priorityMaskFirst &= ~BITIZE(p1);
+	}
+    }
+}
+
+// 
+//	get highest priority 
+//	by bit mapping
+//
+int	TaskPQueue::getHighestPriority( void ) {
+    register int p1, p2, p3;
+    register int priority;
+    //int p1, p2, p3;
+    //int priority;
+
+    p1 = priorityMap[priorityMaskFirst];
+    p2 = priorityMap[priorityMaskSecond[p1]];
+    p3 = priorityMap[priorityMaskThird[p1][p2]];
+
+    priority = ( p1 << ( POWER * 2 ) ) + ( p2 << ( POWER * 1 ) ) + p3;
+    cprintf("bit mapping highest priority %d \n", PRI_CHANGE(priority));
+
+    return PRI_CHANGE(priority);
+}
+
+
+#undef NOT_USE
+#ifdef NOT_USE
+int	TaskPQueue::getHighestPriority(void)
+{
+    for(int priority = HighestPriority; priority <= LowestPriority ;priority++)
+    {
+	if( taskQ[priority].pHead != (Task *)Empty) {
+	    cprintf("Highest Priority is %d\n",priority);
+	    return priority;
+	} 
+    }  
+    return ErrorGetHighPriority;
+}
+#endif // NOT_USE
+
+//
+//	return pTask
+//
+Task *	TaskPQueue::getNextTask() {
+
+    register int priority;
+    register Task * pTask;
+    //int priority;
+    //Task * pTask;
+
+    //priority = this->getHighestPriority();
+    priority = getHighestPriority();
+    if(priority < 0) { // error condition
+	//Error(ErrorDebug,"getNextTask Error: no task in the queue");
+	cprintf("getNextTask Error : no taks\n");
+    }
+	
+    pTask = removeQueue(priority);
+
+    cprintf("getNextTask tid[%d]\n", pTask->tid);
+
+    return pTask;
+}
+
+
+
+void	TaskPQueue::printQueue(int _priority) {
+    Task * pTask = taskQ[_priority].pHead;
+    while(pTask != (Task *)Empty) {
+	pTask->printTask();
+	pTask = pTask->pNext;
+    }
+}
+	
+	
+
+
+    
+void TaskPQueue::printPQueue() {
+    
+    for(int i = 0; i < PriorityRange; i++) {
+	cprintf("Priority[%d] = Head: %d Tail: %d\n", i, 
+		taskQ[i].pHead, taskQ[i].pTail);
+    }
+}
+
+
+

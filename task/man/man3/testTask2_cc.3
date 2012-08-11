@@ -1,0 +1,93 @@
+.TH testTask2.cc 3 "17 Dec 2001" "TASK" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testTask2.cc \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio.h>\fR
+.br
+\fC#include "task.h"\fR
+.br
+\fC#include "taskDescTable.h"\fR
+.br
+\fC#include "priQueue.h"\fR
+.br
+\fC#include "dbLinkQueue.h"\fR
+.br
+.SS Functions
+
+.in +1c
+.ti -1c
+.RI "int \fBprocessNodeA\fR (void)"
+.br
+.ti -1c
+.RI "int \fBprocessNodeB\fR (void)"
+.br
+.ti -1c
+.RI "int \fBprocessNodeC\fR (void)"
+.br
+.ti -1c
+.RI "int \fBprocessNodeD\fR (void)"
+.br
+.ti -1c
+.RI "int \fBprocessNodeE\fR (void)"
+.br
+.ti -1c
+.RI "int \fBprocessNodeF\fR (void)"
+.br
+.ti -1c
+.RI "int \fBprocessNodeG\fR (void)"
+.br
+.ti -1c
+.RI "int \fBgetNodeType\fR (void)"
+.br
+.ti -1c
+.RI "int (* \fBswitchFunctions\fR [])(void)=\\"
+.br
+.ti -1c
+.RI "\fBmain\fR ()"
+.br
+.in -1c
+.SS Variables
+
+.in +1c
+.ti -1c
+.RI "int (* \fBswitchFunctions\fR [])(void)=\\"
+.br
+.ti -1c
+.RI "int (* \fBfpTest\fR )(void)=(int(*)(void)) processNodeC()"
+.br
+.in -1c
+.SH FUNCTION DOCUMENTATION
+.PP 
+.SS int getNodeType (void)
+.PP
+.SS main ()
+.PP
+.SS int processNodeA (void)
+.PP
+.SS int processNodeB (void)
+.PP
+.SS int processNodeC (void)
+.PP
+.SS int processNodeD (void)
+.PP
+.SS int processNodeE (void)
+.PP
+.SS int processNodeF (void)
+.PP
+.SS int processNodeG (void)
+.PP
+.SS int (* switchFunctions (void)
+.PP
+.SH VARIABLE DOCUMENTATION
+.PP 
+.SS int (* fpTest)(void) = (int(*)(void))processNodeC()
+.PP
+.SS int (* switchFunctions[])(void) = \\
+.PP
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for TASK from the source code.

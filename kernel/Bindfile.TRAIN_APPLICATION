@@ -1,0 +1,17 @@
+kernelMain		KernelMain		62000
+init			Init			700
+idle			Idle			300
+stat			Stat			400
+nameServer		NameServer		1900
+commandSrv		CommandSrv		1500
+sensorSrv		SensorSrv		1500
+sensorSched		SensorSched		500
+trainTaskMain		TrainTaskMain		34000
+centralControlMain	CentralControlMain	40000
+blackBoardMain		BlackBoardMain		10000
+pathfind		PathFind		5000
+onestep			OneStep			5000
+schedular		Schedular		10000
+tokenizer		Tokenizer		2700
+matrix			Matrix			900	
+sensorReporter		SensorReporter		1000

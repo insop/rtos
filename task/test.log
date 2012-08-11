@@ -1,0 +1,299 @@
+TEST2 
+TEST 0
+return val 0
+TEST 1
+return val 1
+TEST2 
+return val 2
+TEST3 
+return val 3
+TEST4 
+return val 4
+TEST5 
+return val 5
+TEST6 
+return val 6
+ testing getNextFreeTask
+First free task tid 0
+add priQueueing tid[0], priority[63]
+Timer check 
+decreased and isEmpty timer 0 , timer 2 
+decreased and isEmpty timer 0 , timer 1 
+decreased and isEmpty timer 1 , timer 0 
+Second free task tid 1
+msg queue of tid 0
+tid[1], pri[63], s[Dummy]
+ 1: free task tid 2
+add priQueueing tid[2], priority[1]
+ 2: free task tid 3
+add priQueueing tid[3], priority[2]
+ 3: free task tid 4
+add priQueueing tid[4], priority[3]
+ 4: free task tid 5
+add priQueueing tid[5], priority[4]
+ 5: free task tid 6
+add priQueueing tid[6], priority[5]
+ 6: free task tid 7
+add priQueueing tid[7], priority[6]
+ 7: free task tid 8
+add priQueueing tid[8], priority[7]
+ 8: free task tid 9
+add priQueueing tid[9], priority[8]
+ 9: free task tid 10
+add priQueueing tid[10], priority[9]
+ 10: free task tid 11
+add priQueueing tid[11], priority[0]
+ 11: free task tid 12
+add priQueueing tid[12], priority[1]
+ 12: free task tid 13
+add priQueueing tid[13], priority[2]
+ 13: free task tid 14
+add priQueueing tid[14], priority[3]
+ 14: free task tid 15
+add priQueueing tid[15], priority[4]
+ 15: free task tid 16
+add priQueueing tid[16], priority[5]
+ 16: free task tid 17
+add priQueueing tid[17], priority[6]
+ 17: free task tid 18
+add priQueueing tid[18], priority[7]
+ 18: free task tid 19
+add priQueueing tid[19], priority[8]
+ 19: free task tid 20
+add priQueueing tid[20], priority[9]
+ 20: free task tid 21
+add priQueueing tid[21], priority[0]
+ 21: free task tid 22
+add priQueueing tid[22], priority[1]
+ 22: free task tid 23
+add priQueueing tid[23], priority[2]
+ 23: free task tid 24
+add priQueueing tid[24], priority[3]
+ 24: free task tid 25
+add priQueueing tid[25], priority[4]
+ 25: free task tid 26
+add priQueueing tid[26], priority[5]
+ 26: free task tid 27
+add priQueueing tid[27], priority[6]
+ 27: free task tid 28
+add priQueueing tid[28], priority[7]
+ 28: free task tid 29
+add priQueueing tid[29], priority[8]
+ 29: free task tid 30
+add priQueueing tid[30], priority[9]
+ 30: free task tid 31
+add priQueueing tid[31], priority[0]
+ 31: free task tid 32
+add priQueueing tid[32], priority[1]
+ 32: free task tid 33
+add priQueueing tid[33], priority[2]
+ 33: free task tid 34
+add priQueueing tid[34], priority[3]
+ 34: free task tid 35
+add priQueueing tid[35], priority[4]
+ 35: free task tid 36
+add priQueueing tid[36], priority[5]
+ 36: free task tid 37
+add priQueueing tid[37], priority[6]
+ 37: free task tid 38
+add priQueueing tid[38], priority[7]
+ 38: free task tid 39
+add priQueueing tid[39], priority[8]
+ 39: free task tid 40
+add priQueueing tid[40], priority[9]
+ 40: free task tid 41
+add priQueueing tid[41], priority[0]
+ 41: free task tid 42
+add priQueueing tid[42], priority[1]
+ 42: free task tid 43
+add priQueueing tid[43], priority[2]
+ 43: free task tid 44
+add priQueueing tid[44], priority[3]
+ 44: free task tid 45
+add priQueueing tid[45], priority[4]
+ 45: free task tid 46
+add priQueueing tid[46], priority[5]
+ 46: free task tid 47
+add priQueueing tid[47], priority[6]
+ 47: free task tid 48
+add priQueueing tid[48], priority[7]
+ 48: free task tid 49
+add priQueueing tid[49], priority[8]
+ 49: free task tid 50
+add priQueueing tid[50], priority[9]
+ 50: free task tid 51
+add priQueueing tid[51], priority[0]
+ 51: free task tid 52
+add priQueueing tid[52], priority[1]
+ 52: free task tid 53
+add priQueueing tid[53], priority[2]
+ 53: free task tid 54
+add priQueueing tid[54], priority[3]
+ 54: free task tid 55
+add priQueueing tid[55], priority[4]
+ 55: free task tid 56
+add priQueueing tid[56], priority[5]
+ 56: free task tid 57
+add priQueueing tid[57], priority[6]
+ 57: free task tid 58
+add priQueueing tid[58], priority[7]
+ 58: free task tid 59
+add priQueueing tid[59], priority[8]
+ 59: free task tid 60
+add priQueueing tid[60], priority[9]
+ 60: free task tid 61
+add priQueueing tid[61], priority[0]
+ 61: free task tid 62
+add priQueueing tid[62], priority[1]
+ 62: free task tid 63
+add priQueueing tid[63], priority[2]
+ 63: free task tid 64
+add priQueueing tid[64], priority[3]
+ 64: free task tid 65
+add priQueueing tid[65], priority[4]
+ 65: free task tid 66
+add priQueueing tid[66], priority[5]
+ 66: free task tid 67
+add priQueueing tid[67], priority[6]
+ 67: free task tid 68
+add priQueueing tid[68], priority[7]
+ 68: free task tid 69
+add priQueueing tid[69], priority[8]
+ 69: free task tid 70
+add priQueueing tid[70], priority[9]
+ 70: free task tid 71
+add priQueueing tid[71], priority[0]
+ 71: free task tid 72
+add priQueueing tid[72], priority[1]
+ 72: free task tid 73
+add priQueueing tid[73], priority[2]
+ 73: free task tid 74
+add priQueueing tid[74], priority[3]
+ 74: free task tid 75
+add priQueueing tid[75], priority[4]
+ 75: free task tid 76
+add priQueueing tid[76], priority[5]
+ 76: free task tid 77
+add priQueueing tid[77], priority[6]
+ 77: free task tid 78
+add priQueueing tid[78], priority[7]
+ 78: free task tid 79
+add priQueueing tid[79], priority[8]
+ 79: free task tid 80
+add priQueueing tid[80], priority[9]
+ 80: free task tid 81
+add priQueueing tid[81], priority[0]
+ 81: free task tid 82
+add priQueueing tid[82], priority[1]
+ 82: free task tid 83
+add priQueueing tid[83], priority[2]
+ 83: free task tid 84
+add priQueueing tid[84], priority[3]
+ 84: free task tid 85
+add priQueueing tid[85], priority[4]
+ 85: free task tid 86
+add priQueueing tid[86], priority[5]
+ 86: free task tid 87
+add priQueueing tid[87], priority[6]
+ 87: free task tid 88
+add priQueueing tid[88], priority[7]
+ 88: free task tid 89
+add priQueueing tid[89], priority[8]
+ 89: free task tid 90
+add priQueueing tid[90], priority[9]
+ 90: free task tid 91
+add priQueueing tid[91], priority[0]
+ 91: free task tid 92
+add priQueueing tid[92], priority[1]
+ 92: free task tid 93
+add priQueueing tid[93], priority[2]
+ 93: free task tid 94
+add priQueueing tid[94], priority[3]
+ 94: free task tid 95
+add priQueueing tid[95], priority[4]
+ 95: free task tid 96
+add priQueueing tid[96], priority[5]
+ 96: free task tid 97
+add priQueueing tid[97], priority[6]
+ 97: free task tid 98
+add priQueueing tid[98], priority[7]
+ 98: free task tid 99
+add priQueueing tid[99], priority[8]
+ 99: free task tid 100
+add priQueueing tid[100], priority[9]
+ priqueu testing 
+tid[0], pri[63], s[Dummy]
+tid[10], pri[9], s[Ready]
+tid[20], pri[9], s[Ready]
+tid[30], pri[9], s[Ready]
+tid[40], pri[9], s[Ready]
+tid[50], pri[9], s[Ready]
+tid[60], pri[9], s[Ready]
+tid[70], pri[9], s[Ready]
+tid[80], pri[9], s[Ready]
+tid[90], pri[9], s[Ready]
+tid[100], pri[9], s[Ready]
+tid[9], pri[8], s[Ready]
+tid[19], pri[8], s[Ready]
+tid[29], pri[8], s[Ready]
+tid[39], pri[8], s[Ready]
+tid[49], pri[8], s[Ready]
+tid[59], pri[8], s[Ready]
+tid[69], pri[8], s[Ready]
+tid[79], pri[8], s[Ready]
+tid[89], pri[8], s[Ready]
+tid[99], pri[8], s[Ready]
+tid[8], pri[7], s[Ready]
+tid[18], pri[7], s[Ready]
+tid[28], pri[7], s[Ready]
+tid[38], pri[7], s[Ready]
+tid[48], pri[7], s[Ready]
+tid[58], pri[7], s[Ready]
+tid[68], pri[7], s[Ready]
+tid[78], pri[7], s[Ready]
+tid[88], pri[7], s[Ready]
+tid[98], pri[7], s[Ready]
+tid[7], pri[6], s[Ready]
+tid[17], pri[6], s[Ready]
+tid[27], pri[6], s[Ready]
+tid[37], pri[6], s[Ready]
+tid[47], pri[6], s[Ready]
+tid[57], pri[6], s[Ready]
+tid[67], pri[6], s[Ready]
+tid[77], pri[6], s[Ready]
+tid[87], pri[6], s[Ready]
+tid[97], pri[6], s[Ready]
+tid[6], pri[5], s[Ready]
+tid[16], pri[5], s[Ready]
+tid[26], pri[5], s[Ready]
+tid[36], pri[5], s[Ready]
+tid[46], pri[5], s[Ready]
+tid[56], pri[5], s[Ready]
+tid[66], pri[5], s[Ready]
+tid[76], pri[5], s[Ready]
+tid[86], pri[5], s[Ready]
+tid[96], pri[5], s[Ready]
+tid[5], pri[4], s[Ready]
+tid[15], pri[4], s[Ready]
+tid[25], pri[4], s[Ready]
+tid[35], pri[4], s[Ready]
+tid[45], pri[4], s[Ready]
+tid[55], pri[4], s[Ready]
+tid[65], pri[4], s[Ready]
+tid[75], pri[4], s[Ready]
+tid[85], pri[4], s[Ready]
+tid[95], pri[4], s[Ready]
+tid[4], pri[3], s[Ready]
+tid[14], pri[3], s[Ready]
+tid[24], pri[3], s[Ready]
+tid[34], pri[3], s[Ready]
+tid[44], pri[3], s[Ready]
+tid[54], pri[3], s[Ready]
+tid[64], pri[3], s[Ready]
+tid[74], pri[3], s[Ready]
+tid[84], pri[3], s[Ready]
+tid[94], pri[3], s[Ready]
+tid[3], pri[2], s[Ready]
+tid[13], pri[2], s[Ready]
+tid[23], pri[2], s[Ready]
+tid

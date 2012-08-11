@@ -1,0 +1,10 @@
+all: 
+	#gcc tokenmain.c Stringlib.o -o test
+	gcc tokenmain.c Stringlib.o -o tokenmain
+	cp	tokenmain	
+
+Stringlib.o:
+	gcc -c -g Stringlib.c -o Stringlib.o
+
+clean:
+	rm -f *.o test

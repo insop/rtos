@@ -1,0 +1,276 @@
+//
+//	Priority queue 
+//
+//
+// 	Written by INSOP SONG
+// 	Systems Design
+// 	University of Waterloo, Canada
+//
+//	June 2001
+//
+
+//#define		DEBUG
+//#include "../util/error.h"
+
+#define SUN
+#ifdef SUN
+#include	<stdio.h>
+#endif //SUN
+
+#include "task.h"
+#include "../include/util/type.h"
+#include "../include/util/errorCode.h"
+
+#ifndef	_PRI_QUEUE_H_
+#define	_PRI_QUEUE_H_
+
+
+// 
+// 	Queue structure
+//
+typedef struct	Queue {
+
+	Task *	pHead;
+	Task *	pTail;
+}TaskQueue;
+
+// 
+//	Priority Queue for Task Descriptor Block
+//
+class	PriQueue {
+
+    private:
+	UBYTE	priorityMaskFirst;
+	UBYTE	priorityMaskSecond[4];
+	UBYTE	priorityMaskThird[4][BITS];
+
+	int	numItem;
+
+    public:
+	TaskQueue	taskQ[PriorityRange];	// priority queue
+	PriQueue();
+
+	//inline Boolean isEmpty(int _priority);
+
+	inline ErrorCode addPriQueue(Task * _pTask);
+	inline ErrorCode addQueue(Task * _pTask, int _priority);
+	inline Task * 	 removeQueue(int _priority);
+	inline Task *	 getNextTask();
+	inline void	 setPriorityMask(int _priority);
+	inline void	 clearPriorityMask(int _priority);
+	inline int 	 getHighestPriority(void);
+	inline Boolean   isEmpty();
+
+	void printQueue(int _priority);	// print specific priority
+
+	void printPriQueue();	// print priority queue
+};
+
+#define	POWER	3	// 2^3 = 8; 2^POWER = BITS 
+#define BITIZE(p)	((0x01 << (p)))
+
+// use this for 0 is lowest priority case
+// XXX this going to be changed little bit for pri converting
+// XXX like LowestPriority is ???
+#define PRI_CHANGE(p)	(LowestPriority - p)
+inline int priChange(int p) { return (LowestPriority - p);}
+
+//
+// 	fast search highest priority from ARX RTOS of SNU
+//
+const UBYTE priorityMap[] = {
+ /* 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15  */
+    0, 0, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3,	// 16 * 0 ~
+    4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,	// 16 * 1 ~
+    5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 	// 16 * 2 ~
+    5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 	// 16 * 3 ~
+    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,	// 16 * 4 ~
+    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,	// 16 * 5 ~
+    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,	// 16 * 6 ~
+    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,	// 16 * 7 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 8 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 9 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 10 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 11 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 12 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 13 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,	// 16 * 14 ~
+    7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7	// 16 * 15 ~
+};
+
+inline Boolean PriQueue::isEmpty() {
+    return (numItem == 0 ? True: False);
+}
+
+// 
+// 	add queue for eacy priority specific queue
+//
+
+inline ErrorCode PriQueue::addQueue(Task * _pTask, int _priority) {
+
+    if((taskQ[_priority].pHead) == (Task *)Empty) {
+
+	setPriorityMask(_priority);	// this is the first, so set
+	//printf("priorityQueue %d start\n", _priority);
+	taskQ[_priority].pHead = _pTask;
+	taskQ[_priority].pTail = _pTask;
+	_pTask->pNext = (Task *)Empty;
+    } // if
+    else {
+	taskQ[_priority].pTail->pNext = _pTask;
+	taskQ[_priority].pTail = _pTask;
+	_pTask->pNext = (Task *)Empty;
+    } // else 
+    numItem++;
+    return True;
+}
+inline void	PriQueue::setPriorityMask(int _priority) {
+
+    register int p1, p2, p3;
+    register int p;
+    //int p1, p2, p3;
+    //int p;
+
+    p = priChange(_priority);
+
+    //GET_MASK_INDEX(_priority, p1, p2, p3);
+    p1 = ((p>>(POWER*2)) & 0x07);
+    p2 = ((p>>(POWER*1)) & 0x07);	
+    p3 = ((p>>(POWER*0)) & 0x07);
+
+    //cprintf("p1 0x%x, 2 %x, 3%x\n",p1,p2,p3);
+    //printf("p1 0x%x, 2 %x, 3%x\n",p1,p2,p3);
+
+    priorityMaskFirst 		|= BITIZE(p1);
+    priorityMaskSecond[p1] 	|= BITIZE(p2);
+    priorityMaskThird[p1][p2] 	|= BITIZE(p3);
+}
+
+inline void	PriQueue::clearPriorityMask(int _priority) {
+    register int p1, p2, p3;
+    register int p;
+    //int p1, p2, p3;
+    //int p;
+
+    p = priChange(_priority);
+
+    //GET_MASK_INDEX(_priority, p1, p2, p3);
+    p1 = ((p>>(POWER*2)) & 0x07);
+    p2 = ((p>>(POWER*1)) & 0x07);	
+    p3 = ((p>>(POWER*0)) & 0x07);
+
+    //cprintf("p1 0x%x, 2 %x, 3%x\n",p1,p2,p3);
+
+    priorityMaskThird[p1][p2] &= ~BITIZE(p3);
+    if (priorityMaskThird[p1][p2] == 0) {
+
+	priorityMaskSecond[p1] &= ~BITIZE(p2);
+
+	if(priorityMaskSecond[p1] == 0) {
+
+	    priorityMaskFirst &= ~BITIZE(p1);
+	} // inner if
+    } // outter if
+}
+
+// 
+//	get highest priority 
+//	by bit mapping
+//
+// 	can be changed into inline
+//
+inline int	PriQueue::getHighestPriority( void ) {
+    register int p1, p2, p3;
+    register int priority;
+    //int p1, p2, p3;
+    //int priority;
+
+    p1 = priorityMap[priorityMaskFirst];
+    p2 = priorityMap[priorityMaskSecond[p1]];
+    p3 = priorityMap[priorityMaskThird[p1][p2]];
+
+    priority = ( p1 << ( POWER * 2 ) ) + ( p2 << ( POWER * 1 ) ) + p3;
+    //cprintf("bit mapping highest priority %d \n", priChange(priority));
+    //printf("bit mapping highest priority %d \n", priChange(priority));
+
+    return priChange(priority);
+}
+
+//
+//	return pTask
+//	and !!! Remove from the queue
+//
+inline Task *	PriQueue::getNextTask() {
+
+    register int priority;
+    register Task * pTask;
+    //int priority;
+    //Task * pTask;
+
+    if( numItem > 0) {
+	priority = getHighestPriority();
+	if(priority < 0) { // error condition
+	    //Error(ErrorDebug,"getNextTask Error: no task in the queue");
+	    //cprintf("getNextTask Error : no taks\n");
+	    printf("Warning!!! getNextTask Error : no taks\n");
+	    getchar();
+	    return (Task *) Empty;
+	} // if
+	    
+	pTask = removeQueue(priority);
+
+	//cprintf("getNextTask tid[%d]\n", pTask->getTid());
+	//printf("getNextTask tid[%d] pri %d\n", 
+		//pTask->getTid(), pTask->getPriority());
+
+	return pTask;
+    } // if
+    else 
+	return (Task *) Empty;
+}
+
+inline ErrorCode PriQueue::addPriQueue(Task * _pTask) {
+
+    register int priority = _pTask->getPriority();
+    register int tid = _pTask->getTid();
+
+    //int priority = _pTask->getPriority;
+    //int tid = _pTask->getTid();
+
+    // XXX 
+    //_pTask->setState(Ready);
+
+    //cprintf("EnQueueing tid[%d], priority[%d]\n", tid, priority);
+    //printf("add priQueueing tid[%d], priority[%d]\n", tid, priority);
+
+    return addQueue(_pTask, priority);
+
+
+}
+
+
+// 
+// 	de queue for eacy priority specific queue
+//
+//	return pTask;
+//
+inline Task *	PriQueue::removeQueue(int _priority) {
+
+    register Task * pTask;
+    //Task * pTask;
+
+    pTask = taskQ[_priority].pHead;
+    if( pTask->pNext != (Task *)Empty) {
+	taskQ[_priority].pHead = pTask->pNext;
+    } // if
+    else {	
+	clearPriorityMask(_priority);	// last task of the priority
+	//printf("priorityQueue %d finished\n", _priority);
+	taskQ[_priority].pHead = (Task *)Empty;
+	taskQ[_priority].pTail = (Task *)Empty;
+    } // else
+    numItem--;
+    return pTask;
+}
+#endif // _PRI_QUEUE_H_
+

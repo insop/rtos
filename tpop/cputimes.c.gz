@@ -1,0 +1,244 @@
+/* time.c -- produce a 1-page summary of cpu times of various C constructs
+ * To port to a new machine, change the following:
+ *	BASEN:	Start around 10000, increase by *10 until no question marks
+ *	Macro processor: define ANSIIMAC 1 for Ansii C, undef for old C
+ *	Times: probably change CLOCKS_PER_SEC, may change jobclicks()
+ *	WARNRANGE: print ? after CPU time if max clicks - min clicks >
+ *		   WARNRANGE * mean clicks
+ */
+
+#include <stdio.h>
+#include <limits.h>
+#include <math.h>
+#include <string.h>
+#include <stdlib.h>
+
+#undef ANSIIMAC
+#define ANSIIMAC 1
+#define BASEN 1000000
+#define WARNRANGE 0.4
+
+struct stacknode {
+	int val;
+	struct stacknode *next;
+};
+typedef struct stacknode *Stackp;
+Stackp	stackroot;
+
+void push(int i)
+{
+	Stackp p;
+
+	p = (Stackp) malloc(sizeof(struct stacknode));
+	p->val = i;
+	p->next = stackroot;
+	stackroot = p;
+}
+
+int pop()
+{
+	Stackp p;
+	int	i;
+
+	p = stackroot;
+	i = stackroot->val;
+	stackroot = stackroot->next;
+	free(p);
+	return i;
+}
+
+/* Objects associated with CPU times -- may have to change
+ * CLOCKS_PER_SEC is defined as HZ on many systems
+ *	Typical values of CLOCKS_PER_SEC: Vax=60  Cray=105296000
+ *	For large values, also change %5d in macro loop1, 99999 in minclicks;
+ */
+
+#include <time.h>
+
+int jobclicks()
+{
+	/* supposedly this returns a value in microseconds */
+	/* convert to seconds with CLOCKS_PER_SEC */
+	return (int) clock();
+}
+
+/* Main macros for experiments */
+
+#ifdef ANSIIMAC
+#define quoted(TEXT) #TEXT
+#else
+#define quoted(TEXT) "TEXT"
+#endif
+
+#define loop1(CODE) loop1ctr++; \
+	for (i = 0; i < n; i++) { CODE; } \
+	loop1next = jobclicks(); \
+	thisclicks = loop1next - loop1start; \
+	sumclicks += thisclicks; \
+	if (thisclicks < minclicks) minclicks = thisclicks; \
+	if (thisclicks > maxclicks) maxclicks = thisclicks; \
+	printf("%7d ", loop1next - loop1start); \
+	loop1start = loop1next;
+
+#define loop(CODE) printf("  %-30s", quoted(CODE)); \
+	minclicks = INT_MAX; maxclicks = -1; sumclicks = 0; \
+	loop1ctr = 0; \
+	loop1start = jobclicks(); \
+	loop1(CODE) \
+	loop1(CODE) \
+	i0 = i1 + i2 + i3; \
+	loop1(CODE) \
+	i0 = i1 + i2 + i3 - i1 - i2 - i3; \
+	loop1(CODE) \
+	i0 = i1 + i2 + i3 + i1*i2 + i2*i3 + i1*i3; \
+	loop1(CODE) \
+	queststr = ""; \
+	if (loop1ctr * (maxclicks - minclicks) > WARNRANGE *  sumclicks) \
+		queststr = "?"; \
+	lastmics = sumclicks * 1000000.0 / ((double) CLOCKS_PER_SEC * n * loop1ctr); \
+	printf("%10.2f%s\n", lastmics - basemics, queststr);
+
+#define title(TEXT) printf("%s (n=%d)\n", TEXT, n);
+
+/* The experiment */
+
+int sum1(int a) { return a; }
+int sum2(int a, int b) { return a + b; }
+int sum3(int a, int b, int c) { return a + b + c; }
+
+int main()
+{
+	int	loop1start, loop1next, loop1ctr;
+	double	lastmics, basemics;
+	int	minclicks, maxclicks, sumclicks, thisclicks, startclicks;
+	int	i, n, basen;
+	volatile int	i0, i1, i2, i3, i4;
+	volatile float	f0, f1, f2, f3;
+	int	*v;
+	char	*queststr;
+	char	s[100];
+	char	fname[20];
+	FILE	*fp;
+	/* The following strings are variables because some macro processors
+		don't handle quoted strings in quoted arguments */
+	/* also, these have to be writable, so don't use char *; */
+	char	s0123456789[] = "0123456789";
+	char	sa123456789[] = "a123456789";
+	char	s12345[] = "12345";
+	char	s123_45[] = "123.45";
+	char	sd[] = "%d";
+	char	sdn[] = "%d\n";
+	char	sf[] = "%f";
+	char	sf62[] = "%f6.2";
+
+	setbuf(stdout, (char *) 0);	/* No buffering to watch output */
+	printf("  Operation                         Clicks for each trial ");
+	printf("   Mics/N\n");
+	startclicks = jobclicks();
+
+	basen = BASEN;
+	n = basen;
+	title("Null Loop")
+	i0 = i1 = i2 = i3 = 5;
+	f0 = f1 = f2 = f3 = 5.0;
+	basemics = 0.0;
+	loop({})
+	basemics = lastmics;
+
+	title("Int Operations");
+	i1 = i2 = i3 = 5;
+	loop(i1++)
+	i1 = i2 = i3 = 5;
+	loop(i1 = i2 + i3)
+	i1 = i2 = i3 = 5;
+	i1 = i2 = i3 = 5;
+	loop(i1 = i2 - i3)
+	i1 = i2 = i3 = 5;
+	loop(i1 = i2 * i3)
+	i1 = i2 = i3 = 5;
+	loop(i1 = i2 / i3)
+	i1 = i2 = i3 = 5;
+	loop(i1 = i2 % i3)
+
+	title("Float Operations");
+	f1 = f2 = f3 = 5.0;
+	loop(f1 = f2)
+	loop(f1 = f2 + f3)
+	loop(f1 = f2 - f3)
+	loop(f1 = f2 * f3)
+	loop(f1 = f2 / f3)
+
+	title("Numeric Conversions");
+	f1 = 123456.789;
+	i1 = 123456;
+	loop(i1 = f1)
+	loop(f1 = i1)
+
+	title("Integer Vector Operations");
+	v = (int *) malloc(n * sizeof(int));
+	for (i = 0; i < n; i++)
+		v[i] = 0;
+	loop(v[i] = i)
+	loop(v[v[i]] = i)
+	loop(v[v[v[i]]] = i)
+	free(v);
+
+	title("Control Structures");
+	i1 = i2 = i3 = 5;
+	loop(if (i == 5) i1++)
+	loop(if (i != 5) i1++)
+	loop(while (i < 0) i1++)
+	loop(i1 = sum1(i2))
+	loop(i1 = sum2(i2, i3))
+	loop(i1 = sum3(i2, i3, i4))
+
+	n = basen/10;
+	strcpy(fname, "junk");
+	title("Input/Output");
+	strcpy(s, "1234\n");
+	fp = fopen(fname, "w");
+	loop(fputs(s, fp))
+	fclose(fp);
+	fp = fopen(fname, "r");
+	loop(fgets(s, 9, fp))
+	fclose(fp);
+	fp = fopen(fname, "w");
+	loop(fprintf(fp, sdn, i))
+	fclose(fp);
+	fp = fopen(fname, "r");
+	loop(fscanf(fp, sd, &i1))
+	fclose(fp);
+
+	n = basen/10;
+	title("Malloc");
+	loop(free(malloc(8)))
+	loop(push(i))
+	loop(i1 = pop())
+
+	n = basen;
+	title("String Functions");
+	loop(strcpy(s, s0123456789))
+	loop(i1 = strcmp(s, s))
+	loop(i1 = strcmp(s, sa123456789))
+
+	n = basen/100;
+	title("String/Number Conversions");
+	loop(i1 = atoi(s12345))
+	loop(sscanf(s12345, sd, &i1))
+	loop(sprintf(s, sd, i))
+	loop(f1 = atof(s123_45))
+	loop(sscanf(s123_45, sf, &f1))
+	loop(sprintf(s, sf62, 123.45))
+
+	n = basen/10;
+	title("Math Functions");
+	loop(i1 = rand())
+	f2 = 5.0;
+	loop(f1 = log(f2))
+	loop(f1 = exp(f2))
+	loop(f1 = sin(f2))
+	loop(f1 = sqrt(f2))
+
+	printf("Total Seconds:%10.2f\n", ((float) jobclicks()-startclicks) / CLOCKS_PER_SEC);
+	return 0;
+}

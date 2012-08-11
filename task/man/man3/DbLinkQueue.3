@@ -1,0 +1,89 @@
+.TH DbLinkQueue 3 "17 Dec 2001" "TASK" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DbLinkQueue \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <dbLinkQueue.h>\fR
+.PP
+.SS Public Methods
+
+.in +1c
+.ti -1c
+.RI "\fBDbLinkQueue\fR ()"
+.br
+.ti -1c
+.RI "ErrorCode \fBaddQueue\fR (\fBTask\fR *_pTask)"
+.br
+.ti -1c
+.RI "\fBTask\fR* \fBgetNextElement\fR (void)"
+.br
+.ti -1c
+.RI "\fBTask\fR* \fBgetHead\fR (void)"
+.br
+.ti -1c
+.RI "int \fBgetSize\fR (void)"
+.br
+.ti -1c
+.RI "ErrorCode \fBremoveElement\fR (\fBTask\fR *_pTask)"
+.br
+.ti -1c
+.RI "Boolean \fBisEmpty\fR (void)"
+.br
+.ti -1c
+.RI "void \fBresetTravPointer\fR (void)"
+.br
+.ti -1c
+.RI "void \fBprintQueue\fR (void)"
+.br
+.ti -1c
+.RI "Boolean \fBisTravEnd\fR (void)"
+.br
+.ti -1c
+.RI "\fBTask\fR* \fBcheckNext\fR (void)"
+.br
+.in -1c
+.SS Public Attributes
+
+.in +1c
+.ti -1c
+.RI "\fBTQueue\fR \fBtaskQueue\fR"
+.br
+.in -1c
+.SH CONSTRUCTOR & DESTRUCTOR DOCUMENTATION
+.PP 
+.SS DbLinkQueue::DbLinkQueue ()
+.PP
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS ErrorCode DbLinkQueue::addQueue (\fBTask\fR * _pTask)\fC [inline]\fR
+.PP
+.SS \fBTask\fR * DbLinkQueue::checkNext (void)\fC [inline]\fR
+.PP
+.SS \fBTask\fR * DbLinkQueue::getHead (void)\fC [inline]\fR
+.PP
+.SS \fBTask\fR * DbLinkQueue::getNextElement (void)\fC [inline]\fR
+.PP
+.SS int DbLinkQueue::getSize (void)\fC [inline]\fR
+.PP
+.SS Boolean DbLinkQueue::isEmpty (void)\fC [inline]\fR
+.PP
+.SS Boolean DbLinkQueue::isTravEnd (void)\fC [inline]\fR
+.PP
+.SS void DbLinkQueue::printQueue (void)
+.PP
+.SS ErrorCode DbLinkQueue::removeElement (\fBTask\fR * _pTask)\fC [inline]\fR
+.PP
+.SS void DbLinkQueue::resetTravPointer (void)\fC [inline]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS \fBTQueue\fR DbLinkQueue::taskQueue
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for TASK from the source code.

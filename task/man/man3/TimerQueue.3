@@ -1,0 +1,74 @@
+.TH TimerQueue 3 "17 Dec 2001" "TASK" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TimerQueue \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <timerQueue.h>\fR
+.PP
+.SS Public Methods
+
+.in +1c
+.ti -1c
+.RI "\fBTimerQueue\fR ()"
+.br
+.ti -1c
+.RI "ErrorCode \fBaddQueue\fR (\fBTask\fR *_pTask)"
+.br
+.ti -1c
+.RI "\fBTask\fR* \fBgetNextTask\fR ()"
+.br
+.ti -1c
+.RI "\fBTask\fR* \fBcheckNext\fR ()"
+.br
+.ti -1c
+.RI "\fBTask\fR* \fBremoveQueue\fR (\fBTask\fR *_pTask)"
+.br
+.ti -1c
+.RI "Boolean \fBisEmpty\fR ()"
+.br
+.ti -1c
+.RI "Boolean \fBisEnd\fR ()"
+.br
+.ti -1c
+.RI "void \fBprintQueue\fR (void)"
+.br
+.in -1c
+.SS Public Attributes
+
+.in +1c
+.ti -1c
+.RI "\fBTaskQueue\fR \fBtaskQueue\fR"
+.br
+.in -1c
+.SH CONSTRUCTOR & DESTRUCTOR DOCUMENTATION
+.PP 
+.SS TimerQueue::TimerQueue ()
+.PP
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS ErrorCode TimerQueue::addQueue (\fBTask\fR * _pTask)\fC [inline]\fR
+.PP
+.SS \fBTask\fR * TimerQueue::checkNext (void)\fC [inline]\fR
+.PP
+.SS \fBTask\fR * TimerQueue::getNextTask ()\fC [inline]\fR
+.PP
+.SS Boolean TimerQueue::isEmpty (void)\fC [inline]\fR
+.PP
+.SS Boolean TimerQueue::isEnd ()\fC [inline]\fR
+.PP
+.SS void TimerQueue::printQueue (void)
+.PP
+.SS \fBTask\fR * TimerQueue::removeQueue (\fBTask\fR * _pTask)\fC [inline]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS \fBTaskQueue\fR TimerQueue::taskQueue
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for TASK from the source code.

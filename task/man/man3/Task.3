@@ -1,0 +1,264 @@
+.TH Task 3 "17 Dec 2001" "TASK" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Task \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <task.h>\fR
+.PP
+.SS Public Methods
+
+.in +1c
+.ti -1c
+.RI "\fBTask\fR ()"
+.br
+.ti -1c
+.RI "\fB~Task\fR ()"
+.br
+.ti -1c
+.RI "void \fBinitTask\fR ()"
+.br
+.ti -1c
+.RI "ErrorCode \fBisValidPriority\fR (int _priority)"
+.br
+.ti -1c
+.RI "void \fBprintTask\fR ()"
+.br
+.ti -1c
+.RI "void \fBhello\fR ()"
+.br
+.ti -1c
+.RI "int \fBgetTid\fR ()"
+.br
+.ti -1c
+.RI "void \fBsetParentTid\fR (int _parentTid)"
+.br
+.ti -1c
+.RI "int \fBgetParentTid\fR ()"
+.br
+.ti -1c
+.RI "void \fBsetState\fR (\fBTaskState\fR _state)"
+.br
+.ti -1c
+.RI "char* \fBgetState\fR ()"
+.br
+.ti -1c
+.RI "int \fBgetStateNum\fR ()"
+.br
+.ti -1c
+.RI "ErrorCode \fBsetPriority\fR (int _priority)"
+.br
+.ti -1c
+.RI "int \fBgetPriority\fR ()"
+.br
+.ti -1c
+.RI "ErrorCode \fBaddMsgQueue\fR (Task *_pTask)"
+.br
+.ti -1c
+.RI "Task* \fBgetMsgQueue\fR (void)"
+.br
+.ti -1c
+.RI "Boolean \fBisMsgQueueEmpty\fR ()"
+.br
+.ti -1c
+.RI "void \fBprintMsgQueue\fR (void)"
+.br
+.ti -1c
+.RI "int \fBgetTimer\fR (void)"
+.br
+.ti -1c
+.RI "void \fBsetTimer\fR (int timer)"
+.br
+.ti -1c
+.RI "Boolean \fBisTimeOut\fR (int upTime)"
+.br
+.ti -1c
+.RI "Boolean \fBisPriorityInherited\fR (void)"
+.br
+.ti -1c
+.RI "void \fBsetPriorityInheritance\fR (void)"
+.br
+.ti -1c
+.RI "int \fBgetOriginalPriority\fR (void)"
+.br
+.ti -1c
+.RI "void \fBresetPriorityInheritance\fR (void)"
+.br
+.ti -1c
+.RI "void \fBchangeInheritePriority\fR (int _inheritedPriority)"
+.br
+.ti -1c
+.RI "void \fBrevertInheritePriority\fR (void)"
+.br
+.in -1c
+.SS Public Attributes
+
+.in +1c
+.ti -1c
+.RI "int \fBparentTid\fR"
+.br
+.ti -1c
+.RI "Task* \fBpNext\fR"
+.br
+.ti -1c
+.RI "Task* \fBpPrev\fR"
+.br
+.ti -1c
+.RI "int \fBpData\fR"
+.br
+.ti -1c
+.RI "int \fBuserCS\fR"
+.br
+.ti -1c
+.RI "int \fBuserDS\fR"
+.br
+.ti -1c
+.RI "int \fBuserSP\fR"
+.br
+.ti -1c
+.RI "int \fBuserSS\fR"
+.br
+.ti -1c
+.RI "int \fBrequestedSysCall\fR"
+.br
+.ti -1c
+.RI "char* \fBtaskName\fR"
+.br
+.ti -1c
+.RI "int \fBcodeSize\fR"
+.br
+.ti -1c
+.RI "int \fBentryPoint\fR"
+.br
+.ti -1c
+.RI "int \fBdataTotalSize\fR"
+.br
+.ti -1c
+.RI "int \fBstackSize\fR"
+.br
+.ti -1c
+.RI "Task* \fBpTaskSend\fR"
+.br
+.ti -1c
+.RI "Task* \fBpTaskRecv\fR"
+.br
+.ti -1c
+.RI "int \fBpMsgSend\fR"
+.br
+.ti -1c
+.RI "int \fBmsgSendLen\fR"
+.br
+.ti -1c
+.RI "int \fBpMsgRecv\fR"
+.br
+.ti -1c
+.RI "int \fBmsgRecvLen\fR"
+.br
+.in -1c
+.SH CONSTRUCTOR & DESTRUCTOR DOCUMENTATION
+.PP 
+.SS Task::Task ()
+.PP
+.SS Task::~Task ()
+.PP
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS ErrorCode Task::addMsgQueue (Task * _pTask)\fC [inline]\fR
+.PP
+.SS void Task::changeInheritePriority (int _inheritedPriority)\fC [inline]\fR
+.PP
+.SS Task * Task::getMsgQueue (void)\fC [inline]\fR
+.PP
+.SS int Task::getOriginalPriority (void)\fC [inline]\fR
+.PP
+.SS int Task::getParentTid (void)\fC [inline]\fR
+.PP
+.SS int Task::getPriority ()\fC [inline]\fR
+.PP
+.SS char * Task::getState ()\fC [inline]\fR
+.PP
+.SS int Task::getStateNum ()\fC [inline]\fR
+.PP
+.SS int Task::getTid (void)\fC [inline]\fR
+.PP
+.SS int Task::getTimer (void)\fC [inline]\fR
+.PP
+.SS void Task::hello ()
+.PP
+.SS void Task::initTask ()
+.PP
+.SS Boolean Task::isMsgQueueEmpty ()\fC [inline]\fR
+.PP
+.SS Boolean Task::isPriorityInherited (void)\fC [inline]\fR
+.PP
+.SS Boolean Task::isTimeOut (int upTime)\fC [inline]\fR
+.PP
+.SS ErrorCode Task::isValidPriority (int _priority)
+.PP
+.SS void Task::printMsgQueue (void)
+.PP
+.SS void Task::printTask ()
+.PP
+.SS void Task::resetPriorityInheritance (void)\fC [inline]\fR
+.PP
+.SS void Task::revertInheritePriority (void)\fC [inline]\fR
+.PP
+.SS void Task::setParentTid (int _parentTid)\fC [inline]\fR
+.PP
+.SS ErrorCode Task::setPriority (int _priority)\fC [inline]\fR
+.PP
+.SS void Task::setPriorityInheritance (void)\fC [inline]\fR
+.PP
+.SS void Task::setState (\fBTaskState\fR _state)\fC [inline]\fR
+.PP
+.SS void Task::setTimer (int _timer)\fC [inline]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS int Task::codeSize
+.PP
+.SS int Task::dataTotalSize
+.PP
+.SS int Task::entryPoint
+.PP
+.SS int Task::msgRecvLen
+.PP
+.SS int Task::msgSendLen
+.PP
+.SS int Task::pData
+.PP
+.SS int Task::pMsgRecv
+.PP
+.SS int Task::pMsgSend
+.PP
+.SS Task * Task::pNext
+.PP
+.SS Task * Task::pPrev
+.PP
+.SS Task * Task::pTaskRecv
+.PP
+.SS Task * Task::pTaskSend
+.PP
+.SS int Task::parentTid
+.PP
+.SS int Task::requestedSysCall
+.PP
+.SS int Task::stackSize
+.PP
+.SS char * Task::taskName
+.PP
+.SS int Task::userCS
+.PP
+.SS int Task::userDS
+.PP
+.SS int Task::userSP
+.PP
+.SS int Task::userSS
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for TASK from the source code.

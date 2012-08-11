@@ -1,0 +1,8 @@
+kernelMain		KernelMain		62000
+init			Init			700
+idle			Idle			300
+stat			Stat			400
+nameServer		NameServer		1900
+taskA			TaskA			500
+taskB			TaskB			500
+taskC			TaskC			500

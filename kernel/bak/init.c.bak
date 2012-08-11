@@ -1,0 +1,38 @@
+#include "../syscall/sysCall.h"
+#include "../include/i486/cs452.h"
+
+main() {
+    int i;
+    int tid;
+
+    int send=13;
+    int reply=0;
+    int *pSend = &send;
+    int *pReply = &reply;
+
+    printf("init is starting tid %d pri %d parent tid %d\n", \
+		MyTid(), MyPriority(), MyParentTid());
+    for(i=0;i <10;i++) {
+	printf("init\n");
+    }
+    getchar();
+    Pass();
+
+    for(i=0;i <10;i++) {
+	printf("init\n");
+    }
+    getchar();
+
+    tid = Create("Init", 63);
+
+    printf("init is exiting new tid %d\n", tid);
+
+    printf("before send , send %d, reply %d\n", *pSend, *pReply);
+    Send(2, pSend, sizeof(int), pReply, sizeof(int));
+    printf("got replied  , send %d, reply %d\n", *pSend, *pReply);
+
+    tid = Receive( pSend, 9);
+    printf("init received from tid %d\n", tid);
+    printf("init exitting...\n");
+    Exit();
+}

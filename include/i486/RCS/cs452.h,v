@@ -1,0 +1,86 @@
+head	1.1;
+access;
+symbols;
+locks
+	cs452:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	95.05.08.18.27.34;	author cs452;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#ifndef __CS452_H__
+#define __CS452_H__
+
+/* Basic include file for all CS452 programs.
+ *
+ * You can think of this as a replacement for "stdio.h", but on an
+ * embedded system, file IO is exactly what you don't have.
+ * Still, this file defines useful stuff like NULL that normally is
+ * found in stdio.h
+ *
+ * In particular, there is no "FILE *" data type, so all functions
+ * starting with "f" are omitted. Also, "stdin" et al are not
+ * defined.
+ *
+ */
+
+#if !defined(_ANSI_SOURCE) && !defined(__STRICT_ANSI__)
+#include <sys/types.h>
+#endif
+
+#include <sys/cdefs.h>
+
+#include <machine/ansi.h>
+#ifdef	_BSD_SIZE_T_
+typedef	_BSD_SIZE_T_	size_t;
+#undef	_BSD_SIZE_T_
+#endif
+
+#ifndef NULL
+#define	NULL	0
+#endif
+
+/*
+ * Functions defined in ANSI C standard.
+ */
+__BEGIN_DECLS
+int	 getchar __P((void));
+char	*gets __P((char *));
+int	 printf __P((const char *, ...));
+int	 putchar __P((int));
+int	 puts __P((const char *));
+int	 scanf __P((const char *, ...));
+int	 sprintf __P((char *, const char *, ...));
+int	 sscanf __P((const char *, const char *, ...));
+int	 vprintf __P((const char *, _BSD_VA_LIST_));
+int	 vsprintf __P((char *, const char *, _BSD_VA_LIST_));
+__END_DECLS
+
+/*
+ * Routines that are common, but not ANSI
+ */
+#if !defined (_ANSI_SOURCE) && !defined(_POSIX_SOURCE)
+__BEGIN_DECLS
+int	 snprintf __P((char *, size_t, const char *, ...));
+int	 vsnprintf __P((char *, size_t, const char *, _BSD_VA_LIST_));
+int	 vscanf __P((const char *, _BSD_VA_LIST_));
+int	 vsscanf __P((const char *, const char *, _BSD_VA_LIST_));
+__END_DECLS
+#endif
+
+
+#endif /* __CS452_H__ */
+@

@@ -1,0 +1,11 @@
+kernelMain		KernelMain		50000
+init			Init			2000
+idle			Idle			1000
+stat			Stat			3000
+command			Command			1500
+sensor			Sensor			9000
+sensorSrv		SensorSrv		9000
+sensorSched		SensorSched		1500
+input			Input			2500
+train			Train			9000
+matrix			Matrix			3000	

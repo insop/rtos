@@ -1,0 +1,1 @@
+wc -l hal/*.c hal/*.cc hal/*.h syscall/*.c syscall/*.cc syscall/*.h bsp/*.c bsp/*.cc task/*.cc task/*.c task/*.h central_control/*.cc central_control/*.h central_control/*.c kernel/*.c kernel/*.cc kernel/*.h sensor/*.cc sensor/*.c sensor/*.h train/*.cc train/*.h train/*.c serial/*.cc serial/*.c serial/*.h name_server/*.c name_server/*.h

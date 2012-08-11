@@ -1,0 +1,28 @@
+inline int	TrainTask::hasNextSwitchCommand( void ) {
+register int innerIndex = 0;
+if( indexCommandSet+1 < numCommandSet ) { 
+while(
+stepsToFollow[indexCommandSet+1].instlist[innerIndex].sequence!=
+-1) {
+innerIndex++;
+} // inner while
+return innerIndex;
+}
+else 
+return 0;
+}
+
+
+//
+// check next switch command avaiable
+//
+inline Boolean	TrainTask::hasNextSwitchCommand( void ) {
+if( indexCommandSet+1 < numCommandSet ) { 
+return
+((stepsToFollow[indexCommandSet+1].instlist[0].sequence
+!=-1)
+? True : False);
+}
+else 
+return False;
+}

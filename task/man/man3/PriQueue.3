@@ -1,0 +1,94 @@
+.TH PriQueue 3 "17 Dec 2001" "TASK" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PriQueue \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <priQueue.h>\fR
+.PP
+.SS Public Methods
+
+.in +1c
+.ti -1c
+.RI "\fBPriQueue\fR ()"
+.br
+.ti -1c
+.RI "ErrorCode \fBaddPriQueue\fR (\fBTask\fR *_pTask)"
+.br
+.ti -1c
+.RI "ErrorCode \fBaddQueue\fR (\fBTask\fR *_pTask, int _priority)"
+.br
+.ti -1c
+.RI "\fBTask\fR* \fBgetNextTask\fR ()"
+.br
+.ti -1c
+.RI "Boolean \fBisEmpty\fR ()"
+.br
+.ti -1c
+.RI "void \fBprintQueue\fR (int _priority)"
+.br
+.ti -1c
+.RI "void \fBprintPriQueue\fR ()"
+.br
+.ti -1c
+.RI "void \fBsetPriorityMask\fR (int _priority)"
+.br
+.ti -1c
+.RI "void \fBclearPriorityMask\fR (int _priority)"
+.br
+.ti -1c
+.RI "int \fBgetHighestPriority\fR (void)"
+.br
+.ti -1c
+.RI "\fBTask\fR* \fBremoveQueue\fR (int _priority)"
+.br
+.ti -1c
+.RI "Boolean \fBremovePriQueue\fR (\fBTask\fR *_pTask)"
+.br
+.in -1c
+.SS Public Attributes
+
+.in +1c
+.ti -1c
+.RI "\fBTaskQueue\fR \fBtaskQ\fR [\fBPriorityRange\fR]"
+.br
+.in -1c
+.SH CONSTRUCTOR & DESTRUCTOR DOCUMENTATION
+.PP 
+.SS PriQueue::PriQueue ()
+.PP
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS ErrorCode PriQueue::addPriQueue (\fBTask\fR * _pTask)\fC [inline]\fR
+.PP
+.SS ErrorCode PriQueue::addQueue (\fBTask\fR * _pTask, int _priority)\fC [inline]\fR
+.PP
+.SS void PriQueue::clearPriorityMask (int p)\fC [inline]\fR
+.PP
+.SS int PriQueue::getHighestPriority (void)\fC [inline]\fR
+.PP
+.SS \fBTask\fR * PriQueue::getNextTask ()\fC [inline]\fR
+.PP
+.SS Boolean PriQueue::isEmpty (void)\fC [inline]\fR
+.PP
+.SS void PriQueue::printPriQueue ()
+.PP
+.SS void PriQueue::printQueue (int p)
+.PP
+.SS Boolean PriQueue::removePriQueue (\fBTask\fR * pRmvTask)\fC [inline]\fR
+.PP
+.SS \fBTask\fR * PriQueue::removeQueue (int _priority)\fC [inline]\fR
+.PP
+.SS void PriQueue::setPriorityMask (int p)\fC [inline]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS \fBTaskQueue\fR PriQueue::taskQ[\fBPriorityRange\fR]
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for TASK from the source code.

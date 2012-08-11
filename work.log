@@ -1,0 +1,136 @@
+July 25
+    : night mare is finished...
+    :
+    : I am still here, though.
+    : I added CommunicationData object at BB
+    : I trimmed CommunicationData little bit
+    :
+    : I need to add this object at TT 
+    : and make good and efficient stroage space at BB
+    : to hold as many as possible and as fast as possible
+    :
+    : one thing I have think about is sensor packed information
+    : 00, I thought this was null for sensor but actually 
+    : this is A1 sensor the way that I packed.....
+    : I need to check all of these
+    : and checked the random routine, I checked d0 sensor was selected
+    : which should not be happed by code
+
+july 19
+    : I should finish TrainTask
+July 18
+    : 
+    : 11,212
+    :
+    : block serial Read is implemented
+    : only one task can call Read.
+    : I can do this for multiple tasks with blocked queue.
+    : but, at this moment I will make only one task listen serial
+    : data.
+    :
+    :
+July 17
+    : add distributor server for blackboard server
+    : now I am doing some testing.
+    : I need to make collector server for BB and TT
+    : and distributor, collector Srv for CC and TT and BB
+    :
+    : I have to make blackboard specification
+    :
+    :
+July 13
+    : switch output is strainge b9-a2..
+    : 255 value is still displayed
+    : need to check switch work
+    : seems that I stucked
+    :
+July 12
+    : AM
+    :
+    : I am working at hasMoreCommandSet or .....
+    : I have to check these..
+    :
+
+July 12
+    : currently 9626 source code line
+    :
+    : 1. make behaviors based train controller
+    :
+    : 2. make BB, CC, and make communication buffer task in between
+    :
+    : 3. make 2 train tasks with behavior control with commnication
+    :	 with BB and CC
+    :
+    : 4. on Saturday, make train show. and, 
+    :
+    : 5. keyboard, tty, and display things
+    :
+    :
+July 10
+    : I made trainTask, trainTaskMain.cc
+    : which has many function to move train
+    : I need to think about position estimation 
+    : at train task level
+    : I made GetSmallTime() at sysCall.c
+    : which read 8254 directly to get the exact time
+    : I need to use this with UpTime() 
+    : .. need use distance file from mcole
+    :
+    : finished to communicate with dijkstra
+    : now I need to make command set from shotest path segment
+    :
+July 8 Mid
+    : I made cheesy little command set for train.c(train Task)
+    : start from one point and stop at another point
+    :
+    : I dealt with GPF problem. 
+    : It was not becase of shared memory
+    : ans stat.c task or sensorSrv.c task
+    : I was using too much stack and literally use more memory than I
+    : had.
+    : 
+    : sensor.c(sensor data gethering and command output0
+    : 	I change command delay from 2 ticks to 3 ticks
+    : 	because, on pentium EOS machine, there was sensor and command
+    :	output collision so It was stucked.
+    :
+    : sensorSched.c (which send every 2 ticks to send sensor command)
+    :
+    : train.c (train task) read command set and ask sensorSrv(sensor
+    : 	server for sensor data and run every 2 ticks)
+    : 
+    : sensorSrv.c (sensor server) : getting sensor whenever
+    : 	who wants sensor data it reply for it
+    : 	and read sensor data from sensor.c using absRead() as
+    :	shared memory read( with disable Interrupt, enterCS()
+    :	exitCS() )
+    :
+July 6 PM
+    : I changed all sending part to sensor.c
+    : and single sensing mode
+    : and using Delay(3) long delay for sending command
+    : I will find the way.
+    : ........
+
+July 6 am
+    : made sensor 50msec(1 tick)
+    : but it turns sout that interpreteData() doesn't work well
+    : and speed and switch command can't be read
+    : at the interface unit
+    : I need read interface unit
+    :
+July 5
+    : check command routine(send serial command)
+    : still meshed up inside
+    : sensor command, control command eat up each other
+    : I have to check this 
+    : or combine??????
+    :
+    : Sensor input is 30Hz(30ms , 3ms for one byte and
+    : it has 10 sensor bytes come in, so 3ms * 10 = 30ms)
+    : Now our system works in 50msec
+    : ????
+
+June 21
+    : after GDT setting, read bindfile or a.out lead system down...
+    : I don't know yet, hopefully not because of class and c++

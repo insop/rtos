@@ -1,0 +1,69 @@
+.TH TaskDescTable 3 "17 Dec 2001" "TASK" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TaskDescTable \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <taskDescTable.h>\fR
+.PP
+.SS Public Methods
+
+.in +1c
+.ti -1c
+.RI "\fBTaskDescTable\fR ()"
+.br
+.ti -1c
+.RI "\fBTask\fR* \fBgetNextFreeTask\fR (void)"
+.br
+.ti -1c
+.RI "int \fBgetMaxNumTasks\fR (void)"
+.br
+.ti -1c
+.RI "\fBTask\fR* \fBgetPtTask\fR (int tid)"
+.br
+.ti -1c
+.RI "\fBPriQueue\fR* \fBgetPtMsgQueue\fR (int tid)"
+.br
+.ti -1c
+.RI "\fBPriQueue\fR* \fBgetPtMsgQueue\fR (\fBTask\fR *pTask)"
+.br
+.in -1c
+.SS Public Attributes
+
+.in +1c
+.ti -1c
+.RI "\fBPriQueue\fR \fBreadyQueue\fR"
+.br
+.ti -1c
+.RI "\fBDbLinkQueue\fR \fBtimerQueue\fR"
+.br
+.in -1c
+.SH CONSTRUCTOR & DESTRUCTOR DOCUMENTATION
+.PP 
+.SS TaskDescTable::TaskDescTable ()
+.PP
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS int TaskDescTable::getMaxNumTasks (void)\fC [inline]\fR
+.PP
+.SS \fBTask\fR * TaskDescTable::getNextFreeTask (void)\fC [inline]\fR
+.PP
+.SS \fBPriQueue\fR * TaskDescTable::getPtMsgQueue (\fBTask\fR * pTask)\fC [inline]\fR
+.PP
+.SS \fBPriQueue\fR * TaskDescTable::getPtMsgQueue (int tid)\fC [inline]\fR
+.PP
+.SS \fBTask\fR * TaskDescTable::getPtTask (int tid)\fC [inline]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS \fBPriQueue\fR TaskDescTable::readyQueue
+.PP
+.SS \fBDbLinkQueue\fR TaskDescTable::timerQueue
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for TASK from the source code.

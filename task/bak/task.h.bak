@@ -1,0 +1,131 @@
+//
+//	Task Descriptor implementation 
+//
+//
+// 	Written by INSOP SONG
+// 	Systems Design
+// 	University of Waterloo, Canada
+//
+//	June 2001
+//
+
+//#define		DEBUG
+//#include "../util/error.h"
+#include "../include/util/type.h"
+#include "../include/util/errorCode.h"
+
+#ifndef	_TASK_H_
+#define	_TASK_H_
+
+#define	BITS	8
+
+//	Task State define
+enum TaskState	{ Dummy, Active, Ready, Dead, SendBlocked, ReplyBlocked, 
+		    ReceiveBlocked, EventBlocked };
+typedef TaskState TaskStae;
+
+const int	MaxTaskNum 			= 256;
+
+const int	PriorityRange			= 256;
+const int	LowestPriority 			= PriorityRange - 1;
+
+const int	HighestPriority 		= 0;
+const int	ClockServerPriority 		= HighestPriority; 
+const int	NameServerPriority 		= HighestPriority + 1; 
+const int	TrainSerialServerPriority 	= HighestPriority + 2; 
+const int	WyseSerialServerPriority 	= HighestPriority + 3; 
+const int	KeyboardServerPriority 		= HighestPriority + 4; 
+const int	GraphicServerPriority 		= HighestPriority + 5; 
+const int	SystemPriority			= GraphicServerPriority;
+
+const int	UserPriority 			= SystemPriority + 1;
+
+const int	IdleTaskPriority 		= LowestPriority;
+const BYTE	Empty				= -1;
+//
+// 	Task Descriptor Block class
+//
+class Task
+{
+    private:
+	static int	nextTid;
+
+    public:
+	int		tid;
+	int		parentTid;
+
+	TaskState	state;
+	int		priority;
+
+	Task *		pNext;		// pointer for queue
+// maybe set up one register class 
+// should be converted into context struct in bsp.h
+
+	// context 	aContext
+	int *		pESP;
+	int *		pDS;
+	int *		pCS;
+	int *		pSS;
+	int *		pData;		// pointer to data address
+
+// maybe set up one class for bindfile class
+	char *		taskName;	/* The name of the process */
+	int 		codeSize;	/* Self explanitory variable! */
+	int 		entryPoint;	/* Start executing here */
+	int 		dataTotalSize;	/* Real memory pointer for data */
+	int 		stackSize;	/* Size of the stack - no data */
+
+	Task();
+	~Task();
+
+	void initTask();
+	//void getNext();
+	ErrorCode isValidPriority(int _priority);
+
+	void printTask();
+	void hello();
+
+	// get task state in string form
+	void	setState(TaskState _state);
+	char *	getState();
+};
+
+// 
+// 	Task Queue
+//
+typedef struct	TaskQueue {
+
+	Task *	pHead;
+	Task *	pTail;
+}TaskQueue;
+
+// 
+//	Priority Queue for Task Descriptor Block
+//
+class	TaskPQueue {
+
+    private:
+	UBYTE	priorityMaskFirst;
+	UBYTE	priorityMaskSecond[4];
+	UBYTE	priorityMaskThird[4][BITS];
+
+    public:
+	TaskQueue	taskQ[PriorityRange];	// priority queue
+	TaskPQueue();
+
+	Boolean isEmpty(int _priority);
+
+	ErrorCode addReadyQueue(Task * _pTask);
+	ErrorCode addQueue(Task * _pTask, int _priority);
+	Task * 	removeQueue(int _priority);
+	Task *	getNextTask();
+	void	setPriorityMask(int _priority);
+	void	clearPriorityMask(int _priority);
+	int 	getHighestPriority(void);
+
+	void printQueue(int _priority);	// print specific priority
+
+	void printPQueue();	// print priority queue
+};
+#endif // _TASK_H_
+

@@ -1,0 +1,208 @@
+.TH task.h 3 "17 Dec 2001" "TASK" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+task.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include "../include/i486/cs452.h"\fR
+.br
+\fC#include "../include/util/type.h"\fR
+.br
+\fC#include "../include/util/errorCode.h"\fR
+.br
+.SS Compounds
+
+.in +1c
+.ti -1c
+.RI "class \fBTask\fR"
+.br
+.in -1c
+.SS Defines
+
+.in +1c
+.ti -1c
+.RI "#define \fB_TASK_H_\fR"
+.br
+.ti -1c
+.RI "#define \fBPLAIN_QUEUE\fR"
+.br
+.ti -1c
+.RI "#define \fBPRIORITY_INHERITANCE\fR"
+.br
+.ti -1c
+.RI "#define \fBTIMER_INCREMENT_WAY\fR"
+.br
+.ti -1c
+.RI "#define \fBBITS\fR  8"
+.br
+.ti -1c
+.RI "#define \fBNELEMS\fR(array)	  (sizeof(array) / sizeof(array[0]))"
+.br
+.in -1c
+.SS Typedefs
+
+.in +1c
+.ti -1c
+.RI "typedef \fBTaskState\fR \fBTaskStae\fR"
+.br
+.in -1c
+.SS Enumerations
+
+.in +1c
+.ti -1c
+.RI "enum \fBTaskState\fR { \fBDummy\fR, \fBActive\fR, \fBReady\fR, \fBDead\fR, \fBSendBlocked\fR, \fBReplyBlocked\fR, \fBReceiveBlocked\fR, \fBEventBlocked\fR, \fBPriorityInherited\fR }"
+.br
+.in -1c
+.SS Variables
+
+.in +1c
+.ti -1c
+.RI "const int \fBMaxTaskNum\fR = 64"
+.br
+.ti -1c
+.RI "const int \fBPriorityRange\fR = 64"
+.br
+.ti -1c
+.RI "const int \fBLowestPriority\fR = \fBPriorityRange\fR - 1"
+.br
+.ti -1c
+.RI "const int \fBHighestPriority\fR = 0"
+.br
+.ti -1c
+.RI "const int \fBClockServerPriority\fR = \fBHighestPriority\fR"
+.br
+.ti -1c
+.RI "const int \fBNameServerPriority\fR = \fBHighestPriority\fR + 1"
+.br
+.ti -1c
+.RI "const int \fBTrainSerialServerPriority\fR = \fBHighestPriority\fR + 2"
+.br
+.ti -1c
+.RI "const int \fBWyseSerialServerPriority\fR = \fBHighestPriority\fR + 3"
+.br
+.ti -1c
+.RI "const int \fBKeybordServerPriority\fR = \fBHighestPriority\fR + 4"
+.br
+.ti -1c
+.RI "const int \fBGraphicServerPriority\fR = \fBHighestPriority\fR + 5"
+.br
+.ti -1c
+.RI "const int \fBSystemPriority\fR = \fBGraphicServerPriority\fR"
+.br
+.ti -1c
+.RI "const int \fBUserPriority\fR = \fBSystemPriority\fR + 1"
+.br
+.ti -1c
+.RI "const int \fBInitTaskPriority\fR = \fBUserPriority\fR"
+.br
+.ti -1c
+.RI "const int \fBIdleTaskPriority\fR = \fBLowestPriority\fR"
+.br
+.ti -1c
+.RI "const BYTE \fBEmpty\fR = -1"
+.br
+.ti -1c
+.RI "char* \fBstrTaskState\fR []"
+.br
+.in -1c
+.SH DEFINE DOCUMENTATION
+.PP 
+.SS #define BITS  8
+.PP
+.SS #define NELEMS(array)  (sizeof(array) / sizeof(array[0]))
+.PP
+.SS #define PLAIN_QUEUE
+.PP
+\fBValue:\fR
+.PP
+.nf
+
+.fi
+.SS #define PRIORITY_INHERITANCE
+.PP
+\fBValue:\fR
+.PP
+.nf
+
+.fi
+.SS #define TIMER_INCREMENT_WAY
+.PP
+\fBValue:\fR
+.PP
+.nf
+
+.fi
+.SS #define _TASK_H_
+.PP
+\fBValue:\fR
+.PP
+.nf
+
+.fi
+.SH TYPEDEF DOCUMENTATION
+.PP 
+.SS typedef \fBTaskState\fR TaskStae
+.PP
+.SH ENUMERATION TYPE DOCUMENTATION
+.PP 
+.SS enum TaskState
+.PP
+\fBEnumeration values:\fR
+.in +1c
+.TP
+\fB\fIDummy\fR \fR
+.TP
+\fB\fIActive\fR \fR
+.TP
+\fB\fIReady\fR \fR
+.TP
+\fB\fIDead\fR \fR
+.TP
+\fB\fISendBlocked\fR \fR
+.TP
+\fB\fIReplyBlocked\fR \fR
+.TP
+\fB\fIReceiveBlocked\fR \fR
+.TP
+\fB\fIEventBlocked\fR \fR
+.TP
+\fB\fIPriorityInherited\fR \fR
+.SH VARIABLE DOCUMENTATION
+.PP 
+.SS const int ClockServerPriority = \fBHighestPriority\fR
+.PP
+.SS const BYTE Empty = -1
+.PP
+.SS const int GraphicServerPriority = \fBHighestPriority\fR + 5
+.PP
+.SS const int HighestPriority = 0
+.PP
+.SS const int IdleTaskPriority = \fBLowestPriority\fR
+.PP
+.SS const int InitTaskPriority = \fBUserPriority\fR
+.PP
+.SS const int KeybordServerPriority = \fBHighestPriority\fR + 4
+.PP
+.SS const int LowestPriority = \fBPriorityRange\fR - 1
+.PP
+.SS const int MaxTaskNum = 64
+.PP
+.SS const int NameServerPriority = \fBHighestPriority\fR + 1
+.PP
+.SS const int PriorityRange = 64
+.PP
+.SS const int SystemPriority = \fBGraphicServerPriority\fR
+.PP
+.SS const int TrainSerialServerPriority = \fBHighestPriority\fR + 2
+.PP
+.SS const int UserPriority = \fBSystemPriority\fR + 1
+.PP
+.SS const int WyseSerialServerPriority = \fBHighestPriority\fR + 3
+.PP
+.SS char* strTaskState[]
+.PP
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for TASK from the source code.

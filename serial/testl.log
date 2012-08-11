@@ -1,0 +1,3271 @@
+BdBuffer testing num0 :Left 256 : isEnough 1 
+num: 1 ADD TAIL[0]  0
+num: 2 ADD TAIL[1]  1
+num: 3 ADD TAIL[2]  2
+num: 4 ADD TAIL[3]  3
+num: 5 ADD TAIL[4]  4
+num: 6 ADD TAIL[5]  5
+num: 7 ADD TAIL[6]  6
+num: 8 ADD TAIL[7]  7
+num: 9 ADD TAIL[8]  8
+num: 10 ADD TAIL[9]  9
+num: 11 ADD TAIL[10]  10
+num: 12 ADD TAIL[11]  11
+num: 13 ADD TAIL[12]  12
+num: 14 ADD TAIL[13]  13
+num: 15 ADD TAIL[14]  14
+num: 16 ADD TAIL[15]  15
+num: 17 ADD TAIL[16]  16
+num: 18 ADD TAIL[17]  17
+num: 19 ADD TAIL[18]  18
+num: 20 ADD TAIL[19]  19
+num: 21 ADD TAIL[20]  20
+num: 22 ADD TAIL[21]  21
+num: 23 ADD TAIL[22]  22
+num: 24 ADD TAIL[23]  23
+num: 25 ADD TAIL[24]  24
+num: 26 ADD TAIL[25]  25
+num: 27 ADD TAIL[26]  26
+num: 28 ADD TAIL[27]  27
+num: 29 ADD TAIL[28]  28
+num: 30 ADD TAIL[29]  29
+num: 31 ADD TAIL[30]  30
+num: 32 ADD TAIL[31]  31
+num: 33 ADD TAIL[32]  32
+num: 34 ADD TAIL[33]  33
+num: 35 ADD TAIL[34]  34
+num: 36 ADD TAIL[35]  35
+num: 37 ADD TAIL[36]  36
+num: 38 ADD TAIL[37]  37
+num: 39 ADD TAIL[38]  38
+num: 40 ADD TAIL[39]  39
+num: 41 ADD TAIL[40]  40
+num: 42 ADD TAIL[41]  41
+num: 43 ADD TAIL[42]  42
+num: 44 ADD TAIL[43]  43
+num: 45 ADD TAIL[44]  44
+num: 46 ADD TAIL[45]  45
+num: 47 ADD TAIL[46]  46
+num: 48 ADD TAIL[47]  47
+num: 49 ADD TAIL[48]  48
+num: 50 ADD TAIL[49]  49
+num: 51 ADD TAIL[50]  50
+num: 52 ADD TAIL[51]  51
+num: 53 ADD TAIL[52]  52
+num: 54 ADD TAIL[53]  53
+num: 55 ADD TAIL[54]  54
+num: 56 ADD TAIL[55]  55
+num: 57 ADD TAIL[56]  56
+num: 58 ADD TAIL[57]  57
+num: 59 ADD TAIL[58]  58
+num: 60 ADD TAIL[59]  59
+num: 61 ADD TAIL[60]  60
+num: 62 ADD TAIL[61]  61
+num: 63 ADD TAIL[62]  62
+num: 64 ADD TAIL[63]  63
+num: 65 ADD TAIL[64]  64
+num: 66 ADD TAIL[65]  65
+num: 67 ADD TAIL[66]  66
+num: 68 ADD TAIL[67]  67
+num: 69 ADD TAIL[68]  68
+num: 70 ADD TAIL[69]  69
+num: 71 ADD TAIL[70]  70
+num: 72 ADD TAIL[71]  71
+num: 73 ADD TAIL[72]  72
+num: 74 ADD TAIL[73]  73
+num: 75 ADD TAIL[74]  74
+num: 76 ADD TAIL[75]  75
+num: 77 ADD TAIL[76]  76
+num: 78 ADD TAIL[77]  77
+num: 79 ADD TAIL[78]  78
+num: 80 ADD TAIL[79]  79
+num: 81 ADD TAIL[80]  80
+num: 82 ADD TAIL[81]  81
+num: 83 ADD TAIL[82]  82
+num: 84 ADD TAIL[83]  83
+num: 85 ADD TAIL[84]  84
+num: 86 ADD TAIL[85]  85
+num: 87 ADD TAIL[86]  86
+num: 88 ADD TAIL[87]  87
+num: 89 ADD TAIL[88]  88
+num: 90 ADD TAIL[89]  89
+num: 91 ADD TAIL[90]  90
+num: 92 ADD TAIL[91]  91
+num: 93 ADD TAIL[92]  92
+num: 94 ADD TAIL[93]  93
+num: 95 ADD TAIL[94]  94
+num: 96 ADD TAIL[95]  95
+num: 97 ADD TAIL[96]  96
+num: 98 ADD TAIL[97]  97
+num: 99 ADD TAIL[98]  98
+num: 100 ADD TAIL[99]  99
+num: 101 ADD TAIL[100]  0
+num: 102 ADD TAIL[101]  1
+num: 103 ADD TAIL[102]  2
+num: 104 ADD TAIL[103]  3
+num: 105 ADD TAIL[104]  4
+num: 106 ADD TAIL[105]  5
+num: 107 ADD TAIL[106]  6
+num: 108 ADD TAIL[107]  7
+num: 109 ADD TAIL[108]  8
+num: 110 ADD TAIL[109]  9
+num: 111 ADD TAIL[110]  10
+num: 112 ADD TAIL[111]  11
+num: 113 ADD TAIL[112]  12
+num: 114 ADD TAIL[113]  13
+num: 115 ADD TAIL[114]  14
+num: 116 ADD TAIL[115]  15
+num: 117 ADD TAIL[116]  16
+num: 118 ADD TAIL[117]  17
+num: 119 ADD TAIL[118]  18
+num: 120 ADD TAIL[119]  19
+num: 121 ADD TAIL[120]  20
+num: 122 ADD TAIL[121]  21
+num: 123 ADD TAIL[122]  22
+num: 124 ADD TAIL[123]  23
+num: 125 ADD TAIL[124]  24
+num: 126 ADD TAIL[125]  25
+num: 127 ADD TAIL[126]  26
+num: 128 ADD TAIL[127]  27
+num: 129 ADD TAIL[128]  28
+num: 130 ADD TAIL[129]  29
+num: 131 ADD TAIL[130]  30
+num: 132 ADD TAIL[131]  31
+num: 133 ADD TAIL[132]  32
+num: 134 ADD TAIL[133]  33
+num: 135 ADD TAIL[134]  34
+num: 136 ADD TAIL[135]  35
+num: 137 ADD TAIL[136]  36
+num: 138 ADD TAIL[137]  37
+num: 139 ADD TAIL[138]  38
+num: 140 ADD TAIL[139]  39
+num: 141 ADD TAIL[140]  40
+num: 142 ADD TAIL[141]  41
+num: 143 ADD TAIL[142]  42
+num: 144 ADD TAIL[143]  43
+num: 145 ADD TAIL[144]  44
+num: 146 ADD TAIL[145]  45
+num: 147 ADD TAIL[146]  46
+num: 148 ADD TAIL[147]  47
+num: 149 ADD TAIL[148]  48
+num: 150 ADD TAIL[149]  49
+num: 151 ADD TAIL[150]  50
+num: 152 ADD TAIL[151]  51
+num: 153 ADD TAIL[152]  52
+num: 154 ADD TAIL[153]  53
+num: 155 ADD TAIL[154]  54
+num: 156 ADD TAIL[155]  55
+num: 157 ADD TAIL[156]  56
+num: 158 ADD TAIL[157]  57
+num: 159 ADD TAIL[158]  58
+num: 160 ADD TAIL[159]  59
+num: 161 ADD TAIL[160]  60
+num: 162 ADD TAIL[161]  61
+num: 163 ADD TAIL[162]  62
+num: 164 ADD TAIL[163]  63
+num: 165 ADD TAIL[164]  64
+num: 166 ADD TAIL[165]  65
+num: 167 ADD TAIL[166]  66
+num: 168 ADD TAIL[167]  67
+num: 169 ADD TAIL[168]  68
+num: 170 ADD TAIL[169]  69
+num: 171 ADD TAIL[170]  70
+num: 172 ADD TAIL[171]  71
+num: 173 ADD TAIL[172]  72
+num: 174 ADD TAIL[173]  73
+num: 175 ADD TAIL[174]  74
+num: 176 ADD TAIL[175]  75
+num: 177 ADD TAIL[176]  76
+num: 178 ADD TAIL[177]  77
+num: 179 ADD TAIL[178]  78
+num: 180 ADD TAIL[179]  79
+num: 181 ADD TAIL[180]  80
+num: 182 ADD TAIL[181]  81
+num: 183 ADD TAIL[182]  82
+num: 184 ADD TAIL[183]  83
+num: 185 ADD TAIL[184]  84
+num: 186 ADD TAIL[185]  85
+num: 187 ADD TAIL[186]  86
+num: 188 ADD TAIL[187]  87
+num: 189 ADD TAIL[188]  88
+num: 190 ADD TAIL[189]  89
+num: 191 ADD TAIL[190]  90
+num: 192 ADD TAIL[191]  91
+num: 193 ADD TAIL[192]  92
+num: 194 ADD TAIL[193]  93
+num: 195 ADD TAIL[194]  94
+num: 196 ADD TAIL[195]  95
+num: 197 ADD TAIL[196]  96
+num: 198 ADD TAIL[197]  97
+num: 199 ADD TAIL[198]  98
+num: 200 ADD TAIL[199]  99
+num: 201 ADD TAIL[200]  0
+num: 202 ADD TAIL[201]  1
+num: 203 ADD TAIL[202]  2
+num: 204 ADD TAIL[203]  3
+num: 205 ADD TAIL[204]  4
+num: 206 ADD TAIL[205]  5
+num: 207 ADD TAIL[206]  6
+num: 208 ADD TAIL[207]  7
+num: 209 ADD TAIL[208]  8
+num: 210 ADD TAIL[209]  9
+num: 211 ADD TAIL[210]  10
+num: 212 ADD TAIL[211]  11
+num: 213 ADD TAIL[212]  12
+num: 214 ADD TAIL[213]  13
+num: 215 ADD TAIL[214]  14
+num: 216 ADD TAIL[215]  15
+num: 217 ADD TAIL[216]  16
+num: 218 ADD TAIL[217]  17
+num: 219 ADD TAIL[218]  18
+num: 220 ADD TAIL[219]  19
+num: 221 ADD TAIL[220]  20
+num: 222 ADD TAIL[221]  21
+num: 223 ADD TAIL[222]  22
+num: 224 ADD TAIL[223]  23
+num: 225 ADD TAIL[224]  24
+num: 226 ADD TAIL[225]  25
+num: 227 ADD TAIL[226]  26
+num: 228 ADD TAIL[227]  27
+num: 229 ADD TAIL[228]  28
+num: 230 ADD TAIL[229]  29
+num: 231 ADD TAIL[230]  30
+num: 232 ADD TAIL[231]  31
+num: 233 ADD TAIL[232]  32
+num: 234 ADD TAIL[233]  33
+num: 235 ADD TAIL[234]  34
+num: 236 ADD TAIL[235]  35
+num: 237 ADD TAIL[236]  36
+num: 238 ADD TAIL[237]  37
+num: 239 ADD TAIL[238]  38
+num: 240 ADD TAIL[239]  39
+num: 241 ADD TAIL[240]  40
+num: 242 ADD TAIL[241]  41
+num: 243 ADD TAIL[242]  42
+num: 244 ADD TAIL[243]  43
+num: 245 ADD TAIL[244]  44
+num: 246 ADD TAIL[245]  45
+num: 247 ADD TAIL[246]  46
+num: 248 ADD TAIL[247]  47
+num: 249 ADD TAIL[248]  48
+num: 250 ADD TAIL[249]  49
+num: 251 ADD TAIL[250]  50
+num: 252 ADD TAIL[251]  51
+num: 253 ADD TAIL[252]  52
+num: 254 ADD TAIL[253]  53
+num: 255 ADD TAIL[254]  54
+num: 256 ADD TAIL[255]  55
+BdBuffer testing num256 :Left 0 : isEnough 0 
+num 255 : GET Head[0]  0
+num 254 : GET Head[1]  1
+num 253 : GET Head[2]  2
+num 252 : GET Head[3]  3
+num: 253 ADD TAIL[0]  57
+num 252 : GET Head[4]  4
+num 251 : GET Head[5]  5
+num 250 : GET Head[6]  6
+num 249 : GET Head[7]  7
+num: 250 ADD TAIL[1]  58
+num 249 : GET Head[8]  8
+num 248 : GET Head[9]  9
+num 247 : GET Head[10]  10
+num 246 : GET Head[11]  11
+num: 247 ADD TAIL[2]  59
+num 246 : GET Head[12]  12
+num 245 : GET Head[13]  13
+num 244 : GET Head[14]  14
+num 243 : GET Head[15]  15
+num: 244 ADD TAIL[3]  60
+num 243 : GET Head[16]  16
+num 242 : GET Head[17]  17
+num 241 : GET Head[18]  18
+num 240 : GET Head[19]  19
+num: 241 ADD TAIL[4]  61
+num 240 : GET Head[20]  20
+num 239 : GET Head[21]  21
+num 238 : GET Head[22]  22
+num 237 : GET Head[23]  23
+num: 238 ADD TAIL[5]  62
+num 237 : GET Head[24]  24
+num 236 : GET Head[25]  25
+num 235 : GET Head[26]  26
+num 234 : GET Head[27]  27
+num: 235 ADD TAIL[6]  63
+num 234 : GET Head[28]  28
+num 233 : GET Head[29]  29
+num 232 : GET Head[30]  30
+num 231 : GET Head[31]  31
+num: 232 ADD TAIL[7]  64
+num 231 : GET Head[32]  32
+num 230 : GET Head[33]  33
+num 229 : GET Head[34]  34
+num 228 : GET Head[35]  35
+num: 229 ADD TAIL[8]  65
+num 228 : GET Head[36]  36
+num 227 : GET Head[37]  37
+num 226 : GET Head[38]  38
+num 225 : GET Head[39]  39
+num: 226 ADD TAIL[9]  66
+num 225 : GET Head[40]  40
+num 224 : GET Head[41]  41
+num 223 : GET Head[42]  42
+num 222 : GET Head[43]  43
+num: 223 ADD TAIL[10]  67
+num 222 : GET Head[44]  44
+num 221 : GET Head[45]  45
+num 220 : GET Head[46]  46
+num 219 : GET Head[47]  47
+num: 220 ADD TAIL[11]  68
+num 219 : GET Head[48]  48
+num 218 : GET Head[49]  49
+num 217 : GET Head[50]  50
+num 216 : GET Head[51]  51
+num: 217 ADD TAIL[12]  69
+num 216 : GET Head[52]  52
+num 215 : GET Head[53]  53
+num 214 : GET Head[54]  54
+num 213 : GET Head[55]  55
+num: 214 ADD TAIL[13]  70
+num 213 : GET Head[56]  56
+num 212 : GET Head[57]  57
+num 211 : GET Head[58]  58
+num 210 : GET Head[59]  59
+num: 211 ADD TAIL[14]  71
+num 210 : GET Head[60]  60
+num 209 : GET Head[61]  61
+num 208 : GET Head[62]  62
+num 207 : GET Head[63]  63
+num: 208 ADD TAIL[15]  72
+num 207 : GET Head[64]  64
+num 206 : GET Head[65]  65
+num 205 : GET Head[66]  66
+num 204 : GET Head[67]  67
+num: 205 ADD TAIL[16]  73
+num 204 : GET Head[68]  68
+num 203 : GET Head[69]  69
+num 202 : GET Head[70]  70
+num 201 : GET Head[71]  71
+num: 202 ADD TAIL[17]  74
+num 201 : GET Head[72]  72
+num 200 : GET Head[73]  73
+num 199 : GET Head[74]  74
+num 198 : GET Head[75]  75
+num: 199 ADD TAIL[18]  75
+num 198 : GET Head[76]  76
+num 197 : GET Head[77]  77
+num 196 : GET Head[78]  78
+num 195 : GET Head[79]  79
+num: 196 ADD TAIL[19]  76
+num 195 : GET Head[80]  80
+num 194 : GET Head[81]  81
+num 193 : GET Head[82]  82
+num 192 : GET Head[83]  83
+num: 193 ADD TAIL[20]  77
+num 192 : GET Head[84]  84
+num 191 : GET Head[85]  85
+num 190 : GET Head[86]  86
+num 189 : GET Head[87]  87
+num: 190 ADD TAIL[21]  78
+num 189 : GET Head[88]  88
+num 188 : GET Head[89]  89
+num 187 : GET Head[90]  90
+num 186 : GET Head[91]  91
+num: 187 ADD TAIL[22]  79
+num 186 : GET Head[92]  92
+num 185 : GET Head[93]  93
+num 184 : GET Head[94]  94
+num 183 : GET Head[95]  95
+num: 184 ADD TAIL[23]  80
+num 183 : GET Head[96]  96
+num 182 : GET Head[97]  97
+num 181 : GET Head[98]  98
+num 180 : GET Head[99]  99
+num: 181 ADD TAIL[24]  81
+num 180 : GET Head[100]  0
+num 179 : GET Head[101]  1
+num 178 : GET Head[102]  2
+num 177 : GET Head[103]  3
+num: 178 ADD TAIL[25]  82
+num 177 : GET Head[104]  4
+num 176 : GET Head[105]  5
+num 175 : GET Head[106]  6
+num 174 : GET Head[107]  7
+num: 175 ADD TAIL[26]  83
+num 174 : GET Head[108]  8
+num 173 : GET Head[109]  9
+num 172 : GET Head[110]  10
+num 171 : GET Head[111]  11
+num: 172 ADD TAIL[27]  84
+num 171 : GET Head[112]  12
+num 170 : GET Head[113]  13
+num 169 : GET Head[114]  14
+num 168 : GET Head[115]  15
+num: 169 ADD TAIL[28]  85
+num 168 : GET Head[116]  16
+num 167 : GET Head[117]  17
+num 166 : GET Head[118]  18
+num 165 : GET Head[119]  19
+num: 166 ADD TAIL[29]  86
+num 165 : GET Head[120]  20
+num 164 : GET Head[121]  21
+num 163 : GET Head[122]  22
+num 162 : GET Head[123]  23
+num: 163 ADD TAIL[30]  87
+num 162 : GET Head[124]  24
+num 161 : GET Head[125]  25
+num 160 : GET Head[126]  26
+num 159 : GET Head[127]  27
+num: 160 ADD TAIL[31]  88
+num 159 : GET Head[128]  28
+num 158 : GET Head[129]  29
+num 157 : GET Head[130]  30
+num 156 : GET Head[131]  31
+num: 157 ADD TAIL[32]  89
+num 156 : GET Head[132]  32
+num 155 : GET Head[133]  33
+num 154 : GET Head[134]  34
+num 153 : GET Head[135]  35
+num: 154 ADD TAIL[33]  90
+num 153 : GET Head[136]  36
+num 152 : GET Head[137]  37
+num 151 : GET Head[138]  38
+num 150 : GET Head[139]  39
+num: 151 ADD TAIL[34]  91
+num 150 : GET Head[140]  40
+num 149 : GET Head[141]  41
+num 148 : GET Head[142]  42
+num 147 : GET Head[143]  43
+num: 148 ADD TAIL[35]  92
+num 147 : GET Head[144]  44
+num 146 : GET Head[145]  45
+num 145 : GET Head[146]  46
+num 144 : GET Head[147]  47
+num: 145 ADD TAIL[36]  93
+num 144 : GET Head[148]  48
+num 143 : GET Head[149]  49
+num 142 : GET Head[150]  50
+num 141 : GET Head[151]  51
+num: 142 ADD TAIL[37]  94
+num 141 : GET Head[152]  52
+num 140 : GET Head[153]  53
+num 139 : GET Head[154]  54
+num 138 : GET Head[155]  55
+num: 139 ADD TAIL[38]  95
+num 138 : GET Head[156]  56
+num 137 : GET Head[157]  57
+num 136 : GET Head[158]  58
+num 135 : GET Head[159]  59
+num: 136 ADD TAIL[39]  96
+num 135 : GET Head[160]  60
+num 134 : GET Head[161]  61
+num 133 : GET Head[162]  62
+num 132 : GET Head[163]  63
+num: 133 ADD TAIL[40]  97
+num 132 : GET Head[164]  64
+num 131 : GET Head[165]  65
+num 130 : GET Head[166]  66
+num 129 : GET Head[167]  67
+num: 130 ADD TAIL[41]  98
+num 129 : GET Head[168]  68
+num 128 : GET Head[169]  69
+num 127 : GET Head[170]  70
+num 126 : GET Head[171]  71
+num: 127 ADD TAIL[42]  99
+num 126 : GET Head[172]  72
+num 125 : GET Head[173]  73
+num 124 : GET Head[174]  74
+num 123 : GET Head[175]  75
+num: 124 ADD TAIL[43]  0
+num 123 : GET Head[176]  76
+num 122 : GET Head[177]  77
+num 121 : GET Head[178]  78
+num 120 : GET Head[179]  79
+num: 121 ADD TAIL[44]  1
+num 120 : GET Head[180]  80
+num 119 : GET Head[181]  81
+num 118 : GET Head[182]  82
+num 117 : GET Head[183]  83
+num: 118 ADD TAIL[45]  2
+num 117 : GET Head[184]  84
+num 116 : GET Head[185]  85
+num 115 : GET Head[186]  86
+num 114 : GET Head[187]  87
+num: 115 ADD TAIL[46]  3
+num 114 : GET Head[188]  88
+num 113 : GET Head[189]  89
+num 112 : GET Head[190]  90
+num 111 : GET Head[191]  91
+num: 112 ADD TAIL[47]  4
+num 111 : GET Head[192]  92
+num 110 : GET Head[193]  93
+num 109 : GET Head[194]  94
+num 108 : GET Head[195]  95
+num: 109 ADD TAIL[48]  5
+num 108 : GET Head[196]  96
+num 107 : GET Head[197]  97
+num 106 : GET Head[198]  98
+num 105 : GET Head[199]  99
+num: 106 ADD TAIL[49]  6
+num 105 : GET Head[200]  0
+num 104 : GET Head[201]  1
+num 103 : GET Head[202]  2
+num 102 : GET Head[203]  3
+num: 103 ADD TAIL[50]  7
+num 102 : GET Head[204]  4
+num 101 : GET Head[205]  5
+num 100 : GET Head[206]  6
+num 99 : GET Head[207]  7
+num: 100 ADD TAIL[51]  8
+num 99 : GET Head[208]  8
+num 98 : GET Head[209]  9
+num 97 : GET Head[210]  10
+num 96 : GET Head[211]  11
+num: 97 ADD TAIL[52]  9
+num 96 : GET Head[212]  12
+num 95 : GET Head[213]  13
+num 94 : GET Head[214]  14
+num 93 : GET Head[215]  15
+num: 94 ADD TAIL[53]  10
+num 93 : GET Head[216]  16
+num 92 : GET Head[217]  17
+num 91 : GET Head[218]  18
+num 90 : GET Head[219]  19
+num: 91 ADD TAIL[54]  11
+num 90 : GET Head[220]  20
+num 89 : GET Head[221]  21
+num 88 : GET Head[222]  22
+num 87 : GET Head[223]  23
+num: 88 ADD TAIL[55]  12
+num 87 : GET Head[224]  24
+num 86 : GET Head[225]  25
+num 85 : GET Head[226]  26
+num 84 : GET Head[227]  27
+num: 85 ADD TAIL[56]  13
+num 84 : GET Head[228]  28
+num 83 : GET Head[229]  29
+num 82 : GET Head[230]  30
+num 81 : GET Head[231]  31
+num: 82 ADD TAIL[57]  14
+num 81 : GET Head[232]  32
+num 80 : GET Head[233]  33
+num 79 : GET Head[234]  34
+num 78 : GET Head[235]  35
+num: 79 ADD TAIL[58]  15
+num 78 : GET Head[236]  36
+num 77 : GET Head[237]  37
+num 76 : GET Head[238]  38
+num 75 : GET Head[239]  39
+num: 76 ADD TAIL[59]  16
+num 75 : GET Head[240]  40
+num 74 : GET Head[241]  41
+num 73 : GET Head[242]  42
+num 72 : GET Head[243]  43
+num: 73 ADD TAIL[60]  17
+num 72 : GET Head[244]  44
+num 71 : GET Head[245]  45
+num 70 : GET Head[246]  46
+num 69 : GET Head[247]  47
+num: 70 ADD TAIL[61]  18
+num 69 : GET Head[248]  48
+num 68 : GET Head[249]  49
+num 67 : GET Head[250]  50
+num 66 : GET Head[251]  51
+num: 67 ADD TAIL[62]  19
+num 66 : GET Head[252]  52
+num 65 : GET Head[253]  53
+num 64 : GET Head[254]  54
+num 63 : GET Head[255]  55
+num: 64 ADD TAIL[63]  20
+num 63 : GET Head[0]  57
+num 62 : GET Head[1]  58
+num 61 : GET Head[2]  59
+num 60 : GET Head[3]  60
+num: 61 ADD TAIL[64]  21
+num 60 : GET Head[4]  61
+num 59 : GET Head[5]  62
+num 58 : GET Head[6]  63
+num 57 : GET Head[7]  64
+num: 58 ADD TAIL[65]  22
+num 57 : GET Head[8]  65
+num 56 : GET Head[9]  66
+num 55 : GET Head[10]  67
+num 54 : GET Head[11]  68
+num: 55 ADD TAIL[66]  23
+num 54 : GET Head[12]  69
+num 53 : GET Head[13]  70
+num 52 : GET Head[14]  71
+num 51 : GET Head[15]  72
+num: 52 ADD TAIL[67]  24
+num 51 : GET Head[16]  73
+num 50 : GET Head[17]  74
+num 49 : GET Head[18]  75
+num 48 : GET Head[19]  76
+num: 49 ADD TAIL[68]  25
+num 48 : GET Head[20]  77
+num 47 : GET Head[21]  78
+num 46 : GET Head[22]  79
+num 45 : GET Head[23]  80
+num: 46 ADD TAIL[69]  26
+num 45 : GET Head[24]  81
+num 44 : GET Head[25]  82
+num 43 : GET Head[26]  83
+num 42 : GET Head[27]  84
+num: 43 ADD TAIL[70]  27
+num 42 : GET Head[28]  85
+num 41 : GET Head[29]  86
+num 40 : GET Head[30]  87
+num 39 : GET Head[31]  88
+num: 40 ADD TAIL[71]  28
+num 39 : GET Head[32]  89
+num 38 : GET Head[33]  90
+num 37 : GET Head[34]  91
+num 36 : GET Head[35]  92
+num: 37 ADD TAIL[72]  29
+num 36 : GET Head[36]  93
+num 35 : GET Head[37]  94
+num 34 : GET Head[38]  95
+num 33 : GET Head[39]  96
+num: 34 ADD TAIL[73]  30
+num 33 : GET Head[40]  97
+num 32 : GET Head[41]  98
+num 31 : GET Head[42]  99
+num 30 : GET Head[43]  0
+num: 31 ADD TAIL[74]  31
+num 30 : GET Head[44]  1
+num 29 : GET Head[45]  2
+num 28 : GET Head[46]  3
+num 27 : GET Head[47]  4
+num: 28 ADD TAIL[75]  32
+num 27 : GET Head[48]  5
+num 26 : GET Head[49]  6
+num 25 : GET Head[50]  7
+num 24 : GET Head[51]  8
+num: 25 ADD TAIL[76]  33
+num 24 : GET Head[52]  9
+num 23 : GET Head[53]  10
+num 22 : GET Head[54]  11
+num 21 : GET Head[55]  12
+num: 22 ADD TAIL[77]  34
+num 21 : GET Head[56]  13
+num 20 : GET Head[57]  14
+num 19 : GET Head[58]  15
+num 18 : GET Head[59]  16
+num: 19 ADD TAIL[78]  35
+num 18 : GET Head[60]  17
+num 17 : GET Head[61]  18
+num 16 : GET Head[62]  19
+num 15 : GET Head[63]  20
+num: 16 ADD TAIL[79]  36
+num 15 : GET Head[64]  21
+num 14 : GET Head[65]  22
+num 13 : GET Head[66]  23
+num 12 : GET Head[67]  24
+num: 13 ADD TAIL[80]  37
+num 12 : GET Head[68]  25
+num 11 : GET Head[69]  26
+num 10 : GET Head[70]  27
+num 9 : GET Head[71]  28
+num: 10 ADD TAIL[81]  38
+num 9 : GET Head[72]  29
+num 8 : GET Head[73]  30
+num 7 : GET Head[74]  31
+num 6 : GET Head[75]  32
+num: 7 ADD TAIL[82]  39
+num 6 : GET Head[76]  33
+num 5 : GET Head[77]  34
+num 4 : GET Head[78]  35
+num 3 : GET Head[79]  36
+num: 4 ADD TAIL[83]  40
+num 3 : GET Head[80]  37
+num 2 : GET Head[81]  38
+num 1 : GET Head[82]  39
+num 0 : GET Head[83]  40
+num: 1 ADD TAIL[84]  41
+num 0 : GET Head[84]  41
+num: 1 ADD TAIL[85]  42
+num 0 : GET Head[85]  42
+num: 1 ADD TAIL[86]  43
+num 0 : GET Head[86]  43
+num: 1 ADD TAIL[87]  44
+num 0 : GET Head[87]  44
+num: 1 ADD TAIL[88]  45
+num 0 : GET Head[88]  45
+num: 1 ADD TAIL[89]  46
+num 0 : GET Head[89]  46
+num: 1 ADD TAIL[90]  47
+num 0 : GET Head[90]  47
+num: 1 ADD TAIL[91]  48
+num 0 : GET Head[91]  48
+num: 1 ADD TAIL[92]  49
+num 0 : GET Head[92]  49
+num: 1 ADD TAIL[93]  50
+num 0 : GET Head[93]  50
+num: 1 ADD TAIL[94]  51
+num 0 : GET Head[94]  51
+num: 1 ADD TAIL[95]  52
+num 0 : GET Head[95]  52
+num: 1 ADD TAIL[96]  53
+num 0 : GET Head[96]  53
+num: 1 ADD TAIL[97]  54
+num 0 : GET Head[97]  54
+num: 1 ADD TAIL[98]  55
+num 0 : GET Head[98]  55
+num: 1 ADD TAIL[99]  56
+num 0 : GET Head[99]  56
+num: 1 ADD TAIL[100]  57
+num 0 : GET Head[100]  57
+num: 1 ADD TAIL[101]  58
+num 0 : GET Head[101]  58
+num: 1 ADD TAIL[102]  59
+num 0 : GET Head[102]  59
+num: 1 ADD TAIL[103]  60
+num 0 : GET Head[103]  60
+num: 1 ADD TAIL[104]  61
+num 0 : GET Head[104]  61
+num: 1 ADD TAIL[105]  62
+num 0 : GET Head[105]  62
+num: 1 ADD TAIL[106]  63
+num 0 : GET Head[106]  63
+num: 1 ADD TAIL[107]  64
+num 0 : GET Head[107]  64
+num: 1 ADD TAIL[108]  65
+num 0 : GET Head[108]  65
+num: 1 ADD TAIL[109]  66
+num 0 : GET Head[109]  66
+num: 1 ADD TAIL[110]  67
+num 0 : GET Head[110]  67
+num: 1 ADD TAIL[111]  68
+num 0 : GET Head[111]  68
+num: 1 ADD TAIL[112]  69
+num 0 : GET Head[112]  69
+num: 1 ADD TAIL[113]  70
+num 0 : GET Head[113]  70
+num: 1 ADD TAIL[114]  71
+num 0 : GET Head[114]  71
+num: 1 ADD TAIL[115]  72
+num 0 : GET Head[115]  72
+num: 1 ADD TAIL[116]  73
+num 0 : GET Head[116]  73
+num: 1 ADD TAIL[117]  74
+num 0 : GET Head[117]  74
+num: 1 ADD TAIL[118]  75
+num 0 : GET Head[118]  75
+num: 1 ADD TAIL[119]  76
+num 0 : GET Head[119]  76
+num: 1 ADD TAIL[120]  77
+num 0 : GET Head[120]  77
+num: 1 ADD TAIL[121]  78
+num 0 : GET Head[121]  78
+num: 1 ADD TAIL[122]  79
+num 0 : GET Head[122]  79
+num: 1 ADD TAIL[123]  80
+num 0 : GET Head[123]  80
+num: 1 ADD TAIL[124]  81
+num 0 : GET Head[124]  81
+num: 1 ADD TAIL[125]  82
+num 0 : GET Head[125]  82
+num: 1 ADD TAIL[126]  83
+num 0 : GET Head[126]  83
+num: 1 ADD TAIL[127]  84
+num 0 : GET Head[127]  84
+num: 1 ADD TAIL[128]  85
+num 0 : GET Head[128]  85
+num: 1 ADD TAIL[129]  86
+num 0 : GET Head[129]  86
+num: 1 ADD TAIL[130]  87
+num 0 : GET Head[130]  87
+num: 1 ADD TAIL[131]  88
+num 0 : GET Head[131]  88
+num: 1 ADD TAIL[132]  89
+num 0 : GET Head[132]  89
+num: 1 ADD TAIL[133]  90
+num 0 : GET Head[133]  90
+num: 1 ADD TAIL[134]  91
+num 0 : GET Head[134]  91
+num: 1 ADD TAIL[135]  92
+num 0 : GET Head[135]  92
+num: 1 ADD TAIL[136]  93
+num 0 : GET Head[136]  93
+num: 1 ADD TAIL[137]  94
+num 0 : GET Head[137]  94
+num: 1 ADD TAIL[138]  95
+num 0 : GET Head[138]  95
+num: 1 ADD TAIL[139]  96
+num 0 : GET Head[139]  96
+num: 1 ADD TAIL[140]  97
+num 0 : GET Head[140]  97
+num: 1 ADD TAIL[141]  98
+num 0 : GET Head[141]  98
+num: 1 ADD TAIL[142]  99
+num 0 : GET Head[142]  99
+num: 1 ADD TAIL[143]  0
+num 0 : GET Head[143]  0
+num: 1 ADD TAIL[144]  1
+num 0 : GET Head[144]  1
+num: 1 ADD TAIL[145]  2
+num 0 : GET Head[145]  2
+num: 1 ADD TAIL[146]  3
+num 0 : GET Head[146]  3
+num: 1 ADD TAIL[147]  4
+num 0 : GET Head[147]  4
+num: 1 ADD TAIL[148]  5
+num 0 : GET Head[148]  5
+num: 1 ADD TAIL[149]  6
+num 0 : GET Head[149]  6
+num: 1 ADD TAIL[150]  7
+num 0 : GET Head[150]  7
+num: 1 ADD TAIL[151]  8
+num 0 : GET Head[151]  8
+num: 1 ADD TAIL[152]  9
+num 0 : GET Head[152]  9
+num: 1 ADD TAIL[153]  10
+num 0 : GET Head[153]  10
+num: 1 ADD TAIL[154]  11
+num 0 : GET Head[154]  11
+num: 1 ADD TAIL[155]  12
+num 0 : GET Head[155]  12
+num: 1 ADD TAIL[156]  13
+num 0 : GET Head[156]  13
+num: 1 ADD TAIL[157]  14
+num 0 : GET Head[157]  14
+num: 1 ADD TAIL[158]  15
+num 0 : GET Head[158]  15
+num: 1 ADD TAIL[159]  16
+num 0 : GET Head[159]  16
+num: 1 ADD TAIL[160]  17
+num 0 : GET Head[160]  17
+num: 1 ADD TAIL[161]  18
+num 0 : GET Head[161]  18
+num: 1 ADD TAIL[162]  19
+num 0 : GET Head[162]  19
+num: 1 ADD TAIL[163]  20
+num 0 : GET Head[163]  20
+num: 1 ADD TAIL[164]  21
+num 0 : GET Head[164]  21
+num: 1 ADD TAIL[165]  22
+num 0 : GET Head[165]  22
+num: 1 ADD TAIL[166]  23
+num 0 : GET Head[166]  23
+num: 1 ADD TAIL[167]  24
+num 0 : GET Head[167]  24
+num: 1 ADD TAIL[168]  25
+num 0 : GET Head[168]  25
+num: 1 ADD TAIL[169]  26
+num 0 : GET Head[169]  26
+num: 1 ADD TAIL[170]  27
+num 0 : GET Head[170]  27
+num: 1 ADD TAIL[171]  28
+num 0 : GET Head[171]  28
+num: 1 ADD TAIL[172]  29
+num 0 : GET Head[172]  29
+num: 1 ADD TAIL[173]  30
+num 0 : GET Head[173]  30
+num: 1 ADD TAIL[174]  31
+num 0 : GET Head[174]  31
+num: 1 ADD TAIL[175]  32
+num 0 : GET Head[175]  32
+num: 1 ADD TAIL[176]  33
+num 0 : GET Head[176]  33
+num: 1 ADD TAIL[177]  34
+num 0 : GET Head[177]  34
+num: 1 ADD TAIL[178]  35
+num 0 : GET Head[178]  35
+num: 1 ADD TAIL[179]  36
+num 0 : GET Head[179]  36
+num: 1 ADD TAIL[180]  37
+num 0 : GET Head[180]  37
+num: 1 ADD TAIL[181]  38
+num 0 : GET Head[181]  38
+num: 1 ADD TAIL[182]  39
+num 0 : GET Head[182]  39
+num: 1 ADD TAIL[183]  40
+num 0 : GET Head[183]  40
+num: 1 ADD TAIL[184]  41
+num 0 : GET Head[184]  41
+num: 1 ADD TAIL[185]  42
+num 0 : GET Head[185]  42
+num: 1 ADD TAIL[186]  43
+num 0 : GET Head[186]  43
+num: 1 ADD TAIL[187]  44
+num 0 : GET Head[187]  44
+num: 1 ADD TAIL[188]  45
+num 0 : GET Head[188]  45
+num: 1 ADD TAIL[189]  46
+num 0 : GET Head[189]  46
+num: 1 ADD TAIL[190]  47
+num 0 : GET Head[190]  47
+num: 1 ADD TAIL[191]  48
+num 0 : GET Head[191]  48
+num: 1 ADD TAIL[192]  49
+num 0 : GET Head[192]  49
+num: 1 ADD TAIL[193]  50
+num 0 : GET Head[193]  50
+num: 1 ADD TAIL[194]  51
+num 0 : GET Head[194]  51
+num: 1 ADD TAIL[195]  52
+num 0 : GET Head[195]  52
+num: 1 ADD TAIL[196]  53
+num 0 : GET Head[196]  53
+num: 1 ADD TAIL[197]  54
+num 0 : GET Head[197]  54
+num: 1 ADD TAIL[198]  55
+num 0 : GET Head[198]  55
+num: 1 ADD TAIL[199]  56
+num 0 : GET Head[199]  56
+num: 1 ADD TAIL[200]  57
+num 0 : GET Head[200]  57
+num: 1 ADD TAIL[201]  58
+num 0 : GET Head[201]  58
+num: 1 ADD TAIL[202]  59
+num 0 : GET Head[202]  59
+num: 1 ADD TAIL[203]  60
+num 0 : GET Head[203]  60
+num: 1 ADD TAIL[204]  61
+num 0 : GET Head[204]  61
+num: 1 ADD TAIL[205]  62
+num 0 : GET Head[205]  62
+num: 1 ADD TAIL[206]  63
+num 0 : GET Head[206]  63
+num: 1 ADD TAIL[207]  64
+num 0 : GET Head[207]  64
+num: 1 ADD TAIL[208]  65
+num 0 : GET Head[208]  65
+num: 1 ADD TAIL[209]  66
+num 0 : GET Head[209]  66
+num: 1 ADD TAIL[210]  67
+num 0 : GET Head[210]  67
+num: 1 ADD TAIL[211]  68
+num 0 : GET Head[211]  68
+num: 1 ADD TAIL[212]  69
+num 0 : GET Head[212]  69
+num: 1 ADD TAIL[213]  70
+num 0 : GET Head[213]  70
+num: 1 ADD TAIL[214]  71
+num 0 : GET Head[214]  71
+num: 1 ADD TAIL[215]  72
+num 0 : GET Head[215]  72
+num: 1 ADD TAIL[216]  73
+num 0 : GET Head[216]  73
+num: 1 ADD TAIL[217]  74
+num 0 : GET Head[217]  74
+num: 1 ADD TAIL[218]  75
+num 0 : GET Head[218]  75
+num: 1 ADD TAIL[219]  76
+num 0 : GET Head[219]  76
+num: 1 ADD TAIL[220]  77
+num 0 : GET Head[220]  77
+num: 1 ADD TAIL[221]  78
+num 0 : GET Head[221]  78
+num: 1 ADD TAIL[222]  79
+num 0 : GET Head[222]  79
+num: 1 ADD TAIL[223]  80
+num 0 : GET Head[223]  80
+num: 1 ADD TAIL[224]  81
+num 0 : GET Head[224]  81
+num: 1 ADD TAIL[225]  82
+num 0 : GET Head[225]  82
+num: 1 ADD TAIL[226]  83
+num 0 : GET Head[226]  83
+num: 1 ADD TAIL[227]  84
+num 0 : GET Head[227]  84
+num: 1 ADD TAIL[228]  85
+num 0 : GET Head[228]  85
+num: 1 ADD TAIL[229]  86
+num 0 : GET Head[229]  86
+num: 1 ADD TAIL[230]  87
+num 0 : GET Head[230]  87
+num: 1 ADD TAIL[231]  88
+num 0 : GET Head[231]  88
+num: 1 ADD TAIL[232]  89
+num 0 : GET Head[232]  89
+num: 1 ADD TAIL[233]  90
+num 0 : GET Head[233]  90
+num: 1 ADD TAIL[234]  91
+num 0 : GET Head[234]  91
+num: 1 ADD TAIL[235]  92
+num 0 : GET Head[235]  92
+num: 1 ADD TAIL[236]  93
+num 0 : GET Head[236]  93
+num: 1 ADD TAIL[237]  94
+num 0 : GET Head[237]  94
+num: 1 ADD TAIL[238]  95
+num 0 : GET Head[238]  95
+num: 1 ADD TAIL[239]  96
+num 0 : GET Head[239]  96
+num: 1 ADD TAIL[240]  97
+num 0 : GET Head[240]  97
+num: 1 ADD TAIL[241]  98
+num 0 : GET Head[241]  98
+num: 1 ADD TAIL[242]  99
+num 0 : GET Head[242]  99
+num: 1 ADD TAIL[243]  0
+num 0 : GET Head[243]  0
+num: 1 ADD TAIL[244]  1
+num 0 : GET Head[244]  1
+num: 1 ADD TAIL[245]  2
+num 0 : GET Head[245]  2
+num: 1 ADD TAIL[246]  3
+num 0 : GET Head[246]  3
+num: 1 ADD TAIL[247]  4
+num 0 : GET Head[247]  4
+num: 1 ADD TAIL[248]  5
+num 0 : GET Head[248]  5
+num: 1 ADD TAIL[249]  6
+num 0 : GET Head[249]  6
+num: 1 ADD TAIL[250]  7
+num 0 : GET Head[250]  7
+num: 1 ADD TAIL[251]  8
+num 0 : GET Head[251]  8
+num: 1 ADD TAIL[252]  9
+num 0 : GET Head[252]  9
+num: 1 ADD TAIL[253]  10
+num 0 : GET Head[253]  10
+num: 1 ADD TAIL[254]  11
+num 0 : GET Head[254]  11
+num: 1 ADD TAIL[255]  12
+num 0 : GET Head[255]  12
+num: 1 ADD TAIL[0]  13
+num 0 : GET Head[0]  13
+num: 1 ADD TAIL[1]  14
+num 0 : GET Head[1]  14
+num: 1 ADD TAIL[2]  15
+num 0 : GET Head[2]  15
+num: 1 ADD TAIL[3]  16
+num 0 : GET Head[3]  16
+num: 1 ADD TAIL[4]  17
+num 0 : GET Head[4]  17
+num: 1 ADD TAIL[5]  18
+num 0 : GET Head[5]  18
+num: 1 ADD TAIL[6]  19
+num 0 : GET Head[6]  19
+num: 1 ADD TAIL[7]  20
+num 0 : GET Head[7]  20
+num: 1 ADD TAIL[8]  21
+num 0 : GET Head[8]  21
+num: 1 ADD TAIL[9]  22
+num 0 : GET Head[9]  22
+num: 1 ADD TAIL[10]  23
+num 0 : GET Head[10]  23
+num: 1 ADD TAIL[11]  24
+num 0 : GET Head[11]  24
+num: 1 ADD TAIL[12]  25
+num 0 : GET Head[12]  25
+num: 1 ADD TAIL[13]  26
+num 0 : GET Head[13]  26
+num: 1 ADD TAIL[14]  27
+num 0 : GET Head[14]  27
+num: 1 ADD TAIL[15]  28
+num 0 : GET Head[15]  28
+num: 1 ADD TAIL[16]  29
+num 0 : GET Head[16]  29
+num: 1 ADD TAIL[17]  30
+num 0 : GET Head[17]  30
+num: 1 ADD TAIL[18]  31
+num 0 : GET Head[18]  31
+num: 1 ADD TAIL[19]  32
+num 0 : GET Head[19]  32
+num: 1 ADD TAIL[20]  33
+num 0 : GET Head[20]  33
+num: 1 ADD TAIL[21]  34
+num 0 : GET Head[21]  34
+num: 1 ADD TAIL[22]  35
+num 0 : GET Head[22]  35
+num: 1 ADD TAIL[23]  36
+num 0 : GET Head[23]  36
+num: 1 ADD TAIL[24]  37
+num 0 : GET Head[24]  37
+num: 1 ADD TAIL[25]  38
+num 0 : GET Head[25]  38
+num: 1 ADD TAIL[26]  39
+num 0 : GET Head[26]  39
+num: 1 ADD TAIL[27]  40
+num 0 : GET Head[27]  40
+num: 1 ADD TAIL[28]  41
+num 0 : GET Head[28]  41
+num: 1 ADD TAIL[29]  42
+num 0 : GET Head[29]  42
+num: 1 ADD TAIL[30]  43
+num 0 : GET Head[30]  43
+num: 1 ADD TAIL[31]  44
+num 0 : GET Head[31]  44
+num: 1 ADD TAIL[32]  45
+num 0 : GET Head[32]  45
+num: 1 ADD TAIL[33]  46
+num 0 : GET Head[33]  46
+num: 1 ADD TAIL[34]  47
+num 0 : GET Head[34]  47
+num: 1 ADD TAIL[35]  48
+num 0 : GET Head[35]  48
+num: 1 ADD TAIL[36]  49
+num 0 : GET Head[36]  49
+num: 1 ADD TAIL[37]  50
+num 0 : GET Head[37]  50
+num: 1 ADD TAIL[38]  51
+num 0 : GET Head[38]  51
+num: 1 ADD TAIL[39]  52
+num 0 : GET Head[39]  52
+num: 1 ADD TAIL[40]  53
+num 0 : GET Head[40]  53
+num: 1 ADD TAIL[41]  54
+num 0 : GET Head[41]  54
+num: 1 ADD TAIL[42]  55
+num 0 : GET Head[42]  55
+num: 1 ADD TAIL[43]  56
+num 0 : GET Head[43]  56
+num: 1 ADD TAIL[44]  57
+num 0 : GET Head[44]  57
+num: 1 ADD TAIL[45]  58
+num 0 : GET Head[45]  58
+num: 1 ADD TAIL[46]  59
+num 0 : GET Head[46]  59
+num: 1 ADD TAIL[47]  60
+num 0 : GET Head[47]  60
+num: 1 ADD TAIL[48]  61
+num 0 : GET Head[48]  61
+num: 1 ADD TAIL[49]  62
+num 0 : GET Head[49]  62
+num: 1 ADD TAIL[50]  63
+num 0 : GET Head[50]  63
+num: 1 ADD TAIL[51]  64
+num 0 : GET Head[51]  64
+num: 1 ADD TAIL[52]  65
+num 0 : GET Head[52]  65
+num: 1 ADD TAIL[53]  66
+num 0 : GET Head[53]  66
+num: 1 ADD TAIL[54]  67
+num 0 : GET Head[54]  67
+num: 1 ADD TAIL[55]  68
+num 0 : GET Head[55]  68
+num: 1 ADD TAIL[56]  69
+num 0 : GET Head[56]  69
+num: 1 ADD TAIL[57]  70
+num 0 : GET Head[57]  70
+num: 1 ADD TAIL[58]  71
+num 0 : GET Head[58]  71
+num: 1 ADD TAIL[59]  72
+num 0 : GET Head[59]  72
+num: 1 ADD TAIL[60]  73
+num 0 : GET Head[60]  73
+num: 1 ADD TAIL[61]  74
+num 0 : GET Head[61]  74
+num: 1 ADD TAIL[62]  75
+num 0 : GET Head[62]  75
+num: 1 ADD TAIL[63]  76
+num 0 : GET Head[63]  76
+num: 1 ADD TAIL[64]  77
+num 0 : GET Head[64]  77
+num: 1 ADD TAIL[65]  78
+num 0 : GET Head[65]  78
+num: 1 ADD TAIL[66]  79
+num 0 : GET Head[66]  79
+num: 1 ADD TAIL[67]  80
+num 0 : GET Head[67]  80
+num: 1 ADD TAIL[68]  81
+num 0 : GET Head[68]  81
+num: 1 ADD TAIL[69]  82
+num 0 : GET Head[69]  82
+num: 1 ADD TAIL[70]  83
+num 0 : GET Head[70]  83
+num: 1 ADD TAIL[71]  84
+num 0 : GET Head[71]  84
+num: 1 ADD TAIL[72]  85
+num 0 : GET Head[72]  85
+num: 1 ADD TAIL[73]  86
+num 0 : GET Head[73]  86
+num: 1 ADD TAIL[74]  87
+num 0 : GET Head[74]  87
+num: 1 ADD TAIL[75]  88
+num 0 : GET Head[75]  88
+num: 1 ADD TAIL[76]  89
+num 0 : GET Head[76]  89
+num: 1 ADD TAIL[77]  90
+num 0 : GET Head[77]  90
+num: 1 ADD TAIL[78]  91
+num 0 : GET Head[78]  91
+num: 1 ADD TAIL[79]  92
+num 0 : GET Head[79]  92
+num: 1 ADD TAIL[80]  93
+num 0 : GET Head[80]  93
+num: 1 ADD TAIL[81]  94
+num 0 : GET Head[81]  94
+num: 1 ADD TAIL[82]  95
+num 0 : GET Head[82]  95
+num: 1 ADD TAIL[83]  96
+num 0 : GET Head[83]  96
+num: 1 ADD TAIL[84]  97
+num 0 : GET Head[84]  97
+num: 1 ADD TAIL[85]  98
+num 0 : GET Head[85]  98
+num: 1 ADD TAIL[86]  99
+num 0 : GET Head[86]  99
+num: 1 ADD TAIL[87]  0
+num 0 : GET Head[87]  0
+num: 1 ADD TAIL[88]  1
+num 0 : GET Head[88]  1
+num: 1 ADD TAIL[89]  2
+num 0 : GET Head[89]  2
+num: 1 ADD TAIL[90]  3
+num 0 : GET Head[90]  3
+num: 1 ADD TAIL[91]  4
+num 0 : GET Head[91]  4
+num: 1 ADD TAIL[92]  5
+num 0 : GET Head[92]  5
+num: 1 ADD TAIL[93]  6
+num 0 : GET Head[93]  6
+num: 1 ADD TAIL[94]  7
+num 0 : GET Head[94]  7
+num: 1 ADD TAIL[95]  8
+num 0 : GET Head[95]  8
+num: 1 ADD TAIL[96]  9
+num 0 : GET Head[96]  9
+num: 1 ADD TAIL[97]  10
+num 0 : GET Head[97]  10
+num: 1 ADD TAIL[98]  11
+num 0 : GET Head[98]  11
+num: 1 ADD TAIL[99]  12
+num 0 : GET Head[99]  12
+num: 1 ADD TAIL[100]  13
+num 0 : GET Head[100]  13
+num: 1 ADD TAIL[101]  14
+num 0 : GET Head[101]  14
+num: 1 ADD TAIL[102]  15
+num 0 : GET Head[102]  15
+num: 1 ADD TAIL[103]  16
+num 0 : GET Head[103]  16
+num: 1 ADD TAIL[104]  17
+num 0 : GET Head[104]  17
+num: 1 ADD TAIL[105]  18
+num 0 : GET Head[105]  18
+num: 1 ADD TAIL[106]  19
+num 0 : GET Head[106]  19
+num: 1 ADD TAIL[107]  20
+num 0 : GET Head[107]  20
+num: 1 ADD TAIL[108]  21
+num 0 : GET Head[108]  21
+num: 1 ADD TAIL[109]  22
+num 0 : GET Head[109]  22
+num: 1 ADD TAIL[110]  23
+num 0 : GET Head[110]  23
+num: 1 ADD TAIL[111]  24
+num 0 : GET Head[111]  24
+num: 1 ADD TAIL[112]  25
+num 0 : GET Head[112]  25
+num: 1 ADD TAIL[113]  26
+num 0 : GET Head[113]  26
+num: 1 ADD TAIL[114]  27
+num 0 : GET Head[114]  27
+num: 1 ADD TAIL[115]  28
+num 0 : GET Head[115]  28
+num: 1 ADD TAIL[116]  29
+num 0 : GET Head[116]  29
+num: 1 ADD TAIL[117]  30
+num 0 : GET Head[117]  30
+num: 1 ADD TAIL[118]  31
+num 0 : GET Head[118]  31
+num: 1 ADD TAIL[119]  32
+num 0 : GET Head[119]  32
+num: 1 ADD TAIL[120]  33
+num 0 : GET Head[120]  33
+num: 1 ADD TAIL[121]  34
+num 0 : GET Head[121]  34
+num: 1 ADD TAIL[122]  35
+num 0 : GET Head[122]  35
+num: 1 ADD TAIL[123]  36
+num 0 : GET Head[123]  36
+num: 1 ADD TAIL[124]  37
+num 0 : GET Head[124]  37
+num: 1 ADD TAIL[125]  38
+num 0 : GET Head[125]  38
+num: 1 ADD TAIL[126]  39
+num 0 : GET Head[126]  39
+num: 1 ADD TAIL[127]  40
+num 0 : GET Head[127]  40
+num: 1 ADD TAIL[128]  41
+num 0 : GET Head[128]  41
+num: 1 ADD TAIL[129]  42
+num 0 : GET Head[129]  42
+num: 1 ADD TAIL[130]  43
+num 0 : GET Head[130]  43
+num: 1 ADD TAIL[131]  44
+num 0 : GET Head[131]  44
+num: 1 ADD TAIL[132]  45
+num 0 : GET Head[132]  45
+num: 1 ADD TAIL[133]  46
+num 0 : GET Head[133]  46
+num: 1 ADD TAIL[134]  47
+num 0 : GET Head[134]  47
+num: 1 ADD TAIL[135]  48
+num 0 : GET Head[135]  48
+num: 1 ADD TAIL[136]  49
+num 0 : GET Head[136]  49
+num: 1 ADD TAIL[137]  50
+num 0 : GET Head[137]  50
+num: 1 ADD TAIL[138]  51
+num 0 : GET Head[138]  51
+num: 1 ADD TAIL[139]  52
+num 0 : GET Head[139]  52
+num: 1 ADD TAIL[140]  53
+num 0 : GET Head[140]  53
+num: 1 ADD TAIL[141]  54
+num 0 : GET Head[141]  54
+num: 1 ADD TAIL[142]  55
+num 0 : GET Head[142]  55
+num: 1 ADD TAIL[143]  56
+num 0 : GET Head[143]  56
+num: 1 ADD TAIL[144]  57
+num 0 : GET Head[144]  57
+num: 1 ADD TAIL[145]  58
+num 0 : GET Head[145]  58
+num: 1 ADD TAIL[146]  59
+num 0 : GET Head[146]  59
+num: 1 ADD TAIL[147]  60
+num 0 : GET Head[147]  60
+num: 1 ADD TAIL[148]  61
+num 0 : GET Head[148]  61
+num: 1 ADD TAIL[149]  62
+num 0 : GET Head[149]  62
+num: 1 ADD TAIL[150]  63
+num 0 : GET Head[150]  63
+num: 1 ADD TAIL[151]  64
+num 0 : GET Head[151]  64
+num: 1 ADD TAIL[152]  65
+num 0 : GET Head[152]  65
+num: 1 ADD TAIL[153]  66
+num 0 : GET Head[153]  66
+num: 1 ADD TAIL[154]  67
+num 0 : GET Head[154]  67
+num: 1 ADD TAIL[155]  68
+num 0 : GET Head[155]  68
+num: 1 ADD TAIL[156]  69
+num 0 : GET Head[156]  69
+num: 1 ADD TAIL[157]  70
+num 0 : GET Head[157]  70
+num: 1 ADD TAIL[158]  71
+num 0 : GET Head[158]  71
+num: 1 ADD TAIL[159]  72
+num 0 : GET Head[159]  72
+num: 1 ADD TAIL[160]  73
+num 0 : GET Head[160]  73
+num: 1 ADD TAIL[161]  74
+num 0 : GET Head[161]  74
+num: 1 ADD TAIL[162]  75
+num 0 : GET Head[162]  75
+num: 1 ADD TAIL[163]  76
+num 0 : GET Head[163]  76
+num: 1 ADD TAIL[164]  77
+num 0 : GET Head[164]  77
+num: 1 ADD TAIL[165]  78
+num 0 : GET Head[165]  78
+num: 1 ADD TAIL[166]  79
+num 0 : GET Head[166]  79
+num: 1 ADD TAIL[167]  80
+num 0 : GET Head[167]  80
+num: 1 ADD TAIL[168]  81
+num 0 : GET Head[168]  81
+num: 1 ADD TAIL[169]  82
+num 0 : GET Head[169]  82
+num: 1 ADD TAIL[170]  83
+num 0 : GET Head[170]  83
+num: 1 ADD TAIL[171]  84
+num 0 : GET Head[171]  84
+num: 1 ADD TAIL[172]  85
+num 0 : GET Head[172]  85
+num: 1 ADD TAIL[173]  86
+num 0 : GET Head[173]  86
+num: 1 ADD TAIL[174]  87
+num 0 : GET Head[174]  87
+num: 1 ADD TAIL[175]  88
+num 0 : GET Head[175]  88
+num: 1 ADD TAIL[176]  89
+num 0 : GET Head[176]  89
+num: 1 ADD TAIL[177]  90
+num 0 : GET Head[177]  90
+num: 1 ADD TAIL[178]  91
+num 0 : GET Head[178]  91
+num: 1 ADD TAIL[179]  92
+num 0 : GET Head[179]  92
+num: 1 ADD TAIL[180]  93
+num 0 : GET Head[180]  93
+num: 1 ADD TAIL[181]  94
+num 0 : GET Head[181]  94
+num: 1 ADD TAIL[182]  95
+num 0 : GET Head[182]  95
+num: 1 ADD TAIL[183]  96
+num 0 : GET Head[183]  96
+num: 1 ADD TAIL[184]  97
+num 0 : GET Head[184]  97
+num: 1 ADD TAIL[185]  98
+num 0 : GET Head[185]  98
+num: 1 ADD TAIL[186]  99
+num 0 : GET Head[186]  99
+num: 1 ADD TAIL[187]  0
+num 0 : GET Head[187]  0
+num: 1 ADD TAIL[188]  1
+num 0 : GET Head[188]  1
+num: 1 ADD TAIL[189]  2
+num 0 : GET Head[189]  2
+num: 1 ADD TAIL[190]  3
+num 0 : GET Head[190]  3
+num: 1 ADD TAIL[191]  4
+num 0 : GET Head[191]  4
+num: 1 ADD TAIL[192]  5
+num 0 : GET Head[192]  5
+num: 1 ADD TAIL[193]  6
+num 0 : GET Head[193]  6
+num: 1 ADD TAIL[194]  7
+num 0 : GET Head[194]  7
+num: 1 ADD TAIL[195]  8
+num 0 : GET Head[195]  8
+num: 1 ADD TAIL[196]  9
+num 0 : GET Head[196]  9
+num: 1 ADD TAIL[197]  10
+num 0 : GET Head[197]  10
+num: 1 ADD TAIL[198]  11
+num 0 : GET Head[198]  11
+num: 1 ADD TAIL[199]  12
+num 0 : GET Head[199]  12
+num: 1 ADD TAIL[200]  13
+num 0 : GET Head[200]  13
+num: 1 ADD TAIL[201]  14
+num 0 : GET Head[201]  14
+num: 1 ADD TAIL[202]  15
+num 0 : GET Head[202]  15
+num: 1 ADD TAIL[203]  16
+num 0 : GET Head[203]  16
+num: 1 ADD TAIL[204]  17
+num 0 : GET Head[204]  17
+num: 1 ADD TAIL[205]  18
+num 0 : GET Head[205]  18
+num: 1 ADD TAIL[206]  19
+num 0 : GET Head[206]  19
+num: 1 ADD TAIL[207]  20
+num 0 : GET Head[207]  20
+num: 1 ADD TAIL[208]  21
+num 0 : GET Head[208]  21
+num: 1 ADD TAIL[209]  22
+num 0 : GET Head[209]  22
+num: 1 ADD TAIL[210]  23
+num 0 : GET Head[210]  23
+num: 1 ADD TAIL[211]  24
+num 0 : GET Head[211]  24
+num: 1 ADD TAIL[212]  25
+num 0 : GET Head[212]  25
+num: 1 ADD TAIL[213]  26
+num 0 : GET Head[213]  26
+num: 1 ADD TAIL[214]  27
+num 0 : GET Head[214]  27
+num: 1 ADD TAIL[215]  28
+num 0 : GET Head[215]  28
+num: 1 ADD TAIL[216]  29
+num 0 : GET Head[216]  29
+num: 1 ADD TAIL[217]  30
+num 0 : GET Head[217]  30
+num: 1 ADD TAIL[218]  31
+num 0 : GET Head[218]  31
+num: 1 ADD TAIL[219]  32
+num 0 : GET Head[219]  32
+num: 1 ADD TAIL[220]  33
+num 0 : GET Head[220]  33
+num: 1 ADD TAIL[221]  34
+num 0 : GET Head[221]  34
+num: 1 ADD TAIL[222]  35
+num 0 : GET Head[222]  35
+num: 1 ADD TAIL[223]  36
+num 0 : GET Head[223]  36
+num: 1 ADD TAIL[224]  37
+num 0 : GET Head[224]  37
+num: 1 ADD TAIL[225]  38
+num 0 : GET Head[225]  38
+num: 1 ADD TAIL[226]  39
+num 0 : GET Head[226]  39
+num: 1 ADD TAIL[227]  40
+num 0 : GET Head[227]  40
+num: 1 ADD TAIL[228]  41
+num 0 : GET Head[228]  41
+num: 1 ADD TAIL[229]  42
+num 0 : GET Head[229]  42
+num: 1 ADD TAIL[230]  43
+num 0 : GET Head[230]  43
+num: 1 ADD TAIL[231]  44
+num 0 : GET Head[231]  44
+num: 1 ADD TAIL[232]  45
+num 0 : GET Head[232]  45
+num: 1 ADD TAIL[233]  46
+num 0 : GET Head[233]  46
+num: 1 ADD TAIL[234]  47
+num 0 : GET Head[234]  47
+num: 1 ADD TAIL[235]  48
+num 0 : GET Head[235]  48
+num: 1 ADD TAIL[236]  49
+num 0 : GET Head[236]  49
+num: 1 ADD TAIL[237]  50
+num 0 : GET Head[237]  50
+num: 1 ADD TAIL[238]  51
+num 0 : GET Head[238]  51
+num: 1 ADD TAIL[239]  52
+num 0 : GET Head[239]  52
+num: 1 ADD TAIL[240]  53
+num 0 : GET Head[240]  53
+num: 1 ADD TAIL[241]  54
+num 0 : GET Head[241]  54
+num: 1 ADD TAIL[242]  55
+num 0 : GET Head[242]  55
+BdBuffer testing num0 :Left 256 : isEnough 1 
+
+BdBuffer testing num0 :Left 256 : isEnough 1 
+num: 1 ADD TAIL[243]  56
+num: 2 ADD TAIL[244]  56
+num: 3 ADD TAIL[245]  56
+num 2 : GET Head[243]  56
+>>get 56
+num: 3 ADD TAIL[246]  57
+num: 4 ADD TAIL[247]  57
+num: 5 ADD TAIL[248]  57
+num 4 : GET Head[244]  56
+>>get 56
+num: 5 ADD TAIL[249]  58
+num: 6 ADD TAIL[250]  58
+num: 7 ADD TAIL[251]  58
+num 6 : GET Head[245]  56
+>>get 56
+num: 7 ADD TAIL[252]  59
+num: 8 ADD TAIL[253]  59
+num: 9 ADD TAIL[254]  59
+num 8 : GET Head[246]  57
+>>get 57
+num: 9 ADD TAIL[255]  60
+num: 10 ADD TAIL[0]  60
+num: 11 ADD TAIL[1]  60
+num 10 : GET Head[247]  57
+>>get 57
+num: 11 ADD TAIL[2]  61
+num: 12 ADD TAIL[3]  61
+num: 13 ADD TAIL[4]  61
+num 12 : GET Head[248]  57
+>>get 57
+num: 13 ADD TAIL[5]  62
+num: 14 ADD TAIL[6]  62
+num: 15 ADD TAIL[7]  62
+num 14 : GET Head[249]  58
+>>get 58
+num: 15 ADD TAIL[8]  63
+num: 16 ADD TAIL[9]  63
+num: 17 ADD TAIL[10]  63
+num 16 : GET Head[250]  58
+>>get 58
+num: 17 ADD TAIL[11]  64
+num: 18 ADD TAIL[12]  64
+num: 19 ADD TAIL[13]  64
+num 18 : GET Head[251]  58
+>>get 58
+num: 19 ADD TAIL[14]  65
+num: 20 ADD TAIL[15]  65
+num: 21 ADD TAIL[16]  65
+num 20 : GET Head[252]  59
+>>get 59
+num: 21 ADD TAIL[17]  66
+num: 22 ADD TAIL[18]  66
+num: 23 ADD TAIL[19]  66
+num 22 : GET Head[253]  59
+>>get 59
+num: 23 ADD TAIL[20]  67
+num: 24 ADD TAIL[21]  67
+num: 25 ADD TAIL[22]  67
+num 24 : GET Head[254]  59
+>>get 59
+num: 25 ADD TAIL[23]  68
+num: 26 ADD TAIL[24]  68
+num: 27 ADD TAIL[25]  68
+num 26 : GET Head[255]  60
+>>get 60
+num: 27 ADD TAIL[26]  69
+num: 28 ADD TAIL[27]  69
+num: 29 ADD TAIL[28]  69
+num 28 : GET Head[0]  60
+>>get 60
+num: 29 ADD TAIL[29]  70
+num: 30 ADD TAIL[30]  70
+num: 31 ADD TAIL[31]  70
+num 30 : GET Head[1]  60
+>>get 60
+num: 31 ADD TAIL[32]  71
+num: 32 ADD TAIL[33]  71
+num: 33 ADD TAIL[34]  71
+num 32 : GET Head[2]  61
+>>get 61
+num: 33 ADD TAIL[35]  72
+num: 34 ADD TAIL[36]  72
+num: 35 ADD TAIL[37]  72
+num 34 : GET Head[3]  61
+>>get 61
+num: 35 ADD TAIL[38]  73
+num: 36 ADD TAIL[39]  73
+num: 37 ADD TAIL[40]  73
+num 36 : GET Head[4]  61
+>>get 61
+num: 37 ADD TAIL[41]  74
+num: 38 ADD TAIL[42]  74
+num: 39 ADD TAIL[43]  74
+num 38 : GET Head[5]  62
+>>get 62
+num: 39 ADD TAIL[44]  75
+num: 40 ADD TAIL[45]  75
+num: 41 ADD TAIL[46]  75
+num 40 : GET Head[6]  62
+>>get 62
+num: 41 ADD TAIL[47]  76
+num: 42 ADD TAIL[48]  76
+num: 43 ADD TAIL[49]  76
+num 42 : GET Head[7]  62
+>>get 62
+num: 43 ADD TAIL[50]  77
+num: 44 ADD TAIL[51]  77
+num: 45 ADD TAIL[52]  77
+num 44 : GET Head[8]  63
+>>get 63
+num: 45 ADD TAIL[53]  78
+num: 46 ADD TAIL[54]  78
+num: 47 ADD TAIL[55]  78
+num 46 : GET Head[9]  63
+>>get 63
+num: 47 ADD TAIL[56]  79
+num: 48 ADD TAIL[57]  79
+num: 49 ADD TAIL[58]  79
+num 48 : GET Head[10]  63
+>>get 63
+num: 49 ADD TAIL[59]  80
+num: 50 ADD TAIL[60]  80
+num: 51 ADD TAIL[61]  80
+num 50 : GET Head[11]  64
+>>get 64
+num: 51 ADD TAIL[62]  81
+num: 52 ADD TAIL[63]  81
+num: 53 ADD TAIL[64]  81
+num 52 : GET Head[12]  64
+>>get 64
+num: 53 ADD TAIL[65]  82
+num: 54 ADD TAIL[66]  82
+num: 55 ADD TAIL[67]  82
+num 54 : GET Head[13]  64
+>>get 64
+num: 55 ADD TAIL[68]  83
+num: 56 ADD TAIL[69]  83
+num: 57 ADD TAIL[70]  83
+num 56 : GET Head[14]  65
+>>get 65
+num: 57 ADD TAIL[71]  84
+num: 58 ADD TAIL[72]  84
+num: 59 ADD TAIL[73]  84
+num 58 : GET Head[15]  65
+>>get 65
+num: 59 ADD TAIL[74]  85
+num: 60 ADD TAIL[75]  85
+num: 61 ADD TAIL[76]  85
+num 60 : GET Head[16]  65
+>>get 65
+num: 61 ADD TAIL[77]  86
+num: 62 ADD TAIL[78]  86
+num: 63 ADD TAIL[79]  86
+num 62 : GET Head[17]  66
+>>get 66
+num: 63 ADD TAIL[80]  87
+num: 64 ADD TAIL[81]  87
+num: 65 ADD TAIL[82]  87
+num 64 : GET Head[18]  66
+>>get 66
+num: 65 ADD TAIL[83]  88
+num: 66 ADD TAIL[84]  88
+num: 67 ADD TAIL[85]  88
+num 66 : GET Head[19]  66
+>>get 66
+num: 67 ADD TAIL[86]  89
+num: 68 ADD TAIL[87]  89
+num: 69 ADD TAIL[88]  89
+num 68 : GET Head[20]  67
+>>get 67
+num: 69 ADD TAIL[89]  90
+num: 70 ADD TAIL[90]  90
+num: 71 ADD TAIL[91]  90
+num 70 : GET Head[21]  67
+>>get 67
+num: 71 ADD TAIL[92]  91
+num: 72 ADD TAIL[93]  91
+num: 73 ADD TAIL[94]  91
+num 72 : GET Head[22]  67
+>>get 67
+num: 73 ADD TAIL[95]  92
+num: 74 ADD TAIL[96]  92
+num: 75 ADD TAIL[97]  92
+num 74 : GET Head[23]  68
+>>get 68
+num: 75 ADD TAIL[98]  93
+num: 76 ADD TAIL[99]  93
+num: 77 ADD TAIL[100]  93
+num 76 : GET Head[24]  68
+>>get 68
+num: 77 ADD TAIL[101]  94
+num: 78 ADD TAIL[102]  94
+num: 79 ADD TAIL[103]  94
+num 78 : GET Head[25]  68
+>>get 68
+num: 79 ADD TAIL[104]  95
+num: 80 ADD TAIL[105]  95
+num: 81 ADD TAIL[106]  95
+num 80 : GET Head[26]  69
+>>get 69
+num: 81 ADD TAIL[107]  96
+num: 82 ADD TAIL[108]  96
+num: 83 ADD TAIL[109]  96
+num 82 : GET Head[27]  69
+>>get 69
+num: 83 ADD TAIL[110]  97
+num: 84 ADD TAIL[111]  97
+num: 85 ADD TAIL[112]  97
+num 84 : GET Head[28]  69
+>>get 69
+num: 85 ADD TAIL[113]  98
+num: 86 ADD TAIL[114]  98
+num: 87 ADD TAIL[115]  98
+num 86 : GET Head[29]  70
+>>get 70
+num: 87 ADD TAIL[116]  99
+num: 88 ADD TAIL[117]  99
+num: 89 ADD TAIL[118]  99
+num 88 : GET Head[30]  70
+>>get 70
+num: 89 ADD TAIL[119]  0
+num: 90 ADD TAIL[120]  0
+num: 91 ADD TAIL[121]  0
+num 90 : GET Head[31]  70
+>>get 70
+num: 91 ADD TAIL[122]  1
+num: 92 ADD TAIL[123]  1
+num: 93 ADD TAIL[124]  1
+num 92 : GET Head[32]  71
+>>get 71
+num: 93 ADD TAIL[125]  2
+num: 94 ADD TAIL[126]  2
+num: 95 ADD TAIL[127]  2
+num 94 : GET Head[33]  71
+>>get 71
+num: 95 ADD TAIL[128]  3
+num: 96 ADD TAIL[129]  3
+num: 97 ADD TAIL[130]  3
+num 96 : GET Head[34]  71
+>>get 71
+num: 97 ADD TAIL[131]  4
+num: 98 ADD TAIL[132]  4
+num: 99 ADD TAIL[133]  4
+num 98 : GET Head[35]  72
+>>get 72
+num: 99 ADD TAIL[134]  5
+num: 100 ADD TAIL[135]  5
+num: 101 ADD TAIL[136]  5
+num 100 : GET Head[36]  72
+>>get 72
+num: 101 ADD TAIL[137]  6
+num: 102 ADD TAIL[138]  6
+num: 103 ADD TAIL[139]  6
+num 102 : GET Head[37]  72
+>>get 72
+num: 103 ADD TAIL[140]  7
+num: 104 ADD TAIL[141]  7
+num: 105 ADD TAIL[142]  7
+num 104 : GET Head[38]  73
+>>get 73
+num: 105 ADD TAIL[143]  8
+num: 106 ADD TAIL[144]  8
+num: 107 ADD TAIL[145]  8
+num 106 : GET Head[39]  73
+>>get 73
+num: 107 ADD TAIL[146]  9
+num: 108 ADD TAIL[147]  9
+num: 109 ADD TAIL[148]  9
+num 108 : GET Head[40]  73
+>>get 73
+num: 109 ADD TAIL[149]  10
+num: 110 ADD TAIL[150]  10
+num: 111 ADD TAIL[151]  10
+num 110 : GET Head[41]  74
+>>get 74
+num: 111 ADD TAIL[152]  11
+num: 112 ADD TAIL[153]  11
+num: 113 ADD TAIL[154]  11
+num 112 : GET Head[42]  74
+>>get 74
+num: 113 ADD TAIL[155]  12
+num: 114 ADD TAIL[156]  12
+num: 115 ADD TAIL[157]  12
+num 114 : GET Head[43]  74
+>>get 74
+num: 115 ADD TAIL[158]  13
+num: 116 ADD TAIL[159]  13
+num: 117 ADD TAIL[160]  13
+num 116 : GET Head[44]  75
+>>get 75
+num: 117 ADD TAIL[161]  14
+num: 118 ADD TAIL[162]  14
+num: 119 ADD TAIL[163]  14
+num 118 : GET Head[45]  75
+>>get 75
+num: 119 ADD TAIL[164]  15
+num: 120 ADD TAIL[165]  15
+num: 121 ADD TAIL[166]  15
+num 120 : GET Head[46]  75
+>>get 75
+num: 121 ADD TAIL[167]  16
+num: 122 ADD TAIL[168]  16
+num: 123 ADD TAIL[169]  16
+num 122 : GET Head[47]  76
+>>get 76
+num: 123 ADD TAIL[170]  17
+num: 124 ADD TAIL[171]  17
+num: 125 ADD TAIL[172]  17
+num 124 : GET Head[48]  76
+>>get 76
+num: 125 ADD TAIL[173]  18
+num: 126 ADD TAIL[174]  18
+num: 127 ADD TAIL[175]  18
+num 126 : GET Head[49]  76
+>>get 76
+num: 127 ADD TAIL[176]  19
+num: 128 ADD TAIL[177]  19
+num: 129 ADD TAIL[178]  19
+num 128 : GET Head[50]  77
+>>get 77
+num: 129 ADD TAIL[179]  20
+num: 130 ADD TAIL[180]  20
+num: 131 ADD TAIL[181]  20
+num 130 : GET Head[51]  77
+>>get 77
+num: 131 ADD TAIL[182]  21
+num: 132 ADD TAIL[183]  21
+num: 133 ADD TAIL[184]  21
+num 132 : GET Head[52]  77
+>>get 77
+num: 133 ADD TAIL[185]  22
+num: 134 ADD TAIL[186]  22
+num: 135 ADD TAIL[187]  22
+num 134 : GET Head[53]  78
+>>get 78
+num: 135 ADD TAIL[188]  23
+num: 136 ADD TAIL[189]  23
+num: 137 ADD TAIL[190]  23
+num 136 : GET Head[54]  78
+>>get 78
+num: 137 ADD TAIL[191]  24
+num: 138 ADD TAIL[192]  24
+num: 139 ADD TAIL[193]  24
+num 138 : GET Head[55]  78
+>>get 78
+num: 139 ADD TAIL[194]  25
+num: 140 ADD TAIL[195]  25
+num: 141 ADD TAIL[196]  25
+num 140 : GET Head[56]  79
+>>get 79
+num: 141 ADD TAIL[197]  26
+num: 142 ADD TAIL[198]  26
+num: 143 ADD TAIL[199]  26
+num 142 : GET Head[57]  79
+>>get 79
+num: 143 ADD TAIL[200]  27
+num: 144 ADD TAIL[201]  27
+num: 145 ADD TAIL[202]  27
+num 144 : GET Head[58]  79
+>>get 79
+num: 145 ADD TAIL[203]  28
+num: 146 ADD TAIL[204]  28
+num: 147 ADD TAIL[205]  28
+num 146 : GET Head[59]  80
+>>get 80
+num: 147 ADD TAIL[206]  29
+num: 148 ADD TAIL[207]  29
+num: 149 ADD TAIL[208]  29
+num 148 : GET Head[60]  80
+>>get 80
+num: 149 ADD TAIL[209]  30
+num: 150 ADD TAIL[210]  30
+num: 151 ADD TAIL[211]  30
+num 150 : GET Head[61]  80
+>>get 80
+num: 151 ADD TAIL[212]  31
+num: 152 ADD TAIL[213]  31
+num: 153 ADD TAIL[214]  31
+num 152 : GET Head[62]  81
+>>get 81
+num: 153 ADD TAIL[215]  32
+num: 154 ADD TAIL[216]  32
+num: 155 ADD TAIL[217]  32
+num 154 : GET Head[63]  81
+>>get 81
+num: 155 ADD TAIL[218]  33
+num: 156 ADD TAIL[219]  33
+num: 157 ADD TAIL[220]  33
+num 156 : GET Head[64]  81
+>>get 81
+num: 157 ADD TAIL[221]  34
+num: 158 ADD TAIL[222]  34
+num: 159 ADD TAIL[223]  34
+num 158 : GET Head[65]  82
+>>get 82
+num: 159 ADD TAIL[224]  35
+num: 160 ADD TAIL[225]  35
+num: 161 ADD TAIL[226]  35
+num 160 : GET Head[66]  82
+>>get 82
+num: 161 ADD TAIL[227]  36
+num: 162 ADD TAIL[228]  36
+num: 163 ADD TAIL[229]  36
+num 162 : GET Head[67]  82
+>>get 82
+num: 163 ADD TAIL[230]  37
+num: 164 ADD TAIL[231]  37
+num: 165 ADD TAIL[232]  37
+num 164 : GET Head[68]  83
+>>get 83
+num: 165 ADD TAIL[233]  38
+num: 166 ADD TAIL[234]  38
+num: 167 ADD TAIL[235]  38
+num 166 : GET Head[69]  83
+>>get 83
+num: 167 ADD TAIL[236]  39
+num: 168 ADD TAIL[237]  39
+num: 169 ADD TAIL[238]  39
+num 168 : GET Head[70]  83
+>>get 83
+num: 169 ADD TAIL[239]  40
+num: 170 ADD TAIL[240]  40
+num: 171 ADD TAIL[241]  40
+num 170 : GET Head[71]  84
+>>get 84
+num: 171 ADD TAIL[242]  41
+num: 172 ADD TAIL[243]  41
+num: 173 ADD TAIL[244]  41
+num 172 : GET Head[72]  84
+>>get 84
+num: 173 ADD TAIL[245]  42
+num: 174 ADD TAIL[246]  42
+num: 175 ADD TAIL[247]  42
+num 174 : GET Head[73]  84
+>>get 84
+num: 175 ADD TAIL[248]  43
+num: 176 ADD TAIL[249]  43
+num: 177 ADD TAIL[250]  43
+num 176 : GET Head[74]  85
+>>get 85
+num: 177 ADD TAIL[251]  44
+num: 178 ADD TAIL[252]  44
+num: 179 ADD TAIL[253]  44
+num 178 : GET Head[75]  85
+>>get 85
+num: 179 ADD TAIL[254]  45
+num: 180 ADD TAIL[255]  45
+num: 181 ADD TAIL[0]  45
+num 180 : GET Head[76]  85
+>>get 85
+num: 181 ADD TAIL[1]  46
+num: 182 ADD TAIL[2]  46
+num: 183 ADD TAIL[3]  46
+num 182 : GET Head[77]  86
+>>get 86
+num: 183 ADD TAIL[4]  47
+num: 184 ADD TAIL[5]  47
+num: 185 ADD TAIL[6]  47
+num 184 : GET Head[78]  86
+>>get 86
+num: 185 ADD TAIL[7]  48
+num: 186 ADD TAIL[8]  48
+num: 187 ADD TAIL[9]  48
+num 186 : GET Head[79]  86
+>>get 86
+num: 187 ADD TAIL[10]  49
+num: 188 ADD TAIL[11]  49
+num: 189 ADD TAIL[12]  49
+num 188 : GET Head[80]  87
+>>get 87
+num: 189 ADD TAIL[13]  50
+num: 190 ADD TAIL[14]  50
+num: 191 ADD TAIL[15]  50
+num 190 : GET Head[81]  87
+>>get 87
+num: 191 ADD TAIL[16]  51
+num: 192 ADD TAIL[17]  51
+num: 193 ADD TAIL[18]  51
+num 192 : GET Head[82]  87
+>>get 87
+num: 193 ADD TAIL[19]  52
+num: 194 ADD TAIL[20]  52
+num: 195 ADD TAIL[21]  52
+num 194 : GET Head[83]  88
+>>get 88
+num: 195 ADD TAIL[22]  53
+num: 196 ADD TAIL[23]  53
+num: 197 ADD TAIL[24]  53
+num 196 : GET Head[84]  88
+>>get 88
+num: 197 ADD TAIL[25]  54
+num: 198 ADD TAIL[26]  54
+num: 199 ADD TAIL[27]  54
+num 198 : GET Head[85]  88
+>>get 88
+num: 199 ADD TAIL[28]  55
+num: 200 ADD TAIL[29]  55
+num: 201 ADD TAIL[30]  55
+num 200 : GET Head[86]  89
+>>get 89
+num: 201 ADD TAIL[31]  56
+num: 202 ADD TAIL[32]  56
+num: 203 ADD TAIL[33]  56
+num 202 : GET Head[87]  89
+>>get 89
+num: 203 ADD TAIL[34]  57
+num: 204 ADD TAIL[35]  57
+num: 205 ADD TAIL[36]  57
+num 204 : GET Head[88]  89
+>>get 89
+num: 205 ADD TAIL[37]  58
+num: 206 ADD TAIL[38]  58
+num: 207 ADD TAIL[39]  58
+num 206 : GET Head[89]  90
+>>get 90
+num: 207 ADD TAIL[40]  59
+num: 208 ADD TAIL[41]  59
+num: 209 ADD TAIL[42]  59
+num 208 : GET Head[90]  90
+>>get 90
+num: 209 ADD TAIL[43]  60
+num: 210 ADD TAIL[44]  60
+num: 211 ADD TAIL[45]  60
+num 210 : GET Head[91]  90
+>>get 90
+num: 211 ADD TAIL[46]  61
+num: 212 ADD TAIL[47]  61
+num: 213 ADD TAIL[48]  61
+num 212 : GET Head[92]  91
+>>get 91
+num: 213 ADD TAIL[49]  62
+num: 214 ADD TAIL[50]  62
+num: 215 ADD TAIL[51]  62
+num 214 : GET Head[93]  91
+>>get 91
+num: 215 ADD TAIL[52]  63
+num: 216 ADD TAIL[53]  63
+num: 217 ADD TAIL[54]  63
+num 216 : GET Head[94]  91
+>>get 91
+num: 217 ADD TAIL[55]  64
+num: 218 ADD TAIL[56]  64
+num: 219 ADD TAIL[57]  64
+num 218 : GET Head[95]  92
+>>get 92
+num: 219 ADD TAIL[58]  65
+num: 220 ADD TAIL[59]  65
+num: 221 ADD TAIL[60]  65
+num 220 : GET Head[96]  92
+>>get 92
+num: 221 ADD TAIL[61]  66
+num: 222 ADD TAIL[62]  66
+num: 223 ADD TAIL[63]  66
+num 222 : GET Head[97]  92
+>>get 92
+num: 223 ADD TAIL[64]  67
+num: 224 ADD TAIL[65]  67
+num: 225 ADD TAIL[66]  67
+num 224 : GET Head[98]  93
+>>get 93
+num: 225 ADD TAIL[67]  68
+num: 226 ADD TAIL[68]  68
+num: 227 ADD TAIL[69]  68
+num 226 : GET Head[99]  93
+>>get 93
+num: 227 ADD TAIL[70]  69
+num: 228 ADD TAIL[71]  69
+num: 229 ADD TAIL[72]  69
+num 228 : GET Head[100]  93
+>>get 93
+num: 229 ADD TAIL[73]  70
+num: 230 ADD TAIL[74]  70
+num: 231 ADD TAIL[75]  70
+num 230 : GET Head[101]  94
+>>get 94
+num: 231 ADD TAIL[76]  71
+num: 232 ADD TAIL[77]  71
+num: 233 ADD TAIL[78]  71
+num 232 : GET Head[102]  94
+>>get 94
+num: 233 ADD TAIL[79]  72
+num: 234 ADD TAIL[80]  72
+num: 235 ADD TAIL[81]  72
+num 234 : GET Head[103]  94
+>>get 94
+num: 235 ADD TAIL[82]  73
+num: 236 ADD TAIL[83]  73
+num: 237 ADD TAIL[84]  73
+num 236 : GET Head[104]  95
+>>get 95
+num: 237 ADD TAIL[85]  74
+num: 238 ADD TAIL[86]  74
+num: 239 ADD TAIL[87]  74
+num 238 : GET Head[105]  95
+>>get 95
+num: 239 ADD TAIL[88]  75
+num: 240 ADD TAIL[89]  75
+num: 241 ADD TAIL[90]  75
+num 240 : GET Head[106]  95
+>>get 95
+num: 241 ADD TAIL[91]  76
+num: 242 ADD TAIL[92]  76
+num: 243 ADD TAIL[93]  76
+num 242 : GET Head[107]  96
+>>get 96
+num: 243 ADD TAIL[94]  77
+num: 244 ADD TAIL[95]  77
+num: 245 ADD TAIL[96]  77
+num 244 : GET Head[108]  96
+>>get 96
+num: 245 ADD TAIL[97]  78
+num: 246 ADD TAIL[98]  78
+num: 247 ADD TAIL[99]  78
+num 246 : GET Head[109]  96
+>>get 96
+num: 247 ADD TAIL[100]  79
+num: 248 ADD TAIL[101]  79
+num: 249 ADD TAIL[102]  79
+num 248 : GET Head[110]  97
+>>get 97
+num: 249 ADD TAIL[103]  80
+num: 250 ADD TAIL[104]  80
+num: 251 ADD TAIL[105]  80
+num 250 : GET Head[111]  97
+>>get 97
+num: 251 ADD TAIL[106]  81
+num: 252 ADD TAIL[107]  81
+num: 253 ADD TAIL[108]  81
+num 252 : GET Head[112]  97
+>>get 97
+num: 253 ADD TAIL[109]  82
+num: 254 ADD TAIL[110]  82
+num: 255 ADD TAIL[111]  82
+num 254 : GET Head[113]  98
+>>get 98
+num: 255 ADD TAIL[112]  83
+num: 256 ADD TAIL[113]  83
+num 255 : GET Head[114]  98
+>>get 98
+num: 256 ADD TAIL[114]  84
+num 255 : GET Head[115]  98
+>>get 98
+num: 256 ADD TAIL[115]  85
+num 255 : GET Head[116]  99
+>>get 99
+num: 256 ADD TAIL[116]  86
+num 255 : GET Head[117]  99
+>>get 99
+num: 256 ADD TAIL[117]  87
+num 255 : GET Head[118]  99
+>>get 99
+num: 256 ADD TAIL[118]  88
+num 255 : GET Head[119]  0
+>>get 0
+num: 256 ADD TAIL[119]  89
+num 255 : GET Head[120]  0
+>>get 0
+num: 256 ADD TAIL[120]  90
+num 255 : GET Head[121]  0
+>>get 0
+num: 256 ADD TAIL[121]  91
+num 255 : GET Head[122]  1
+>>get 1
+num: 256 ADD TAIL[122]  92
+num 255 : GET Head[123]  1
+>>get 1
+num: 256 ADD TAIL[123]  93
+num 255 : GET Head[124]  1
+>>get 1
+num: 256 ADD TAIL[124]  94
+num 255 : GET Head[125]  2
+>>get 2
+num: 256 ADD TAIL[125]  95
+num 255 : GET Head[126]  2
+>>get 2
+num: 256 ADD TAIL[126]  96
+num 255 : GET Head[127]  2
+>>get 2
+num: 256 ADD TAIL[127]  97
+num 255 : GET Head[128]  3
+>>get 3
+num: 256 ADD TAIL[128]  98
+num 255 : GET Head[129]  3
+>>get 3
+num: 256 ADD TAIL[129]  99
+num 255 : GET Head[130]  3
+>>get 3
+num: 256 ADD TAIL[130]  0
+num 255 : GET Head[131]  4
+>>get 4
+num: 256 ADD TAIL[131]  1
+num 255 : GET Head[132]  4
+>>get 4
+num: 256 ADD TAIL[132]  2
+num 255 : GET Head[133]  4
+>>get 4
+num: 256 ADD TAIL[133]  3
+num 255 : GET Head[134]  5
+>>get 5
+num: 256 ADD TAIL[134]  4
+num 255 : GET Head[135]  5
+>>get 5
+num: 256 ADD TAIL[135]  5
+num 255 : GET Head[136]  5
+>>get 5
+num: 256 ADD TAIL[136]  6
+num 255 : GET Head[137]  6
+>>get 6
+num: 256 ADD TAIL[137]  7
+num 255 : GET Head[138]  6
+>>get 6
+num: 256 ADD TAIL[138]  8
+num 255 : GET Head[139]  6
+>>get 6
+num: 256 ADD TAIL[139]  9
+num 255 : GET Head[140]  7
+>>get 7
+num: 256 ADD TAIL[140]  10
+num 255 : GET Head[141]  7
+>>get 7
+num: 256 ADD TAIL[141]  11
+num 255 : GET Head[142]  7
+>>get 7
+num: 256 ADD TAIL[142]  12
+num 255 : GET Head[143]  8
+>>get 8
+num: 256 ADD TAIL[143]  13
+num 255 : GET Head[144]  8
+>>get 8
+num: 256 ADD TAIL[144]  14
+num 255 : GET Head[145]  8
+>>get 8
+num: 256 ADD TAIL[145]  15
+num 255 : GET Head[146]  9
+>>get 9
+num: 256 ADD TAIL[146]  16
+num 255 : GET Head[147]  9
+>>get 9
+num: 256 ADD TAIL[147]  17
+num 255 : GET Head[148]  9
+>>get 9
+num: 256 ADD TAIL[148]  18
+num 255 : GET Head[149]  10
+>>get 10
+num: 256 ADD TAIL[149]  19
+num 255 : GET Head[150]  10
+>>get 10
+num: 256 ADD TAIL[150]  20
+num 255 : GET Head[151]  10
+>>get 10
+num: 256 ADD TAIL[151]  21
+num 255 : GET Head[152]  11
+>>get 11
+num: 256 ADD TAIL[152]  22
+num 255 : GET Head[153]  11
+>>get 11
+num: 256 ADD TAIL[153]  23
+num 255 : GET Head[154]  11
+>>get 11
+num: 256 ADD TAIL[154]  24
+num 255 : GET Head[155]  12
+>>get 12
+num: 256 ADD TAIL[155]  25
+num 255 : GET Head[156]  12
+>>get 12
+num: 256 ADD TAIL[156]  26
+num 255 : GET Head[157]  12
+>>get 12
+num: 256 ADD TAIL[157]  27
+num 255 : GET Head[158]  13
+>>get 13
+num: 256 ADD TAIL[158]  28
+num 255 : GET Head[159]  13
+>>get 13
+num: 256 ADD TAIL[159]  29
+num 255 : GET Head[160]  13
+>>get 13
+num: 256 ADD TAIL[160]  30
+num 255 : GET Head[161]  14
+>>get 14
+num: 256 ADD TAIL[161]  31
+num 255 : GET Head[162]  14
+>>get 14
+num: 256 ADD TAIL[162]  32
+num 255 : GET Head[163]  14
+>>get 14
+num: 256 ADD TAIL[163]  33
+num 255 : GET Head[164]  15
+>>get 15
+num: 256 ADD TAIL[164]  34
+num 255 : GET Head[165]  15
+>>get 15
+num: 256 ADD TAIL[165]  35
+num 255 : GET Head[166]  15
+>>get 15
+num: 256 ADD TAIL[166]  36
+num 255 : GET Head[167]  16
+>>get 16
+num: 256 ADD TAIL[167]  37
+num 255 : GET Head[168]  16
+>>get 16
+num: 256 ADD TAIL[168]  38
+num 255 : GET Head[169]  16
+>>get 16
+num: 256 ADD TAIL[169]  39
+num 255 : GET Head[170]  17
+>>get 17
+num: 256 ADD TAIL[170]  40
+num 255 : GET Head[171]  17
+>>get 17
+num: 256 ADD TAIL[171]  41
+num 255 : GET Head[172]  17
+>>get 17
+num: 256 ADD TAIL[172]  42
+num 255 : GET Head[173]  18
+>>get 18
+num: 256 ADD TAIL[173]  43
+num 255 : GET Head[174]  18
+>>get 18
+num: 256 ADD TAIL[174]  44
+num 255 : GET Head[175]  18
+>>get 18
+num: 256 ADD TAIL[175]  45
+num 255 : GET Head[176]  19
+>>get 19
+num: 256 ADD TAIL[176]  46
+num 255 : GET Head[177]  19
+>>get 19
+num: 256 ADD TAIL[177]  47
+num 255 : GET Head[178]  19
+>>get 19
+num: 256 ADD TAIL[178]  48
+num 255 : GET Head[179]  20
+>>get 20
+num: 256 ADD TAIL[179]  49
+num 255 : GET Head[180]  20
+>>get 20
+num: 256 ADD TAIL[180]  50
+num 255 : GET Head[181]  20
+>>get 20
+num: 256 ADD TAIL[181]  51
+num 255 : GET Head[182]  21
+>>get 21
+num: 256 ADD TAIL[182]  52
+num 255 : GET Head[183]  21
+>>get 21
+num: 256 ADD TAIL[183]  53
+num 255 : GET Head[184]  21
+>>get 21
+num: 256 ADD TAIL[184]  54
+num 255 : GET Head[185]  22
+>>get 22
+num: 256 ADD TAIL[185]  55
+num 255 : GET Head[186]  22
+>>get 22
+num: 256 ADD TAIL[186]  56
+num 255 : GET Head[187]  22
+>>get 22
+num: 256 ADD TAIL[187]  57
+num 255 : GET Head[188]  23
+>>get 23
+num: 256 ADD TAIL[188]  58
+num 255 : GET Head[189]  23
+>>get 23
+num: 256 ADD TAIL[189]  59
+num 255 : GET Head[190]  23
+>>get 23
+num: 256 ADD TAIL[190]  60
+num 255 : GET Head[191]  24
+>>get 24
+num: 256 ADD TAIL[191]  61
+num 255 : GET Head[192]  24
+>>get 24
+num: 256 ADD TAIL[192]  62
+num 255 : GET Head[193]  24
+>>get 24
+num: 256 ADD TAIL[193]  63
+num 255 : GET Head[194]  25
+>>get 25
+num: 256 ADD TAIL[194]  64
+num 255 : GET Head[195]  25
+>>get 25
+num: 256 ADD TAIL[195]  65
+num 255 : GET Head[196]  25
+>>get 25
+num: 256 ADD TAIL[196]  66
+num 255 : GET Head[197]  26
+>>get 26
+num: 256 ADD TAIL[197]  67
+num 255 : GET Head[198]  26
+>>get 26
+num: 256 ADD TAIL[198]  68
+num 255 : GET Head[199]  26
+>>get 26
+num: 256 ADD TAIL[199]  69
+num 255 : GET Head[200]  27
+>>get 27
+num: 256 ADD TAIL[200]  70
+num 255 : GET Head[201]  27
+>>get 27
+num: 256 ADD TAIL[201]  71
+num 255 : GET Head[202]  27
+>>get 27
+num: 256 ADD TAIL[202]  72
+num 255 : GET Head[203]  28
+>>get 28
+num: 256 ADD TAIL[203]  73
+num 255 : GET Head[204]  28
+>>get 28
+num: 256 ADD TAIL[204]  74
+num 255 : GET Head[205]  28
+>>get 28
+num: 256 ADD TAIL[205]  75
+num 255 : GET Head[206]  29
+>>get 29
+num: 256 ADD TAIL[206]  76
+num 255 : GET Head[207]  29
+>>get 29
+num: 256 ADD TAIL[207]  77
+num 255 : GET Head[208]  29
+>>get 29
+num: 256 ADD TAIL[208]  78
+num 255 : GET Head[209]  30
+>>get 30
+num: 256 ADD TAIL[209]  79
+num 255 : GET Head[210]  30
+>>get 30
+num: 256 ADD TAIL[210]  80
+num 255 : GET Head[211]  30
+>>get 30
+num: 256 ADD TAIL[211]  81
+num 255 : GET Head[212]  31
+>>get 31
+num: 256 ADD TAIL[212]  82
+num 255 : GET Head[213]  31
+>>get 31
+num: 256 ADD TAIL[213]  83
+num 255 : GET Head[214]  31
+>>get 31
+num: 256 ADD TAIL[214]  84
+num 255 : GET Head[215]  32
+>>get 32
+num: 256 ADD TAIL[215]  85
+num 255 : GET Head[216]  32
+>>get 32
+num: 256 ADD TAIL[216]  86
+num 255 : GET Head[217]  32
+>>get 32
+num: 256 ADD TAIL[217]  87
+num 255 : GET Head[218]  33
+>>get 33
+num: 256 ADD TAIL[218]  88
+num 255 : GET Head[219]  33
+>>get 33
+num: 256 ADD TAIL[219]  89
+num 255 : GET Head[220]  33
+>>get 33
+num: 256 ADD TAIL[220]  90
+num 255 : GET Head[221]  34
+>>get 34
+num: 256 ADD TAIL[221]  91
+num 255 : GET Head[222]  34
+>>get 34
+num: 256 ADD TAIL[222]  92
+num 255 : GET Head[223]  34
+>>get 34
+num: 256 ADD TAIL[223]  93
+num 255 : GET Head[224]  35
+>>get 35
+num: 256 ADD TAIL[224]  94
+num 255 : GET Head[225]  35
+>>get 35
+num: 256 ADD TAIL[225]  95
+num 255 : GET Head[226]  35
+>>get 35
+num: 256 ADD TAIL[226]  96
+num 255 : GET Head[227]  36
+>>get 36
+num: 256 ADD TAIL[227]  97
+num 255 : GET Head[228]  36
+>>get 36
+num: 256 ADD TAIL[228]  98
+num 255 : GET Head[229]  36
+>>get 36
+num: 256 ADD TAIL[229]  99
+num 255 : GET Head[230]  37
+>>get 37
+num: 256 ADD TAIL[230]  0
+num 255 : GET Head[231]  37
+>>get 37
+num: 256 ADD TAIL[231]  1
+num 255 : GET Head[232]  37
+>>get 37
+num: 256 ADD TAIL[232]  2
+num 255 : GET Head[233]  38
+>>get 38
+num: 256 ADD TAIL[233]  3
+num 255 : GET Head[234]  38
+>>get 38
+num: 256 ADD TAIL[234]  4
+num 255 : GET Head[235]  38
+>>get 38
+num: 256 ADD TAIL[235]  5
+num 255 : GET Head[236]  39
+>>get 39
+num: 256 ADD TAIL[236]  6
+num 255 : GET Head[237]  39
+>>get 39
+num: 256 ADD TAIL[237]  7
+num 255 : GET Head[238]  39
+>>get 39
+num: 256 ADD TAIL[238]  8
+num 255 : GET Head[239]  40
+>>get 40
+num: 256 ADD TAIL[239]  9
+num 255 : GET Head[240]  40
+>>get 40
+num: 256 ADD TAIL[240]  10
+num 255 : GET Head[241]  40
+>>get 40
+num: 256 ADD TAIL[241]  11
+num 255 : GET Head[242]  41
+>>get 41
+num: 256 ADD TAIL[242]  12
+num 255 : GET Head[243]  41
+>>get 41
+num: 256 ADD TAIL[243]  13
+num 255 : GET Head[244]  41
+>>get 41
+num: 256 ADD TAIL[244]  14
+num 255 : GET Head[245]  42
+>>get 42
+num: 256 ADD TAIL[245]  15
+num 255 : GET Head[246]  42
+>>get 42
+num: 256 ADD TAIL[246]  16
+num 255 : GET Head[247]  42
+>>get 42
+num: 256 ADD TAIL[247]  17
+num 255 : GET Head[248]  43
+>>get 43
+num: 256 ADD TAIL[248]  18
+num 255 : GET Head[249]  43
+>>get 43
+num: 256 ADD TAIL[249]  19
+num 255 : GET Head[250]  43
+>>get 43
+num: 256 ADD TAIL[250]  20
+num 255 : GET Head[251]  44
+>>get 44
+num: 256 ADD TAIL[251]  21
+num 255 : GET Head[252]  44
+>>get 44
+num: 256 ADD TAIL[252]  22
+num 255 : GET Head[253]  44
+>>get 44
+num: 256 ADD TAIL[253]  23
+num 255 : GET Head[254]  45
+>>get 45
+num: 256 ADD TAIL[254]  24
+num 255 : GET Head[255]  45
+>>get 45
+num: 256 ADD TAIL[255]  25
+num 255 : GET Head[0]  45
+>>get 45
+num: 256 ADD TAIL[0]  26
+num 255 : GET Head[1]  46
+>>get 46
+num: 256 ADD TAIL[1]  27
+num 255 : GET Head[2]  46
+>>get 46
+num: 256 ADD TAIL[2]  28
+num 255 : GET Head[3]  46
+>>get 46
+num: 256 ADD TAIL[3]  29
+num 255 : GET Head[4]  47
+>>get 47
+num: 256 ADD TAIL[4]  30
+num 255 : GET Head[5]  47
+>>get 47
+num: 256 ADD TAIL[5]  31
+num 255 : GET Head[6]  47
+>>get 47
+num: 256 ADD TAIL[6]  32
+num 255 : GET Head[7]  48
+>>get 48
+num: 256 ADD TAIL[7]  33
+num 255 : GET Head[8]  48
+>>get 48
+num: 256 ADD TAIL[8]  34
+num 255 : GET Head[9]  48
+>>get 48
+num: 256 ADD TAIL[9]  35
+num 255 : GET Head[10]  49
+>>get 49
+num: 256 ADD TAIL[10]  36
+num 255 : GET Head[11]  49
+>>get 49
+num: 256 ADD TAIL[11]  37
+num 255 : GET Head[12]  49
+>>get 49
+num: 256 ADD TAIL[12]  38
+num 255 : GET Head[13]  50
+>>get 50
+num: 256 ADD TAIL[13]  39
+num 255 : GET Head[14]  50
+>>get 50
+num: 256 ADD TAIL[14]  40
+num 255 : GET Head[15]  50
+>>get 50
+num: 256 ADD TAIL[15]  41
+num 255 : GET Head[16]  51
+>>get 51
+num: 256 ADD TAIL[16]  42
+num 255 : GET Head[17]  51
+>>get 51
+num: 256 ADD TAIL[17]  43
+num 255 : GET Head[18]  51
+>>get 51
+num: 256 ADD TAIL[18]  44
+num 255 : GET Head[19]  52
+>>get 52
+num: 256 ADD TAIL[19]  45
+num 255 : GET Head[20]  52
+>>get 52
+num: 256 ADD TAIL[20]  46
+num 255 : GET Head[21]  52
+>>get 52
+num: 256 ADD TAIL[21]  47
+num 255 : GET Head[22]  53
+>>get 53
+num: 256 ADD TAIL[22]  48
+num 255 : GET Head[23]  53
+>>get 53
+num: 256 ADD TAIL[23]  49
+num 255 : GET Head[24]  53
+>>get 53
+num: 256 ADD TAIL[24]  50
+num 255 : GET Head[25]  54
+>>get 54
+num: 256 ADD TAIL[25]  51
+num 255 : GET Head[26]  54
+>>get 54
+num: 256 ADD TAIL[26]  52
+num 255 : GET Head[27]  54
+>>get 54
+num: 256 ADD TAIL[27]  53
+num 255 : GET Head[28]  55
+>>get 55
+num: 256 ADD TAIL[28]  54
+num 255 : GET Head[29]  55
+>>get 55
+num: 256 ADD TAIL[29]  55
+num 255 : GET Head[30]  55
+>>get 55
+num: 256 ADD TAIL[30]  56
+num 255 : GET Head[31]  56
+>>get 56
+num: 256 ADD TAIL[31]  57
+num 255 : GET Head[32]  56
+>>get 56
+num: 256 ADD TAIL[32]  58
+num 255 : GET Head[33]  56
+>>get 56
+num: 256 ADD TAIL[33]  59
+num 255 : GET Head[34]  57
+>>get 57
+num: 256 ADD TAIL[34]  60
+num 255 : GET Head[35]  57
+>>get 57
+num: 256 ADD TAIL[35]  61
+num 255 : GET Head[36]  57
+>>get 57
+num: 256 ADD TAIL[36]  62
+num 255 : GET Head[37]  58
+>>get 58
+num: 256 ADD TAIL[37]  63
+num 255 : GET Head[38]  58
+>>get 58
+num: 256 ADD TAIL[38]  64
+num 255 : GET Head[39]  58
+>>get 58
+num: 256 ADD TAIL[39]  65
+num 255 : GET Head[40]  59
+>>get 59
+num: 256 ADD TAIL[40]  66
+num 255 : GET Head[41]  59
+>>get 59
+num: 256 ADD TAIL[41]  67
+num 255 : GET Head[42]  59
+>>get 59
+num: 256 ADD TAIL[42]  68
+num 255 : GET Head[43]  60
+>>get 60
+num: 256 ADD TAIL[43]  69
+num 255 : GET Head[44]  60
+>>get 60
+num: 256 ADD TAIL[44]  70
+num 255 : GET Head[45]  60
+>>get 60
+num: 256 ADD TAIL[45]  71
+num 255 : GET Head[46]  61
+>>get 61
+num: 256 ADD TAIL[46]  72
+num 255 : GET Head[47]  61
+>>get 61
+num: 256 ADD TAIL[47]  73
+num 255 : GET Head[48]  61
+>>get 61
+num: 256 ADD TAIL[48]  74
+num 255 : GET Head[49]  62
+>>get 62
+num: 256 ADD TAIL[49]  75
+num 255 : GET Head[50]  62
+>>get 62
+num: 256 ADD TAIL[50]  76
+num 255 : GET Head[51]  62
+>>get 62
+num: 256 ADD TAIL[51]  77
+num 255 : GET Head[52]  63
+>>get 63
+num: 256 ADD TAIL[52]  78
+num 255 : GET Head[53]  63
+>>get 63
+num: 256 ADD TAIL[53]  79
+num 255 : GET Head[54]  63
+>>get 63
+num: 256 ADD TAIL[54]  80
+num 255 : GET Head[55]  64
+>>get 64
+num: 256 ADD TAIL[55]  81
+num 255 : GET Head[56]  64
+>>get 64
+num: 256 ADD TAIL[56]  82
+num 255 : GET Head[57]  64
+>>get 64
+num: 256 ADD TAIL[57]  83
+num 255 : GET Head[58]  65
+>>get 65
+num: 256 ADD TAIL[58]  84
+num 255 : GET Head[59]  65
+>>get 65
+num: 256 ADD TAIL[59]  85
+num 255 : GET Head[60]  65
+>>get 65
+num: 256 ADD TAIL[60]  86
+num 255 : GET Head[61]  66
+>>get 66
+num: 256 ADD TAIL[61]  87
+num 255 : GET Head[62]  66
+>>get 66
+num: 256 ADD TAIL[62]  88
+num 255 : GET Head[63]  66
+>>get 66
+num: 256 ADD TAIL[63]  89
+num 255 : GET Head[64]  67
+>>get 67
+num: 256 ADD TAIL[64]  90
+num 255 : GET Head[65]  67
+>>get 67
+num: 256 ADD TAIL[65]  91
+num 255 : GET Head[66]  67
+>>get 67
+num: 256 ADD TAIL[66]  92
+num 255 : GET Head[67]  68
+>>get 68
+num: 256 ADD TAIL[67]  93
+num 255 : GET Head[68]  68
+>>get 68
+num: 256 ADD TAIL[68]  94
+num 255 : GET Head[69]  68
+>>get 68
+num: 256 ADD TAIL[69]  95
+num 255 : GET Head[70]  69
+>>get 69
+num: 256 ADD TAIL[70]  96
+num 255 : GET Head[71]  69
+>>get 69
+num: 256 ADD TAIL[71]  97
+num 255 : GET Head[72]  69
+>>get 69
+num: 256 ADD TAIL[72]  98
+num 255 : GET Head[73]  70
+>>get 70
+num: 256 ADD TAIL[73]  99
+num 255 : GET Head[74]  70
+>>get 70
+num: 256 ADD TAIL[74]  0
+num 255 : GET Head[75]  70
+>>get 70
+num: 256 ADD TAIL[75]  1
+num 255 : GET Head[76]  71
+>>get 71
+num: 256 ADD TAIL[76]  2
+num 255 : GET Head[77]  71
+>>get 71
+num: 256 ADD TAIL[77]  3
+num 255 : GET Head[78]  71
+>>get 71
+num: 256 ADD TAIL[78]  4
+num 255 : GET Head[79]  72
+>>get 72
+num: 256 ADD TAIL[79]  5
+num 255 : GET Head[80]  72
+>>get 72
+num: 256 ADD TAIL[80]  6
+num 255 : GET Head[81]  72
+>>get 72
+num: 256 ADD TAIL[81]  7
+num 255 : GET Head[82]  73
+>>get 73
+num: 256 ADD TAIL[82]  8
+num 255 : GET Head[83]  73
+>>get 73
+num: 256 ADD TAIL[83]  9
+num 255 : GET Head[84]  73
+>>get 73
+num: 256 ADD TAIL[84]  10
+num 255 : GET Head[85]  74
+>>get 74
+num: 256 ADD TAIL[85]  11
+num 255 : GET Head[86]  74
+>>get 74
+num: 256 ADD TAIL[86]  12
+num 255 : GET Head[87]  74
+>>get 74
+num: 256 ADD TAIL[87]  13
+num 255 : GET Head[88]  75
+>>get 75
+num: 256 ADD TAIL[88]  14
+num 255 : GET Head[89]  75
+>>get 75
+num: 256 ADD TAIL[89]  15
+num 255 : GET Head[90]  75
+>>get 75
+num: 256 ADD TAIL[90]  16
+num 255 : GET Head[91]  76
+>>get 76
+num: 256 ADD TAIL[91]  17
+num 255 : GET Head[92]  76
+>>get 76
+num: 256 ADD TAIL[92]  18
+num 255 : GET Head[93]  76
+>>get 76
+num: 256 ADD TAIL[93]  19
+num 255 : GET Head[94]  77
+>>get 77
+num: 256 ADD TAIL[94]  20
+num 255 : GET Head[95]  77
+>>get 77
+num: 256 ADD TAIL[95]  21
+num 255 : GET Head[96]  77
+>>get 77
+num: 256 ADD TAIL[96]  22
+num 255 : GET Head[97]  78
+>>get 78
+num: 256 ADD TAIL[97]  23
+num 255 : GET Head[98]  78
+>>get 78
+num: 256 ADD TAIL[98]  24
+num 255 : GET Head[99]  78
+>>get 78
+num: 256 ADD TAIL[99]  25
+num 255 : GET Head[100]  79
+>>get 79
+num: 256 ADD TAIL[100]  26
+num 255 : GET Head[101]  79
+>>get 79
+num: 256 ADD TAIL[101]  27
+num 255 : GET Head[102]  79
+>>get 79
+num: 256 ADD TAIL[102]  28
+num 255 : GET Head[103]  80
+>>get 80
+num: 256 ADD TAIL[103]  29
+num 255 : GET Head[104]  80
+>>get 80
+num: 256 ADD TAIL[104]  30
+num 255 : GET Head[105]  80
+>>get 80
+num: 256 ADD TAIL[105]  31
+num 255 : GET Head[106]  81
+>>get 81
+num: 256 ADD TAIL[106]  32
+num 255 : GET Head[107]  81
+>>get 81
+num: 256 ADD TAIL[107]  33
+num 255 : GET Head[108]  81
+>>get 81
+num: 256 ADD TAIL[108]  34
+num 255 : GET Head[109]  82
+>>get 82
+num: 256 ADD TAIL[109]  35
+num 255 : GET Head[110]  82
+>>get 82
+num: 256 ADD TAIL[110]  36
+num 255 : GET Head[111]  82
+>>get 82
+num: 256 ADD TAIL[111]  37
+num 255 : GET Head[112]  83
+>>get 83
+num: 256 ADD TAIL[112]  38
+num 255 : GET Head[113]  83
+>>get 83
+num: 256 ADD TAIL[113]  39
+num 255 : GET Head[114]  84
+>>get 84
+num: 256 ADD TAIL[114]  40
+num 255 : GET Head[115]  85
+>>get 85
+num: 256 ADD TAIL[115]  41
+num 255 : GET Head[116]  86
+>>get 86
+num: 256 ADD TAIL[116]  42
+num 255 : GET Head[117]  87
+>>get 87
+num: 256 ADD TAIL[117]  43
+num 255 : GET Head[118]  88
+>>get 88
+num: 256 ADD TAIL[118]  44
+num 255 : GET Head[119]  89
+>>get 89
+num: 256 ADD TAIL[119]  45
+num 255 : GET Head[120]  90
+>>get 90
+num: 256 ADD TAIL[120]  46
+num 255 : GET Head[121]  91
+>>get 91
+num: 256 ADD TAIL[121]  47
+num 255 : GET Head[122]  92
+>>get 92
+num: 256 ADD TAIL[122]  48
+num 255 : GET Head[123]  93
+>>get 93
+num: 256 ADD TAIL[123]  49
+num 255 : GET Head[124]  94
+>>get 94
+num: 256 ADD TAIL[124]  50
+num 255 : GET Head[125]  95
+>>get 95
+num: 256 ADD TAIL[125]  51
+num 255 : GET Head[126]  96
+>>get 96
+num: 256 ADD TAIL[126]  52
+num 255 : GET Head[127]  97
+>>get 97
+num: 256 ADD TAIL[127]  53
+num 255 : GET Head[128]  98
+>>get 98
+num: 256 ADD TAIL[128]  54
+num 255 : GET Head[129]  99
+>>get 99
+num: 256 ADD TAIL[129]  55
+num 255 : GET Head[130]  0
+>>get 0
+num: 256 ADD TAIL[130]  56
+num 255 : GET Head[131]  1
+>>get 1
+num: 256 ADD TAIL[131]  57
+num 255 : GET Head[132]  2
+>>get 2
+num: 256 ADD TAIL[132]  58
+num 255 : GET Head[133]  3
+>>get 3
+num: 256 ADD TAIL[133]  59
+num 255 : GET Head[134]  4
+>>get 4
+num: 256 ADD TAIL[134]  60
+num 255 : GET Head[135]  5
+>>get 5
+num: 256 ADD TAIL[135]  61
+num 255 : GET Head[136]  6
+>>get 6
+num: 256 ADD TAIL[136]  62
+num 255 : GET Head[137]  7
+>>get 7
+num: 256 ADD TAIL[137]  63
+num 255 : GET Head[138]  8
+>>get 8
+num: 256 ADD TAIL[138]  64
+num 255 : GET Head[139]  9
+>>get 9
+num: 256 ADD TAIL[139]  65
+num 255 : GET Head[140]  10
+>>get 10
+num: 256 ADD TAIL[140]  66
+num 255 : GET Head[141]  11
+>>get 11
+num: 256 ADD TAIL[141]  67
+num 255 : GET Head[142]  12
+>>get 12
+num: 256 ADD TAIL[142]  68
+num 255 : GET Head[143]  13
+>>get 13
+num: 256 ADD TAIL[143]  69
+num 255 : GET Head[144]  14
+>>get 14
+num: 256 ADD TAIL[144]  70
+num 255 : GET Head[145]  15
+>>get 15
+num: 256 ADD TAIL[145]  71
+num 255 : GET Head[146]  16
+>>get 16
+num: 256 ADD TAIL[146]  72
+num 255 : GET Head[147]  17
+>>get 17
+num: 256 ADD TAIL[147]  73
+num 255 : GET Head[148]  18
+>>get 18
+num: 256 ADD TAIL[148]  74
+num 255 : GET Head[149]  19
+>>get 19
+num: 256 ADD TAIL[149]  75
+num 255 : GET Head[150]  20
+>>get 20
+num: 256 ADD TAIL[150]  76
+num 255 : GET Head[151]  21
+>>get 21
+num: 256 ADD TAIL[151]  77
+num 255 : GET Head[152]  22
+>>get 22
+num: 256 ADD TAIL[152]  78
+num 255 : GET Head[153]  23
+>>get 23
+num: 256 ADD TAIL[153]  79
+num 255 : GET Head[154]  24
+>>get 24
+num: 256 ADD TAIL[154]  80
+num 255 : GET Head[155]  25
+>>get 25
+num: 256 ADD TAIL[155]  81
+num 255 : GET Head[156]  26
+>>get 26
+num: 256 ADD TAIL[156]  82
+num 255 : GET Head[157]  27
+>>get 27
+num: 256 ADD TAIL[157]  83
+num 255 : GET Head[158]  28
+>>get 28
+num: 256 ADD TAIL[158]  84
+num 255 : GET Head[159]  29
+>>get 29
+num: 256 ADD TAIL[159]  85
+num 255 : GET Head[160]  30
+>>get 30
+num: 256 ADD TAIL[160]  86
+num 255 : GET Head[161]  31
+>>get 31
+num: 256 ADD TAIL[161]  87
+num 255 : GET Head[162]  32
+>>get 32
+num: 256 ADD TAIL[162]  88
+num 255 : GET Head[163]  33
+>>get 33
+num: 256 ADD TAIL[163]  89
+num 255 : GET Head[164]  34
+>>get 34
+num: 256 ADD TAIL[164]  90
+num 255 : GET Head[165]  35
+>>get 35
+num: 256 ADD TAIL[165]  91
+num 255 : GET Head[166]  36
+>>get 36
+num: 256 ADD TAIL[166]  92
+num 255 : GET Head[167]  37
+>>get 37
+num: 256 ADD TAIL[167]  93
+num 255 : GET Head[168]  38
+>>get 38
+num: 256 ADD TAIL[168]  94
+num 255 : GET Head[169]  39
+>>get 39
+num: 256 ADD TAIL[169]  95
+num 255 : GET Head[170]  40
+>>get 40
+num: 256 ADD TAIL[170]  96
+num 255 : GET Head[171]  41
+>>get 41
+num: 256 ADD TAIL[171]  97
+num 255 : GET Head[172]  42
+>>get 42
+num: 256 ADD TAIL[172]  98
+num 255 : GET Head[173]  43
+>>get 43
+num: 256 ADD TAIL[173]  99
+num 255 : GET Head[174]  44
+>>get 44
+num: 256 ADD TAIL[174]  0
+num 255 : GET Head[175]  45
+>>get 45
+num: 256 ADD TAIL[175]  1
+num 255 : GET Head[176]  46
+>>get 46
+num: 256 ADD TAIL[176]  2
+num 255 : GET Head[177]  47
+>>get 47
+num: 256 ADD TAIL[177]  3
+num 255 : GET Head[178]  48
+>>get 48
+num: 256 ADD TAIL[178]  4
+num 255 : GET Head[179]  49
+>>get 49
+num: 256 ADD TAIL[179]  5
+num 255 : GET Head[180]  50
+>>get 50
+num: 256 ADD TAIL[180]  6
+num 255 : GET Head[181]  51
+>>get 51
+num: 256 ADD TAIL[181]  7
+num 255 : GET Head[182]  52
+>>get 52
+num: 256 ADD TAIL[182]  8
+num 255 : GET Head[183]  53
+>>get 53
+num: 256 ADD TAIL[183]  9
+num 255 : GET Head[184]  54
+>>get 54
+num: 256 ADD TAIL[184]  10
+num 255 : GET Head[185]  55
+>>get 55
+num: 256 ADD TAIL[185]  11
+num 255 : GET Head[186]  56
+>>get 56
+num: 256 ADD TAIL[186]  12
+num 255 : GET Head[187]  57
+>>get 57
+num: 256 ADD TAIL[187]  13
+num 255 : GET Head[188]  58
+>>get 58
+num: 256 ADD TAIL[188]  14
+num 255 : GET Head[189]  59
+>>get 59
+num: 256 ADD TAIL[189]  15
+num 255 : GET Head[190]  60
+>>get 60
+num: 256 ADD TAIL[190]  16
+num 255 : GET Head[191]  61
+>>get 61
+num: 256 ADD TAIL[191]  17
+num 255 : GET Head[192]  62
+>>get 62
+num: 256 ADD TAIL[192]  18
+num 255 : GET Head[193]  63
+>>get 63
+num: 256 ADD TAIL[193]  19
+num 255 : GET Head[194]  64
+>>get 64
+num: 256 ADD TAIL[194]  20
+num 255 : GET Head[195]  65
+>>get 65
+num: 256 ADD TAIL[195]  21
+num 255 : GET Head[196]  66
+>>get 66
+num: 256 ADD TAIL[196]  22
+num 255 : GET Head[197]  67
+>>get 67
+num: 256 ADD TAIL[197]  23
+num 255 : GET Head[198]  68
+>>get 68
+num: 256 ADD TAIL[198]  24
+num 255 : GET Head[199]  69
+>>get 69
+num: 256 ADD TAIL[199]  25
+num 255 : GET Head[200]  70
+>>get 70
+num: 256 ADD TAIL[200]  26
+num 255 : GET Head[201]  71
+>>get 71
+num: 256 ADD TAIL[201]  27
+num 255 : GET Head[202]  72
+>>get 72
+num: 256 ADD TAIL[202]  28
+num 255 : GET Head[203]  73
+>>get 73
+num: 256 ADD TAIL[203]  29
+num 255 : GET Head[204]  74
+>>get 74
+num: 256 ADD TAIL[204]  30
+num 255 : GET Head[205]  75
+>>get 75
+num: 256 ADD TAIL[205]  31
+num 255 : GET Head[206]  76
+>>get 76
+num: 256 ADD TAIL[206]  32
+num 255 : GET Head[207]  77
+>>get 77
+num: 256 ADD TAIL[207]  33
+num 255 : GET Head[208]  78
+>>get 78
+num: 256 ADD TAIL[208]  34
+num 255 : GET Head[209]  79
+>>get 79
+num: 256 ADD TAIL[209]  35
+num 255 : GET Head[210]  80
+>>get 80
+num: 256 ADD TAIL[210]  36
+num 255 : GET Head[211]  81
+>>get 81
+num: 256 ADD TAIL[211]  37
+num 255 : GET Head[212]  82
+>>get 82
+num: 256 ADD TAIL[212]  38
+num 255 : GET Head[213]  83
+>>get 83
+num: 256 ADD TAIL[213]  39
+num 255 : GET Head[214]  84
+>>get 84
+num: 256 ADD TAIL[214]  40
+num 255 : GET Head[215]  85
+>>get 85
+num: 256 ADD TAIL[215]  41
+num 255 : GET Head[216]  86
+>>get 86
+num: 256 ADD TAIL[216]  42
+num 255 : GET Head[217]  87
+>>get 87
+num: 256 ADD TAIL[217]  43
+num 255 : GET Head[218]  88
+>>get 88
+num: 256 ADD TAIL[218]  44
+num 255 : GET Head[219]  89
+>>get 89
+num: 256 ADD TAIL[219]  45
+num 255 : GET Head[220]  90
+>>get 90
+num: 256 ADD TAIL[220]  46
+num 255 : GET Head[221]  91
+>>get 91
+num: 256 ADD TAIL[221]  47
+num 255 : GET Head[222]  92
+>>get 92
+num: 256 ADD TAIL[222]  48
+num 255 : GET Head[223]  93
+>>get 93
+num: 256 ADD TAIL[223]  49
+num 255 : GET Head[224]  94
+>>get 94
+num: 256 ADD TAIL[224]  50
+num 255 : GET Head[225]  95
+>>get 95
+num: 256 ADD TAIL[225]  51
+num 255 : GET Head[226]  96
+>>get 96
+num: 256 ADD TAIL[226]  52
+num 255 : GET Head[227]  97
+>>get 97
+num: 256 ADD TAIL[227]  53
+num 255 : GET Head[228]  98
+>>get 98
+num: 256 ADD TAIL[228]  54
+num 255 : GET Head[229]  99
+>>get 99
+num: 256 ADD TAIL[229]  55
+num 255 : GET Head[230]  0
+>>get 0
+BdBuffer testing num255 :Left 1 : isEnough 1 

@@ -1,0 +1,79 @@
+#include	<stdio.h>
+#include	"task.h"
+
+
+
+main() {
+
+    Task 	aTask[MaxTaskNum];
+    TaskPQueue	aTaskPQ;
+
+    Task *	pTask;
+
+    //initDebug(ErrorDebug);
+    for(int i = 0 ; i < 30 ; i++)
+	aTask[i].printTask();
+
+    pTask = &aTask[1];
+
+    printf("\n");
+    pTask->printTask();
+
+    pTask->hello();
+
+    
+
+    printf("task testing\n");
+    char * taskState = pTask->getState();
+    printf("task state [%s] \n", taskState);
+
+    //pTask->priority = 340;
+    if( pTask->isValidPriority(LowestPriority) != OK )
+	printf("NOT valid priority\n");
+    else
+	printf("valid priority\n");
+
+    aTask[45].priority = 1;
+    aTask[4].priority = 254;
+    aTask[5].priority = 0;
+    aTask[14].priority = 1;
+    aTask[37].priority = 1;
+    aTask[99].priority = 0;
+    aTask[78].priority = 4;
+    for(i = 3; i < 80; i++) {
+	pTask = &aTask[i]; 
+	aTaskPQ.addReadyQueue(pTask);
+    }
+    
+    aTaskPQ.printQueue(255);
+    aTaskPQ.printQueue(254);
+    aTaskPQ.printQueue(200);
+    aTaskPQ.printQueue(99);
+    aTaskPQ.printQueue(78);
+    aTaskPQ.printQueue(37);
+    aTaskPQ.printQueue(45);
+    aTaskPQ.printQueue(14);
+    //aTaskPQ.printQueue(3);
+    aTaskPQ.printQueue(1);
+
+    //aTaskPQ.getHighPriority();
+
+    printf("Damm i will call getNextTask\n");
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+	aTaskPQ.addReadyQueue(&aTask[5]);
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+    pTask = aTaskPQ.getNextTask();
+
+    aTaskPQ.printQueue(1);
+    //printf("getNext task %d\n", pTask->tid);
+    //aTaskPQ.removeQueue(1);
+
+    //aTaskPQ.getHighestPriority();
+
+
+}

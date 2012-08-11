@@ -1,0 +1,39 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.1
+date	95.05.26.14.05.13;	author cs452;	state Exp;
+branches;
+next	;
+
+
+desc
+@Don't think I need this.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#ifndef _I386_SYSARCH_H_
+#define _I386_SYSARCH_H_
+
+/*
+ * Architecture specific syscalls (i386)
+ */
+#define I386_GET_LDT	0
+#define I386_SET_LDT	1
+
+#ifndef KERNEL
+int i386_get_ldt __P((int, union descriptor *, int));
+int i386_set_ldt __P((int, union descriptor *, int));
+#endif
+
+#endif /* !_I386_SYSARCH_H_ */
+@
